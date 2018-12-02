@@ -12,8 +12,8 @@ import urllib
 
 
 
-app = Flask(__name__, template_folder = '01_HTML')
-
+"""app = Flask(__name__, template_folder = '01_HTML')"""
+app = Flask(__name__)
 
 
 
