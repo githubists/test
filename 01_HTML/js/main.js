@@ -229,7 +229,7 @@ jQuery(document).ready(function($) {
             parallaxScroll();
         });
     };
-
+                       
     // Switch class on filter
     var showfilter = jQuery('.works-filter');
     jQuery('button.nav').on('click', function() {
@@ -395,3 +395,45 @@ jQuery(window).load(function($) {
         jQuery(this).addClass('active');
     });
 });
+
+
+
+
+
+//書き加え
+function headerSticky(){
+    var scrolledY = jQuery(window).scrollTop();
+    var preheaderPosition = jQuery('.preheader').offset().top;
+    //alert(scrolledY);
+    if (scrolledY > preheaderPosition) {
+        //alert(headerScroll)
+        jQuery('.header').css('position', 'fixed');
+        jQuery('.header').css('top', 0 + 'px');
+        jQuery('.postheader').css('height', '100px');
+    }else if (preheaderPosition > scrolledY){
+        jQuery('.header').css('position', 'static');
+        jQuery('.postheader').css('height', '0px');
+    };
+};
+
+function changecolor(){
+    var scrolled = jQuery(window).scrollTop();
+    var pageheight = document.body.scrollHeight;
+    
+    var x = (scrolled)/pageheight;
+    var r = Math.round(Math.max(255,122+255*x));
+    var g = Math.round(122 - 122 * x);
+    var b = Math.round(255 * x);
+    document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
+    
+};
+
+
+jQuery(window).on('scroll', function() {
+    headerSticky();
+    changecolor();
+});
+
+
+
+
