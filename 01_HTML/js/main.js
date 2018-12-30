@@ -424,7 +424,7 @@ function changecolor(){
     var r = Math.round(Math.max(255,122+255*x));
     var g = Math.round(122 - 122 * x);
     var b = Math.round(255 * x);
-    document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
+    //document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
     
 };
 
