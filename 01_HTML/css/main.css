@@ -1730,20 +1730,30 @@ ul.member-social-media {
 }
 ul.client-thumb li {
     display: inline-block;
-    width: 24%;
+    width: 49%;
     text-align: center;
     margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 ul.client-thumb li a img {
     max-width: 100%;
     height: auto;
     opacity: 0.8;
-    height: auto;
+}
+
+ul.client-thumb li:nth-of-type(even){
+    padding-right:0px;
+}
+
+ul.client-thumb li:nth-of-type(odd){
+    padding-left:0px;
 }
 
 ul.client-thumb li a img:hover {
     opacity: 1;
 }
+
 
 ul.client-thumb-2 li{
     display: inline-block;
