@@ -15,7 +15,9 @@
     <meta property="og:title" content="東大医学部 五月祭企画 医へのいざない" />
     <!-- トップページ以外はarticle -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://utmed-mayfes.net/" />
+    <!--本番環境のurlに合わせる -->
+    <meta name="canonical" content="https://utmed-mayfes.net/" />
+    <meta property="og:url" content="https://gogatsusai.herokuapp.com/01_HTML/gogatsusai_home.html" />
     <!-- 1200 × 630px以上 -->
     <meta property="og:image" content="img/五月祭ヘッダー.png" />
     <meta property="og:description" content="2019年 東京大学五月祭医学部公式ウェブサイト" />
@@ -325,11 +327,25 @@
 <section class="container margin-top">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h1>ニュース</h1>
-            <hr>
-            <p>ここに更新履歴を書いていく</p>
-
+          <h1>ニュース</h1>
+          <hr>
         </div>
+          <article class="col-xs-10 col-xs-offset-1">
+            <h3><a href="/">トップページ更新</a></h3>
+            <hr>
+            <p>
+              トップページに企画紹介の画像を追加しました。<br/>
+              更新日時<time datetime="2019-03-01T17:00:06">2019/03/01</time>
+            </p>
+          </article>
+          <article class="col-xs-10 col-xs-offset-1">
+            <h3><a href="/">サイトをアップ</a></h3>
+            <hr>
+            <p>
+              ついに2019年度東京大学医学部五月祭企画ホームページが公開となりました。<br/>
+              更新日時<time datetime="2019-02-09T12:00:06">2019/02/09</time>
+            </p>
+          </article>
     </div>
 </section>
 
