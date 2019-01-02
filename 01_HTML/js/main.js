@@ -424,14 +424,31 @@ function changecolor(){
     var r = Math.round(Math.max(255,122+255*x));
     var g = Math.round(122 - 122 * x);
     var b = Math.round(255 * x);
-    //document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
+    document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
+    
+};
+
+
+function changeBackground(){
+    var scrolledY = jQuery(window).scrollTop();
+    var landmarkPosition = jQuery('.scroll-landmark').offset().top;
+    var windowHeight = jQuery(window).height();
+    
+    
+    if(scrolledY > landmarkPosition) {
+        var scroll = Math.min(1, 2*(scrolledY - landmarkPosition) / windowHeight);
+        var x = 255 - Math.round(255 * scroll);
+        document.body.style.backgroundColor = 'rgba(' + x + ',' + x + ',' + x + ',' + '1 )';
+        
+    };
     
 };
 
 
 jQuery(window).on('scroll', function() {
     headerSticky();
-    changecolor();
+    //changeBackground();
+    //changeclor();
 });
 
 
