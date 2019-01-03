@@ -364,7 +364,7 @@ jQuery(document).ready(function($) {
 
 function feedToNewslist(data,state,feed){
   if(state=="success"){
-    var feedXml = feed.responseXML
+    var feedXml = data
     var newsXMLs = $('entry',feedXml)
     var newsUl = $('ul#newslist')
     var newsArray = []
@@ -449,7 +449,7 @@ jQuery(window).load(function($) {
         jQuery('a.filter').removeClass('active');
         jQuery(this).addClass('active');
     });
-    jQuery.get("/feed.atom",feedToNewslist)//localで動かすときは..
+    jQuery.get("/feed.xml",feedToNewslist)//localで動かすときは..
 });
 
 
