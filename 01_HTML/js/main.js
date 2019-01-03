@@ -393,12 +393,15 @@ function feedToNewslist(data,state,feed){
       newsUl.append($('<li class="list-group-item"/>')
         .append($('<a href="'+news.href+'"/>')
           .append($('<article/>')
-            .append($('<h5/>').text(news.title))
             .append($('<p/>')
+              .append($('<small/>')
+                .append($('<i class="icon-calendar"/>'))
+                .append($('<time/>',{datetime:news.release}).text(dateString[0]+'/'+dateString[1]+'/'+dateString[2]))
+              )
+            )
+            .append($('<h4 class="list-group-item-heading"/>').text(news.title))
+            .append($('<p class="list-group-item-text"/>')
               .append(news.contents)
-              .append($('<br/>'))
-              .append('更新日時:')
-              .append($('<time>',{datetime:news.release}).text(dateString[0]+'/'+dateString[1]+'/'+dateString[2]))
             )//</p>
           )//</article>
         )//</a>
@@ -446,7 +449,7 @@ jQuery(window).load(function($) {
         jQuery('a.filter').removeClass('active');
         jQuery(this).addClass('active');
     });
-    jQuery.get("/feed.atom",feedToNewslist,"xml")//localで動かすときは..
+    jQuery.get("/feed.atom",feedToNewslist)//localで動かすときは..
 });
 
 
