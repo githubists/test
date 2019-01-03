@@ -1,6 +1,6 @@
 "use strict";
 
-//Esc Key 
+//Esc Key
 $.fn.escape = function(callback) {
     return this.each(function() {
         jQuery(document).on("keydown", this, function(e) {
@@ -68,7 +68,7 @@ function Tabs() {
     });
 };
 
-//Dribble 
+//Dribble
 function getDribbbleThumbs() {
     jQuery.jribbble.setToken(dribbbleToken);
     jQuery.jribbble.users(dribbbleName).shots({
@@ -101,7 +101,7 @@ function getSocialButtons() {
     }
 };
 
-//Scroll Top 
+//Scroll Top
 $.fn.scrollToTop = function() {
     jQuery(this).hide().removeAttr('href');
     if (jQuery(window).scrollTop() != '0') {
@@ -190,16 +190,16 @@ function likeEf() {
 
 //Document Ready
 jQuery(document).ready(function($) {
-    
+
     //Navigation Sub Menu Triggering
     jQuery('.menu-item-has-children, .page_item_has_children').hover(function() {
         jQuery(this).children('.sub-menu').stop().slideDown(200);
-    }, 
+    },
     function() {
         jQuery(this).children('.sub-menu').stop().slideUp(200);
     });
 
-    //Mobile Menu Open/Close 
+    //Mobile Menu Open/Close
     jQuery('#open-mobile-menu').on('click', function() {
         var self = jQuery(this);
         var mobileMenu = jQuery('.menu-wrap-2');
@@ -229,7 +229,7 @@ jQuery(document).ready(function($) {
             parallaxScroll();
         });
     };
-                       
+
     // Switch class on filter
     var showfilter = jQuery('.works-filter');
     jQuery('button.nav').on('click', function() {
@@ -323,7 +323,7 @@ jQuery(document).ready(function($) {
         jQuery(".cover").addClass('animated fadeOutRight').fadeOut(1000);
     });
 
-    //Magnific Popup  
+    //Magnific Popup
     jQuery('.popup-video').magnificPopup({
         type: 'iframe',
         closeOnContentClick: true,
@@ -348,7 +348,7 @@ jQuery(document).ready(function($) {
     //Like
     likeEf();
 
-    //Slider 
+    //Slider
     historySlider();
 
     //Get social sharing
@@ -357,14 +357,66 @@ jQuery(document).ready(function($) {
     //Init Tabs
     Tabs();
 
-    //WOW Animation init 
+    //WOW Animation init
     new WOW().init();
 
 });
 
+function feedToNewslist(data,state,feed){
+  if(state=="success"){
+    var feedXml = feed.responseXML
+    var newsXMLs = $('entry',feedXml)
+    var newsUl = $('ul#newslist')
+    var newsArray = []
+    var newsXML
+    var news
+    var dateString
+    newsXMLs.each(function(idx,newsXML){
+      newsArray.push({
+        title:$('title',newsXML).text(),
+        href:$('link',newsXML).attr('href').replace("https://"+"utmed-mayfes.net",""),//document.domainに変換
+        contents:$('summary',newsXML).text(),
+        release:$('updated',newsXML).text()
+      });
+    })
+    if(newsArray.length<1){
+      return ;
+    }
+    newsUl.text("")
+    newsArray.sort(function(a,b){
+    if(a.release>b.release) return -1;
+    if(a.release < b.release) return 1;
+    return 0;})
+    for(var i=0;i<newsArray.length;i++){
+      news=newsArray[i]
+      dateString=news.release.split(/[-T:\.\+]/)
+      newsUl.append($('<li class="list-group-item"/>')
+        .append($('<a href="'+news.href+'"/>')
+          .append($('<article/>')
+            .append($('<h5/>').text(news.title))
+            .append($('<p/>')
+              .append(news.contents)
+              .append($('<br/>'))
+              .append('更新日時:')
+              .append($('<time>',{datetime:news.release}).text(dateString[0]+'/'+dateString[1]+'/'+dateString[2]))
+            )//</p>
+          )//</article>
+        )//</a>
+      )//</li>
+    }
+   }
+   else{
+     newsUl.append($('<li class="list-group-item"/>')
+      .append($('<article/>')
+        .append($('<h5/>').text("フィードの読み込みに失敗しました"))
+      )
+    )
+  }
+}
+
 //Window Load
 jQuery(window).load(function($) {
-    
+
     /*Init Portfolio*/
     var container = jQuery("#work-grid");
     if (container.length > 0) {
@@ -394,6 +446,7 @@ jQuery(window).load(function($) {
         jQuery('a.filter').removeClass('active');
         jQuery(this).addClass('active');
     });
+    jQuery.get("/feed.atom",feedToNewslist,"xml")//localで動かすときは..
 });
 
 
@@ -419,13 +472,13 @@ function headerSticky(){
 function changecolor(){
     var scrolled = jQuery(window).scrollTop();
     var pageheight = document.body.scrollHeight;
-    
+
     var x = (scrolled)/pageheight;
     var r = Math.round(Math.max(255,122+255*x));
     var g = Math.round(122 - 122 * x);
     var b = Math.round(255 * x);
     document.body.style.backgroundColor='rgba(' + r + ',' + g + ',' + b + ',' + Math.min(0.1,7*x) + ')';
-    
+
 };
 
 
@@ -433,15 +486,15 @@ function changeBackground(){
     var scrolledY = jQuery(window).scrollTop();
     var landmarkPosition = jQuery('.scroll-landmark').offset().top;
     var windowHeight = jQuery(window).height();
-    
-    
+
+
     if(scrolledY > landmarkPosition) {
         var scroll = Math.min(1, 2*(scrolledY - landmarkPosition) / windowHeight);
         var x = 255 - Math.round(255 * scroll);
         document.body.style.backgroundColor = 'rgba(' + x + ',' + x + ',' + x + ',' + '1 )';
-        
+
     };
-    
+
 };
 
 
@@ -450,7 +503,3 @@ jQuery(window).on('scroll', function() {
     //changeBackground();
     //changeclor();
 });
-
-
-
-
