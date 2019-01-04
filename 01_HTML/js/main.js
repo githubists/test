@@ -390,31 +390,14 @@ function feedToNewslist(data,state,feed){
     for(var i=0;i<newsArray.length;i++){
       news=newsArray[i]
       dateString=news.release.split(/[-T:\.\+]/)
-      newsUl.append($('<li class="list-group-item"/>')
-        .append($('<a href="'+news.href+'"/>')
-          .append($('<article/>')
-            .append($('<p/>')
-              .append($('<small/>')
-                .append($('<i class="icon-calendar"/>'))
-                .append($('<time/>',{datetime:news.release}).text(dateString[0]+'/'+dateString[1]+'/'+dateString[2]))
-              )
-            )
-            .append($('<h4 class="list-group-item-heading"/>').text(news.title))
-            .append($('<p class="list-group-item-text"/>')
-              .append(news.contents)
-            )//</p>
-          )//</article>
-        )//</a>
-      )//</li>
+      newsUl.append('<li class="list-group-item"><a href="'+
+        news.href+'"><article><p><small><i class="icon-calendar"></i><time datetime="'+
+        news.release+'"> '+dateString[0]+'/'+dateString[1]+'/'+dateString[2]+
+        '</time></small></p><h4 class="list-group-item-heading">'+
+        news.title+'</h4><p class="list-group-item-text">'+
+        news.contents+'</p></article></a></li>')
     }
    }
-   else{
-     newsUl.append($('<li class="list-group-item"/>')
-      .append($('<article/>')
-        .append($('<h5/>').text("フィードの読み込みに失敗しました"))
-      )
-    )
-  }
 }
 
 //Window Load
