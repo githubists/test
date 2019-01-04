@@ -2897,28 +2897,45 @@ input[type="text"] {
     min-height: 300px;
 }
 .footer-inner {
-    height: 300px;
-    display: table;
+    /*height: 300px;*/
+    /*display: table;*/
     width: 100%;
 }
 .footer-content {
-    display: table-cell;
+    /*display: table-cell;*/
     vertical-align: middle;
+    text-align: center;
 }
 .footer-content p {
+    margin: 0px 0px 20px;
     color: #787878;
+    margin-bottom:10px;
+}
+.footer-content h3 {
+    font-weight:500;
+    color: #000;
+    line-height: 30px;
 }
 .footer-content h4 {
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
-    text-transform: uppercase;
+    /*line-height: 27px;*/
+    margin: 15px 0px 0px;
 }
+.footer-content p a {
+    color:#787878;
+}
+.footer-content p a:hover{
+    color:#7beec7;
+}
+
 .footer-content address {
     color: #787878;
     font-size: 14px;
     letter-spacing: 1.5pt;
 }
 ul.social-media {
+    margin-top:20px;
     padding: 0;
     text-align: center;
 }
@@ -2934,7 +2951,8 @@ ul.social-media li a i:hover {
     color: #7beec7;
 }
 .copyright-mark {
-    margin-top: 50px;
+    /*margin-top: 20px;*/
+    margin-bottom:20px;
     display: block;
     text-align: center;
     color: #787878;
