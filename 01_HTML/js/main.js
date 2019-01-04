@@ -472,15 +472,13 @@ function changeBackground(){
     var scrolledY = jQuery(window).scrollTop();
     var landmarkPosition = jQuery('.scroll-landmark').offset().top;
     var windowHeight = jQuery(window).height();
-
+    
 
     if(scrolledY > landmarkPosition) {
         var scroll = Math.min(1, 2*(scrolledY - landmarkPosition) / windowHeight);
         var x = 255 - Math.round(255 * scroll);
         document.body.style.backgroundColor = 'rgba(' + x + ',' + x + ',' + x + ',' + '1 )';
-
     };
-
 };
 
 
