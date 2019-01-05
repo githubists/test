@@ -124,12 +124,12 @@ a:focus {
 a:hover,
 a:focus {
     color: #7beec7;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a,
 a:visited {
     font-weight: 400;
-    text-decoration: none;
+    text-decoration: underline;
 }
 em {
     font-style: italic;
@@ -2946,6 +2946,9 @@ ul.social-media li {
 }
 ul.social-media li a i {
     color: #111111;
+}
+ul.social-media li a{
+    text-decoration: none;
 }
 ul.social-media li a i:hover {
     color: #7beec7;
