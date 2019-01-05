@@ -371,6 +371,9 @@ function feedToNewslist(data,state,feed){
     var newsXML
     var news
     var dateString
+    if(newsXMLs.length<1){
+      return ;
+    }
     newsXMLs.each(function(idx,newsXML){
       newsArray.push({
         title:$('title',newsXML).text(),
@@ -379,9 +382,7 @@ function feedToNewslist(data,state,feed){
         release:$('updated',newsXML).text()
       });
     })
-    if(newsArray.length<1){
-      return ;
-    }
+
     newsUl.text("")
     newsArray.sort(function(a,b){
     if(a.release>b.release) return -1;
@@ -393,8 +394,8 @@ function feedToNewslist(data,state,feed){
       newsUl.append('<li class="list-group-item"><a href="'+
         news.href+'"><article><p><small><i class="icon-calendar"></i><time datetime="'+
         news.release+'"> '+dateString[0]+'/'+dateString[1]+'/'+dateString[2]+
-        '</time></small></p><h4 class="list-group-item-heading">'+
-        news.title+'</h4><p class="list-group-item-text">'+
+        '</time></small></p><h3 class="list-group-item-heading">'+
+        news.title+'</h3><p class="list-group-item-text">'+
         news.contents+'</p></article></a></li>')
     }
    }
@@ -432,7 +433,7 @@ jQuery(window).load(function($) {
         jQuery('a.filter').removeClass('active');
         jQuery(this).addClass('active');
     });
-    jQuery.get("/feed.xml",feedToNewslist)//localで動かすときは..
+    if(jQuery('ul#newslist').length>0){jQuery.get("/feed.xml",feedToNewslist)}//localで動かすときは../feed
 });
 
 
@@ -472,7 +473,7 @@ function changeBackground(){
     var scrolledY = jQuery(window).scrollTop();
     var landmarkPosition = jQuery('.scroll-landmark').offset().top;
     var windowHeight = jQuery(window).height();
-    
+
 
     if(scrolledY > landmarkPosition) {
         var scroll = Math.min(1, 2*(scrolledY - landmarkPosition) / windowHeight);
@@ -492,11 +493,11 @@ function animate(){
     var objectPosition = animatedObject.offset().top;
     var scrolled = jQuery(window).scrollTop();
     var windowHeight = jQuery(window).height();
-    
-    
+
+
     var className = animatedObject.prop('className').match("inView-[a-zA-Z]+");
     var animationClass = String(className).slice(7);
-    
+
     if (scrolled + windowHeight > objectPosition){
         animatedObject.addClass(animationClass + ' animated');
     };
@@ -511,7 +512,7 @@ jQuery(window).on('scroll', function() {
     headerSticky();
     //アニメーション
     animateInView();
-                  
+
     //使わなかったら後で消す
     //changeBackground();
     //changeclor();

@@ -151,4 +151,22 @@
     <changefreq>weekly</changefreq>
     <priority></priority>
   </url>
+  <url>
+    <loc>https://utmed-mayfes.net/contents/piano</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://utmed-mayfes.net/contents/chamber</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://utmed-mayfes.net/contents/cafe</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority></priority>
+  </url>
 </urlset>

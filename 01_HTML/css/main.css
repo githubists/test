@@ -14,7 +14,7 @@
     /* =Preloader
     /* =Header
     /* =Full Width Slider
-    /* =Architecure Slider 
+    /* =Architecure Slider
     /* =Menu right
     /* =Home Content
     /* =Architecture Content
@@ -91,7 +91,7 @@ body {
 }
 :-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #787878;
     font-size: 14px;
     letter-spacing: 1pt;
@@ -99,7 +99,7 @@ body {
 }
 ::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #787878;
     font-size: 14px;
     letter-spacing: 1pt;
@@ -165,8 +165,15 @@ h1 {
 h2 {
     font-size: 22px;
 }
+section h2{
+    font-size: 24px;
+    font-weight: bold;
+}
 h3 {
     font-size: 20px;
+}
+ul#newslist h3{
+   font-size: 18px;
 }
 h4 {
     font-size: 18px;
@@ -452,8 +459,8 @@ ul.sublist {
     background: rgba(255, 255, 255, 0.8);
     z-index: 9;
     position: ;
-    
-    
+
+
 }
 .logo {
     float: left;
@@ -865,7 +872,7 @@ span.border-text {
     font-weight: 400;
 }
 
-/* =Architecure Slider 
+/* =Architecure Slider
 -------------------------------------------------------------- */
 .arch-slider {
     position: relative;
@@ -1034,7 +1041,7 @@ span.border-text {
     transition-delay: 0.15s;
 }
 .search-wrap.open input:focus {
-    border:0; 
+    border:0;
 }
 .search-wrap.open ::-webkit-input-placeholder {
     font-size: 12px;
@@ -1426,7 +1433,7 @@ ul.sub-menu li a {
 
 .menu-wrap-2 ul{
     padding:0;
-    margin-bottom:0; 
+    margin-bottom:0;
 }
 
 .menu-wrap-2 ul li{
@@ -2486,7 +2493,7 @@ ul.social-buttons li {
 }
 
 /*Play Button*/
-.playBut { 
+.playBut {
     display: inline-block;
     -webkit-transition: all 0.5s ease;
     background-color: rgba(255, 255, 255, 0.79);
@@ -2911,12 +2918,14 @@ input[type="text"] {
     color: #787878;
     margin-bottom:10px;
 }
-.footer-content h3 {
+.footer-content h2 {
+    font-size:20px;
     font-weight:500;
     color: #000;
     line-height: 30px;
 }
-.footer-content h4 {
+.footer-content h3 {
+    font-size:18px;
     font-weight: 500;
     color: #000;
     /*line-height: 27px;*/
