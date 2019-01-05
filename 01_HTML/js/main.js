@@ -482,8 +482,37 @@ function changeBackground(){
 };
 
 
+function animateInView(){
+    //class="inView-(アニメーションクラス)" を取得し、それぞれをアニメーション
+    jQuery("[class*='inView']").each(animate);
+}
+
+function animate(){
+    var animatedObject = $(this);
+    var objectPosition = animatedObject.offset().top;
+    var scrolled = jQuery(window).scrollTop();
+    var windowHeight = jQuery(window).height();
+    
+    
+    var className = animatedObject.prop('className').match("inView-[a-zA-Z]+");
+    var animationClass = String(className).slice(7);
+    
+    if (scrolled + windowHeight > objectPosition){
+        animatedObject.addClass(animationClass + ' animated');
+    };
+    if (scrolled + windowHeight < objectPosition){
+        animatedObject.removeClass(animationClass + ' animated');
+    };
+}
+
+
 jQuery(window).on('scroll', function() {
+    //ヘッダーを途中から固定
     headerSticky();
+    //アニメーション
+    animateInView();
+                  
+    //使わなかったら後で消す
     //changeBackground();
     //changeclor();
 });
