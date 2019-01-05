@@ -3173,3 +3173,11 @@ a img.aligncenter {
 .alert-danger .alert-link {
   color: #d2d2d2;
 }
+
+.instagram-color{
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip:text;
+  color: transparent;
+}
