@@ -1742,14 +1742,17 @@ ul.client-thumb li {
     display: inline-block;
     width: 49%;
     text-align: center;
-    margin-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    overflow: hidden;
 }
 ul.client-thumb li a img {
     max-width: 100%;
     height: auto;
-    opacity: 0.8;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+    //opacity: 0.8;
 }
 
 ul.client-thumb li:nth-of-type(even){
@@ -1761,7 +1764,31 @@ ul.client-thumb li:nth-of-type(odd){
 }
 
 ul.client-thumb li a img:hover {
-    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: -webkit-transform 3s;
+    transition: transform 0.5s;
+    opacity: 0.8;
+}
+
+ul.client-thumb li a .overlay-title {
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	font-size: 25px;
+	font-weight: 600;
+	color: white;
+	z-index: 100;
+}
+ul.client-thumb li a .overlay-info {
+	position: absolute;
+	bottom: 30px;
+	right: 5px;
+	font-size: 10px;
+	font-weight: 600;
+	text-align: left;
+	color: white;
+	z-index: 100;
 }
 
 

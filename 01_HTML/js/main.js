@@ -494,15 +494,31 @@ function animate(){
     var scrolled = jQuery(window).scrollTop();
     var windowHeight = jQuery(window).height();
 
-
+	//アニメーションの名前を取得
     var className = animatedObject.prop('className').match("inView-[a-zA-Z]+");
     var animationClass = String(className).slice(7);
 
-    if (scrolled + windowHeight > objectPosition){
-        animatedObject.addClass(animationClass + ' animated');
-    };
-    if (scrolled + windowHeight < objectPosition){
+
+	if (scrolled < objectPosition - 1.2 * windowHeight){
+		//if(animatedObject.is(':animated')){
+			//animatedObject.removeClass(animationClass + ' animated');
+		//};
+		//トリガーが引かれていない場合には非表示
+		animatedObject.css("visibility", "hidden");
+		//アニメーションのクラスを取り除く
         animatedObject.removeClass(animationClass + ' animated');
+    };
+    if (scrolled < objectPosition - 0.85*windowHeight ){
+		//アニメーションのトリガーが引かれていない場合には非表示
+		if(animatedObject.hasClass('animated') == false){
+			animatedObject.css("visibility", "hidden");
+		};
+    };
+    if (scrolled > objectPosition - 0.85*windowHeight ){
+		//アニメートさせる
+        animatedObject.addClass(animationClass + ' animated');
+		//表示させる
+		animatedObject.css("visibility", "visible");
     };
 }
 
