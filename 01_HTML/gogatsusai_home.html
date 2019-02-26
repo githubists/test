@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ja">
 
 <head  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
@@ -53,16 +53,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="#"/>
 
     <meta name="msapplication-tap-highlight" content="yes" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta http-equiv="refresh" content="1000"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="1000"/> user-scalable=no を削除-->
 
     <!-- Google Web Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'/>
     <link href='https://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'/>
 
     <!--  Bootstrap 3-->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- OWL Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/owl.theme.css"/>
@@ -132,7 +131,7 @@
         <h1 style="display:inline; line-height:110px; margin-left:30px;">東大医学部五月祭企画</h1>
 
         <!-- Menu Hamburger (Default) -->
-        <button class="main-menu-indicator" id="open-button">
+        <button class="main-menu-indicator" id="open-button" aria-label="open menu">
             <span class="line"></span>
         </button>
 
@@ -613,7 +612,7 @@
                         <li><a href="/contents/coat">白衣体験</a></li>
                         <li><a href="/contents/vr">VR医学体験</a></li>
                         <li><a href="/contents/organ">臓器当て</a></li>
-                        <li><a href="/contents/muscle_anatomy">マッスルアナトミー</a></li>
+                        <li><a href="/contents/muscle-anatomy">マッスルアナトミー</a></li>
                         <li><a href="/contents/ambulance">救命救急体験</a></li>
                         <li><a href="/contents/narrative">ことばで感じる医療</a></li>
                         <li><a href="/contents/artery">動脈観察</a></li>
@@ -624,10 +623,10 @@
                 </div>
                 <div class="col-xs-5">
                     <ul>
-                        <li><a href="/contents/feel_body">体を感じる</a></li>
-                        <li><a href="/contents/quiz_rally">クイズラリー</a></li>
+                        <li><a href="/contents/feel-body">体を感じる</a></li>
+                        <li><a href="/contents/quiz-rally">クイズラリー</a></li>
                         <li><a href="/contents/lecture">講演会</a></li>
-                        <li><a href="/contents/disaster_med">災害医療</a></li>
+                        <li><a href="/contents/disaster-med">災害医療</a></li>
                         <li><a href="/contents/toxin">毒物</a></li>
                         <li><a href="/contents/forefront">最先端研究</a></li>
                         <li><a href="/contents/bookshelf">医学部生の本棚</a></li>
@@ -658,9 +657,11 @@
 
     <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
 
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- pace.jsによってprogres barが表示される -->
     <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/vendor/classie.js"></script>
     <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/jquery.velocity.min.js"></script>
@@ -724,102 +725,102 @@
         {
           "@type":"ListItem",
           "position":1,
-          "url":"https://utmed-mayfes.net/contents/coffee_cake.html"
+          "url":"https://utmed-mayfes.net/contents/lecture"
         },
         {
           "@type":"ListItem",
           "position":2,
-          "url":"https://utmed-mayfes.net/contents/apple_pie.html"
+          "url":"https://utmed-mayfes.net/contents/surgery"
         },
         {
           "@type":"ListItem",
           "position":3,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/ambulance"
         },
         {
           "@type":"ListItem",
           "position":4,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/history"
         },
         {
           "@type":"ListItem",
           "position":5,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/forefront"
         },
         {
           "@type":"ListItem",
           "position":6,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/goods"
         },
         {
           "@type":"ListItem",
           "position":7,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/cafe"
         },
         {
           "@type":"ListItem",
           "position":8,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/artery"
         },
         {
           "@type":"ListItem",
           "position":9,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/drama"
         },
         {
           "@type":"ListItem",
           "position":10,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/feel-body"
         },
         {
           "@type":"ListItem",
           "position":11,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/toxin"
         },
         {
           "@type":"ListItem",
           "position":12,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/organ"
         },
         {
           "@type":"ListItem",
           "position":13,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/vr"
         },
         {
           "@type":"ListItem",
           "position":14,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/piano"
         },
         {
           "@type":"ListItem",
           "position":15,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/chamber"
         },
         {
           "@type":"ListItem",
           "position":16,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/sketch"
         },
         {
           "@type":"ListItem",
           "position":17,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/narrative"
         },
         {
           "@type":"ListItem",
           "position":18,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/bp"
         },
         {
           "@type":"ListItem",
           "position":19,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/bookshelf"
         },
         {
           "@type":"ListItem",
           "position":20,
-          "url":"https://utmed-mayfes.net/contents/blueberry-pie.html"
+          "url":"https://utmed-mayfes.net/contents/muscle-anatomy"
         },
         {
           "@type":"ListItem",
