@@ -18,7 +18,7 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 - カスタムCSS,JavascriptのMinify、[zopfli](https://github.com/google/zopfli)によるgzip圧縮
 - title,descriptionはページごとに異なるか
 
-# デプロイ後の確認事項
+## デプロイ後の確認事項
 - AMP Cacheの更新
 - feed.xmlの更新
 - [Search Console](https://search.google.com/search-console)での状況確認
