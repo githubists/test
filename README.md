@@ -9,6 +9,7 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 本番環境ではCodeIgniterを利用すると考えられるが現状はページごとにhtmlファイルを作成している。
 
 ニュースの内容を更新する際は/feed.xmlを、デザイン変更の場合、/01_HTML/js/main.jsを編集する。
+.amp.htmlはコミット前に[AMP Validator](https://validator.ampproject.org/)で正当なAMPかチェックする
 
 ## デプロイ前の確認事項
 - PhotoshopでJPGを生成する際には、プログレッシブを選択する
