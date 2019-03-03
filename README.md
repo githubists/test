@@ -14,7 +14,7 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 ## デプロイ前の確認事項
 - PhotoshopでJPGを生成する際には、プログレッシブを選択する
 - 画像の解像度は大きすぎないか確認
-- [W3C Validator](https://validator.w3.org/)、[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)、[Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)での監査
+- [W3C Validator](https://validator.w3.org/)、[AMP テストツール](https://search.google.com/test/amp)、[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)、[Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)での監査
 - hrefにherokuappのアドレスがある場合utmed-mayfesに変換する
 - カスタムCSS,JavascriptのMinify、[zopfli](https://github.com/google/zopfli)によるgzip圧縮
 - title,descriptionはページごとに異なるか
