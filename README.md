@@ -1,7 +1,7 @@
 # test
 テスト用
 ## テスト環境について
-https://github.com/githubists/test/blob/master/01_HTML/gogatsusai_home.html
+https://github.com/githubists/test/blob/master/01_HTML/gogatsusai_home.amp.html
 にてトップページを作成
 https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 にて小企画紹介用のテンプレートを作成
@@ -14,12 +14,24 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 ## デプロイ前の確認事項
 - PhotoshopでJPGを生成する際には、プログレッシブを選択する
 - 画像の解像度は大きすぎないか確認
-- [W3C Validator](https://validator.w3.org/)、[AMP テストツール](https://search.google.com/test/amp)、[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)、[Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)での監査
+- `alt=""`に正しく内容を設定しているか確認
+- 監査ツールでの監査
+    - [W3C Validator](https://validator.w3.org/)
+    - [AMP テストツール](https://search.google.com/test/amp)
+    - [モバイルフレンドリーテスト](https://search.google.com/test/mobile-friendly)
+    - [構造化データテストツール](https://search.google.com/structured-data/testing-tool/u/0/)
+    - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+    - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 - hrefにherokuappのアドレスがある場合utmed-mayfesに変換する
-- カスタムCSS,JavascriptのMinify、[zopfli](https://github.com/google/zopfli)によるgzip圧縮
+- HTML,CSS,JavascriptのMinify
+    - [HTML Minifier](https://github.com/kangax/html-minifier)
+    - [CSSNano](https://github.com/cssnano/cssnano),[csso](https://github.com/css/csso)
+    - [UglifyJS](https://github.com/mishoo/UglifyJS2)
+- [zopfli](https://github.com/google/zopfli)によるgzip圧縮
 - title,descriptionはページごとに異なるか
 
 ## デプロイ後の確認事項
 - AMP Cacheの更新
 - feed.xmlの更新
+- [Google Analytics](https://analytics.google.com/analytics/web/)によるトラッキングのチェック
 - [Search Console](https://search.google.com/search-console)での状況確認
