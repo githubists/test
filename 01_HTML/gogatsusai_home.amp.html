@@ -2084,13 +2084,13 @@ section>p {
 }
 section li {
     overflow: hidden;
-    width: 49%;
+    width: 45%;
     margin-bottom: 1rem;
     position: relative;
 }
-section li>a>h3 {
-    font-size: 4.5vw;
-    line-height: calc(1.5rem + 5vw);
+section a>h3 {
+    font-size: 3.8vw;
+    line-height: calc(1.2rem + 5vw);
     position: absolute;
     font-weight: 600;
     text-decoration: underline;
@@ -2104,7 +2104,7 @@ section li>a>h3 {
     white-space: nowrap
 }
 
-section li>a>p {
+section a>p {
     position: absolute;
     bottom: calc(1rem + 5vw);
     right: 5px;
@@ -2113,22 +2113,21 @@ section li>a>p {
     color: #fff
 }
 @media(min-width: 768px) {
-    section li a h3 {
-        font-size:2.5rem;
+    section a h3 {
+        font-size:2rem;
         line-height: 5rem
     }
-    section li>a>p {
+    section a>p {
         font-size: 1.5rem;
         bottom: 4rem
     }
 }
 @media(min-width: 62rem) {
-    section li a h3 {
-        font-size:3rem;
-        line-height: 6rem
+    section a h3 {
+        font-size:2rem
     }
 
-    section li>a>p {
+    section a>p {
         font-size: 2rem;
         bottom: 6rem
     }
@@ -2201,43 +2200,9 @@ section>a>svg+div>p {
 }
 
 @media(orientation: portrait) {
-    .top-header div,.top-header span {
-        white-space:nowrap;
-        width: auto;
-        writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl
-    }
-    .top-title {
-        top: calc(16vh + 12vw);
-        left: 38vw;
-        font-size: 6vh;
-        -webkit-text-stroke-width: .1vh
-    }
-    .top-credit {
-        top: calc(16vh + 12vw);
-        left: 54vw;
-        font-size: 3.6vh;
-        -webkit-text-stroke-width: .04vh
-    }
-
-    .top-date {
-        width: 100%;
-        -webkit-writing-mode: initial;
-        -ms-writing-mode: initial;
-        writing-mode: initial;
-        font-size: 5.4vw;
-        top: calc(16vh + 4vw);
-        -webkit-text-stroke-width: .04vw
-    }
 }
 
 @media(orientation: portrait) and (min-width:768px) {
-    .top-date {
-        top:calc(16vh + 14vw)
-    }
-    .top-title,.top-credit {
-        top: calc(16vh + 19vw)
-    }
 }
 figure button,li>button {
     width: 100%;
@@ -2259,7 +2224,7 @@ section li>button>amp-img:hover {
     opacity: .8;
     transition: transform .4s
 }
-section li>button>h3 {
+section button>h3 {
     font-size: 4.5vw;
     line-height: calc(1.5rem + 5vw);
     position: absolute;
@@ -2275,13 +2240,33 @@ section li>button>h3 {
     white-space: nowrap
 }
 
-section li>button>p {
+section button p {
     position: absolute;
     bottom: calc(1rem + 5vw);
     right: 5px;
     z-index: 2;
     font-size: calc(0.5rem + 1vw);
     color: #fff
+}
+@media(min-width: 768px) {
+    section button h3 {
+        font-size:2.2rem;
+        line-height: 5rem
+    }
+    section button p {
+        font-size: 1.5rem;
+        bottom: 4rem
+    }
+}
+@media(min-width: 62rem) {
+    section button h3 {
+        font-size:3rem
+    }
+
+    section button p {
+        font-size: 2rem;
+        bottom: 6rem
+    }
 }
 amp-lightbox {
     background: rgba(0,0,0,0.8)
@@ -2346,7 +2331,7 @@ amp-lightbox ul.buttons .notarget {
   <header class="ampstart-headerbar fixed flex justify-between items-center top-0 left-0 right-0 pl2 pr4">
 	<div class="ampstart-headerbar-title mx0 h3 flex justify-start items-center controls">
     <amp-img src="./img/menulogo.png" width="56" height="56" layout="fixed" class="my0 left mr1" alt="Logo"></amp-img>
-    <span><span class="inline-block">東大医学部</span><span class="inline-block">五月祭企画</span><span>
+    <span class="inline-block">医へのいざない<span>
   </div>
 	<div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
     </div>
@@ -2458,7 +2443,7 @@ amp-lightbox ul.buttons .notarget {
       <h2 class="h3 block pt2 mb2">企画紹介（体験企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-between">
+      <ul class="flex flex-wrap justify-around">
         <li><button on="tap:vr">
           <amp-img src="./img/contents/experience/vr.jpg" width="460" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
           <h3>VR体験企画</h3>
@@ -2504,13 +2489,14 @@ amp-lightbox ul.buttons .notarget {
           <h3>白衣体験</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
+        <li></li>
       </ul>
       </section>
       <section>
       <h2 class="h3 block pt2 mb2">企画紹介（展示企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-between">
+      <ul class="flex flex-wrap justify-around">
         <li><button on="tap:sketch">
           <amp-img src="./img/contents/exhibition/sketch.jpg" width="460" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>スケッチ</h3>
@@ -2556,13 +2542,14 @@ amp-lightbox ul.buttons .notarget {
           <h3>毒物</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
+        <li></li>
       </ul>
       </section>
       <section>
       <h2 class="h3 block pt2 mb2">企画紹介（その他の企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-between">
+      <ul class="flex flex-wrap justify-around">
         <li><button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="460" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>カフェ</h3>
