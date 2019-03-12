@@ -2010,20 +2010,20 @@ ul {
     list-style: none;
     padding-left: 0
 }
-ol.breadcrumb>li {
+.breadcrumb>li {
     display: inline-block;
     list-style: none;
     font-weight: bold;
 }
 
-ol.breadcrumb>li:after {
+.breadcrumb>li:after {
     content: '>';
     padding: 0 .75rem;
 }
-ol.breadcrumb>li:last-child:after {
+.breadcrumb>li:last-child:after {
     content: '';
 }
-ol.breadcrumb>li>button {
+.breadcrumb>li>button {
     display: inline-block;
 }
 
@@ -2044,13 +2044,13 @@ footer>ul {
     color: #444;
     line-height: 24px
 }
-ul.disc {
+.disc {
     list-style-type: disc;
     margin-left: 1.5rem;
     text-align: left
 }
 
-footer ul.disc>li {
+.disc>li {
     margin-bottom: 0.5rem
 }
 footer>p {
@@ -2087,17 +2087,6 @@ section li {
     width: 49%;
     margin-bottom: 1rem;
     position: relative;
-}
-section li>a>amp-img {
-    filter: brightness(0.7);
-    transition: transform .4s
-}
-
-section li>a>amp-img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    opacity: .8;
-    transition: transform .4s
 }
 section li>a>h3 {
     font-size: 4.5vw;
@@ -2163,15 +2152,15 @@ section>a>svg+div>p {
     letter-spacing: 1px;
     text-decoration: none
 }
-section ul#sponsors>li {
+#sponsors>li {
     width: 33.4%
 }
 @media(min-width: 768px) {
-    section ul#sponsors>li {
+    #sponsors>li {
         width:20.1%
     }
 }
-button.scrollToTop {
+.scrollToTop {
     border: none;
     position: fixed;
     bottom: 15px;
@@ -2194,18 +2183,18 @@ button.scrollToTop {
     position: absolute;
     left: 0px
 }
-.top-header .top-title {
+.top-title {
     top: calc(28vh + 6vw);
     font-size: 6.4vw;
     -webkit-text-stroke-width: .14vw
 }
 
-.top-header .top-credit {
+.top-credit {
     font-size: 3.8vw;
     top: calc(28vh + 1.1vw);
     -webkit-text-stroke-width: .06vw
 }
-.top-header .top-date {
+.top-date {
     font-size: 3vw;
     top: calc(28vh - 3vw);
     -webkit-text-stroke-width: .04vw
@@ -2218,20 +2207,20 @@ button.scrollToTop {
         writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl
     }
-    .top-header .top-title {
+    .top-title {
         top: calc(16vh + 12vw);
         left: 38vw;
         font-size: 6vh;
         -webkit-text-stroke-width: .1vh
     }
-    .top-header .top-credit {
+    .top-credit {
         top: calc(16vh + 12vw);
         left: 54vw;
         font-size: 3.6vh;
         -webkit-text-stroke-width: .04vh
     }
 
-    .top-header .top-date {
+    .top-date {
         width: 100%;
         -webkit-writing-mode: initial;
         -ms-writing-mode: initial;
@@ -2243,14 +2232,14 @@ button.scrollToTop {
 }
 
 @media(orientation: portrait) and (min-width:768px) {
-    .top-header .top-date {
+    .top-date {
         top:calc(16vh + 14vw)
     }
-    .top-header .top-title,.top-header .top-credit {
+    .top-title,.top-credit {
         top: calc(16vh + 19vw)
     }
 }
-figure button,footer li>button,article li>button {
+figure button,li>button {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -2629,6 +2618,8 @@ amp-lightbox ul.buttons .notarget {
       <ul class="flex flex-wrap justify-around" id="sponsors">
       <li><a href="https://www.fujigakuin.jp/"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="富士学院様ロゴ" layout="responsive" class=""></amp-img></a></li>
       <li><a href="http://www.riso-kyoikugroup.com/"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="リソー教育様ロゴ" layout="responsive" class=""></amp-img></a></li>
+      <li></li>
+      <li></li>
       </ul>
       </section>
     </article>
