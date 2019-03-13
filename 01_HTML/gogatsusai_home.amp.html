@@ -252,6 +252,7 @@ figure {
 hr {
     box-sizing: content-box;
     height: 0;
+    border-color:#000;
     overflow: visible
 }
 pre {
@@ -1999,13 +2000,6 @@ amp-carousel .ampstart-image-with-caption {
 .ampstart-instagram {
     fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
-@font-face {
-    font-family: 'Kosugi Maru';
-    src: local('Kosugi Maru'),local('KosugiMaru-Regular'),url('./fonts/kosugimaru-regular.woff2') format('woff2'),url('./fonts/kosugimaru-regular.woff') format('woff'),url('./fonts/kosugimaru-regular.ttf') format('truetype'),url('./fonts/kosugimaru-regular.eot') format('embedded-opentype');
-    font-weight: 400;
-    font-style: normal;
-    font-display:swap;}
-
 ul {
     list-style: none;
     padding-left: 0
@@ -2040,18 +2034,19 @@ footer {
 footer>ul {
     width: 100%
 }
-.footer-left>ul>li {
+.footer-left{
     color: #444;
     line-height: 24px
 }
 .disc {
     list-style-type: disc;
     margin-left: 1.5rem;
-    text-align: left
+    text-align: left;
+    font-size:0.8rem
 }
 
 .disc>li {
-    margin-bottom: 0.5rem
+    padding: 0.3rem 0rem;
 }
 footer>p {
     font-size: 14px;
@@ -2071,6 +2066,7 @@ section>h2 {
     display: block;
     font-weight: bold;
 }
+
 section>hr {
     width: 40px;
     margin-bottom: 1.2rem;
@@ -2174,16 +2170,13 @@ section>a>svg+div>p {
     background: none;
     color: #000;
     -webkit-text-stroke-color: #fff;
+    font-family: 'Kosugi Maru', sans-serif
 }
 
-.top-header div,.top-header span {
-    font-family: 'Kosugi Maru', sans-serif;
-    width: 100%;
-    position: absolute;
-    left: 0px
-}
 .top-title {
     top: calc(28vh + 6vw);
+    width: 100%;
+    left: 0px;
     font-size: 6.4vw;
     -webkit-text-stroke-width: .14vw
 }
@@ -2191,12 +2184,16 @@ section>a>svg+div>p {
 .top-credit {
     font-size: 3.8vw;
     top: calc(28vh + 1.1vw);
+    width: 100%;
+    left: 0px;
     -webkit-text-stroke-width: .06vw
 }
 .top-date {
     font-size: 3vw;
     top: calc(28vh - 3vw);
-    -webkit-text-stroke-width: .04vw
+    -webkit-text-stroke-width: .04vw;
+    width: 100%;
+    left: 0px
 }
 
 @media(orientation: portrait) {
@@ -2214,11 +2211,11 @@ figure button,li>button {
     text-align: inherit
 }
 
-section li>button>amp-img {
+section button>amp-img {
     filter: brightness(0.7);
     transition: transform .4s
 }
-section li>button>amp-img:hover {
+section button>amp-img:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     opacity: .8;
@@ -2240,7 +2237,7 @@ section button>h3 {
     white-space: nowrap
 }
 
-section button p {
+section button>p{
     position: absolute;
     bottom: calc(1rem + 5vw);
     right: 5px;
@@ -2249,21 +2246,21 @@ section button p {
     color: #fff
 }
 @media(min-width: 768px) {
-    section button h3 {
+    section button>h3 {
         font-size:2.2rem;
         line-height: 5rem
     }
-    section button p {
+    section button>p {
         font-size: 1.5rem;
         bottom: 4rem
     }
 }
 @media(min-width: 62rem) {
-    section button h3 {
+    section button>h3 {
         font-size:3rem
     }
 
-    section button p {
+    section button>p {
         font-size: 2rem;
         bottom: 6rem
     }
@@ -2280,15 +2277,17 @@ amp-lightbox article,amp-lightbox figure {
     amp-lightbox article,amp-lightbox figure {
         width:100%
     }
-    amp-lightbox button.close {
+    amp-lightbox .close {
         background: rgba(0,0,0,0.8)
     }
 }
 amp-lightbox article {
-    padding: .5rem 1rem
+    padding: .5rem 1rem;
+    text-align:left
 }
 amp-lightbox hr {
     margin: 0;
+    text-align:left;
     background: #000;
     width: 4.5rem
 }
@@ -2304,7 +2303,7 @@ amp-lightbox h2 {
 amp-lightbox h3 {
     font-size: 1rem
 }
-amp-lightbox button.close {
+amp-lightbox .close {
     position: fixed;
     right: 1rem;
     top: 0;
@@ -2315,15 +2314,25 @@ amp-lightbox button.close {
     font-size: 9vw;
     z-index: 3
 }
-amp-lightbox ul.buttons {
+.lightbox-nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    margin-bottom: 2rem
 }
-amp-lightbox ul.buttons .notarget {
+.lightbox-nav button{
+  padding:1rem 0rem
+}
+.notarget {
     color: #AAA
-}</style>
+}
+@font-face {
+    font-family: 'Kosugi Maru';
+    src: local('Kosugi Maru'),local('KosugiMaru-Regular'),url('./fonts/kosugimaru-regular.woff2') format('woff2'),url('./fonts/kosugimaru-regular.woff') format('woff'),url('./fonts/kosugimaru-regular.ttf') format('truetype'),url('./fonts/kosugimaru-regular.eot') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;}</style>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 <body  id="top"><amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TSDD9QV&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
@@ -2369,16 +2378,16 @@ amp-lightbox ul.buttons .notarget {
 <ul class="ampstart-social-follow flex justify-around items-center flex-wrap m0 mb4 px3">
     <li>
 
-        <a href="https://twitter.com/utmedmayfes" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+        <a href="https://twitter.com/utmedmayfes" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式Twitterへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
     </li>
     <li>
-        <a href="https://www.facebook.com/utmed.mayfes" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+        <a href="https://www.facebook.com/utmed.mayfes" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式Facebookアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
     </li>
     <li>
-        <a href="https://www.instagram.com/utmed_mayfes/" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
+        <a href="https://www.instagram.com/utmed_mayfes/" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式Instagramアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
     </li>
     <li>
-        <a href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML E-mail"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
+        <a href="mailto:utmed2018mayfes@gmail.com" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式e-mailアドレスへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
     </li>
 </ul>
 
@@ -2396,14 +2405,14 @@ amp-lightbox ul.buttons .notarget {
     <amp-img height="720" width="1200" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header-4x3-2x-50.jpg" media="(orientation:landscape)"></amp-img>
     <figcaption class="absolute top-0 right-0 bottom-0 left-0">
       <header class="top-header p3">
-        <div class="top-date">
+        <div class="top-date absolute">
           2019.5.18(土)-19(日)
         </div>
-        <div class="top-credit inline-block">
+        <div class="top-credit absolute inline-block">
           東京大学医学部五月祭企画
         </div>
         <h1 class="top-heading">
-          <span class="top-title inline-block">
+          <span class="top-title absolute inline-block">
           医へのいざない
           </span>
         </h1>
@@ -2445,47 +2454,47 @@ amp-lightbox ul.buttons .notarget {
       <p>タイムテーブルは<a href="#">こちら</a></p>
       <ul class="flex flex-wrap justify-around">
         <li><button on="tap:vr">
-          <amp-img src="./img/contents/experience/vr.jpg" width="460" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
           <h3>VR体験企画</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:quiz">
-          <amp-img src="./img/contents/experience/quiz.jpg" width="460" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>クイズラリー</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:emergency">
-          <amp-img src="./img/contents/experience/emergency.jpg" width="460" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <h3>救急救命体験</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:bp">
-          <amp-img src="./img/contents/experience/bp.jpg" width="460" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>血圧測定</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:surgery">
-          <amp-img src="./img/contents/experience/surgery.jpg" width="460" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>手術体験</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:organ">
-          <amp-img src="./img/contents/experience/organ.jpg" width="460" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>臓器あて</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
-        <li><button on="tap:feel">
-          <amp-img src="./img/contents/experience/feel.jpg" width="460" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
-          <h3>体を感じる</h3>
+        <li><button on="tap:beat">
+          <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
+          <h3>鼓動を感じる</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:artery">
-          <amp-img src="./img/contents/experience/artery.jpg" width="460" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>動脈観察</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:coat">
-          <amp-img src="./img/contents/experience/coat.jpg" width="460" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
           <h3>白衣体験</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
@@ -2498,47 +2507,47 @@ amp-lightbox ul.buttons .notarget {
       <p>タイムテーブルは<a href="#">こちら</a></p>
       <ul class="flex flex-wrap justify-around">
         <li><button on="tap:sketch">
-          <amp-img src="./img/contents/exhibition/sketch.jpg" width="460" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>スケッチ</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:muscle">
-          <amp-img src="./img/contents/exhibition/muscle.jpg" width="460" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>筋肉体操</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:drama">
-          <amp-img src="./img/contents/exhibition/drama.jpg" width="460" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学ドラマ</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:history">
-          <amp-img src="./img/contents/exhibition/history.jpg" width="460" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学部史</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:bookshelf">
-          <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="460" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学部生の本棚</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:narrative">
-          <amp-img src="./img/contents/exhibition/narrative.jpg" width="460" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>言葉と医療</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:research">
-          <amp-img src="./img/contents/exhibition/research.jpg" width="460" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>最先端研究</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:disaster">
-          <amp-img src="./img/contents/exhibition/disaster.jpg" width="460" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>災害医療</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:toxin">
-          <amp-img src="./img/contents/exhibition/toxin.jpg" width="460" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>毒物</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
@@ -2551,32 +2560,32 @@ amp-lightbox ul.buttons .notarget {
       <p>タイムテーブルは<a href="#">こちら</a></p>
       <ul class="flex flex-wrap justify-around">
         <li><button on="tap:cafe">
-          <amp-img src="./img/contents/misc/cafe.jpg" width="460" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>カフェ</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
-        <li><button on="tap:goods2">
-          <amp-img src="./img/contents/misc/goods2.jpg" width="460" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
+        <li><button on="tap:goods">
+          <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>グッズ販売</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:lecture">
-          <amp-img src="./img/contents/misc/lecture.jpg" width="460" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>講演会</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:piano">
-          <amp-img src="./img/contents/misc/piano.jpg" width="460" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>鉄門ピアノの会</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:chamber">
-          <amp-img src="./img/contents/misc/chamber.jpg" width="460" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>鉄門室内楽の会</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
         <li><button on="tap:art">
-          <amp-img src="./img/contents/misc/art.jpg" width="460" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>踏朱会</h3>
           <p>本館2階 13:00〜14:00</p>
         </button></li>
@@ -2603,8 +2612,8 @@ amp-lightbox ul.buttons .notarget {
       <h2 class="block pt2 mb2">協賛</h2>
       <hr/>
       <ul class="flex flex-wrap justify-around" id="sponsors">
-      <li><a href="https://www.fujigakuin.jp/"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="富士学院様ロゴ" layout="responsive" class=""></amp-img></a></li>
-      <li><a href="http://www.riso-kyoikugroup.com/"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="リソー教育様ロゴ" layout="responsive" class=""></amp-img></a></li>
+      <li><a href="https://www.fujigakuin.jp/" aria-label="本企画にご協賛いただいた富士学院様サイトへのリンクです"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="富士学院様ロゴ" layout="responsive" class=""></amp-img></a></li>
+      <li><a href="http://www.riso-kyoikugroup.com/" aria-label="本企画にご協賛いただいたリソー教育様サイトへのリンクです"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="リソー教育様ロゴ" layout="responsive" class=""></amp-img></a></li>
       <li></li>
       <li></li>
       </ul>
@@ -2632,7 +2641,6 @@ amp-lightbox ul.buttons .notarget {
           <ul class="pb3 md-mx0">
               <li><a href="mailto:utmed2018mayfes@gmail.com">utmed2018mayfes@gmail.com</a></li>
           </ul>
-
       </li>
       <li class ="md-pt0 md-px4 col-12 sm-col-8 lg-col-8">
       <h3 class="line-height-2 center pb1">企画一覧</h3>
@@ -2646,7 +2654,7 @@ amp-lightbox ul.buttons .notarget {
             <li><button on="tap:bp">血圧測定体験</button></li>
             <li><button on="tap:surgery">手術体験</button></li>
             <li><button on="tap:organ">臓器当て</button></li>
-            <li><button on="tap:feel">体を感じる</button></li>
+            <li><button on="tap:beat">鼓動を感じる</button></li>
             <li><button on="tap:artery">動脈観察</button></li>
             <li><button on="tap:coat">白衣体験</button></li>
             <li><button on="tap:sketch">スケッチ企画</button></li>
@@ -2676,18 +2684,18 @@ amp-lightbox ul.buttons .notarget {
 
 <ul class="ampstart-social-follow list-reset flex justify-center items-center flex-wrap m0 mb4">
     <li>
-        <a href="https://twitter.com/utmedmayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+        <a href="https://twitter.com/utmedmayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="東大医学部五月祭企画公式Twitterアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
     </li>
     <li>
-        <a href="https://www.facebook.com/utmed.mayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+        <a href="https://www.facebook.com/utmed.mayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="東大医学部五月祭企画公式Facebookアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
     </li>
     <li>
-      <a class="inline-block p1" aria-label="Link to Youtube Channel" href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17" width="24" height="24"><title>YouTube</title><path class="ampstart-icon ampstart-icon-youtube" fill-rule="evenodd" d="M 16.837 8.242 v 0.126 l -6.742 3.396 V 4.719 l 6.742 3.396 v 0.127 Z m 8.167 -4.707 c 0.05 0.399 0.244 2.102 0.26 3.805 v 0.126 c -0.018 -1.946 -0.27 -3.893 -0.27 -3.893 s -0.245 -1.651 -1.003 -2.384 c -0.96 -0.961 -2.04 -0.961 -2.528 -1.02 C 17.94 -0.075 12.64 0.017 12.64 0.017 S 7.348 -0.075 3.817 0.17 C 3.32 0.228 2.25 0.228 1.29 1.189 C 0.531 1.913 0.287 3.573 0.287 3.573 S 0.05 5.52 0 7.466 v 1.602 c 0.05 1.946 0.287 3.893 0.287 3.893 s 0.244 1.66 1.002 2.384 c 0.96 0.961 2.031 0.961 2.528 1.02 c 3.531 0.244 8.823 0.202 8.823 0.202 s 5.3 0.042 8.823 -0.202 c 0.488 -0.059 1.567 -0.059 2.528 -1.02 c 0.758 -0.733 1.003 -2.384 1.003 -2.384 s 0.252 -1.947 0.27 -3.893 v 0.126 c -0.018 1.946 -0.27 3.893 -0.27 3.893 s -0.061 0.404 -0.211 0.9 c 0.157 -0.508 0.219 -0.925 0.219 -0.925 s 0.253 -1.947 0.27 -3.893 V 7.34 a 38.672 38.672 0 0 0 -0.268 -3.805 Z" ></path></svg></a>
+      <a class="inline-block p1" aria-label="Link to Youtube Channel" href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA" rel="noopener" target="_blank" aria-label="東大医学部五月祭企画公式YouTubeチャネルへのリンク"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17" width="24" height="24"><title>YouTube</title><path class="ampstart-icon ampstart-icon-youtube" fill-rule="evenodd" d="M 16.837 8.242 v 0.126 l -6.742 3.396 V 4.719 l 6.742 3.396 v 0.127 Z m 8.167 -4.707 c 0.05 0.399 0.244 2.102 0.26 3.805 v 0.126 c -0.018 -1.946 -0.27 -3.893 -0.27 -3.893 s -0.245 -1.651 -1.003 -2.384 c -0.96 -0.961 -2.04 -0.961 -2.528 -1.02 C 17.94 -0.075 12.64 0.017 12.64 0.017 S 7.348 -0.075 3.817 0.17 C 3.32 0.228 2.25 0.228 1.29 1.189 C 0.531 1.913 0.287 3.573 0.287 3.573 S 0.05 5.52 0 7.466 v 1.602 c 0.05 1.946 0.287 3.893 0.287 3.893 s 0.244 1.66 1.002 2.384 c 0.96 0.961 2.031 0.961 2.528 1.02 c 3.531 0.244 8.823 0.202 8.823 0.202 s 5.3 0.042 8.823 -0.202 c 0.488 -0.059 1.567 -0.059 2.528 -1.02 c 0.758 -0.733 1.003 -2.384 1.003 -2.384 s 0.252 -1.947 0.27 -3.893 v 0.126 c -0.018 1.946 -0.27 3.893 -0.27 3.893 s -0.061 0.404 -0.211 0.9 c 0.157 -0.508 0.219 -0.925 0.219 -0.925 s 0.253 -1.947 0.27 -3.893 V 7.34 a 38.672 38.672 0 0 0 -0.268 -3.805 Z" ></path></svg></a>
     </li>
     <li>
-        <a class="inline-block p1" aria-label="Link to AMP HTML Instagram" href="https://www.instagram.com/utmed_mayfes/" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" width="24" height="24"><title>instagram</title><path class="ampstart-icon ampstart-icon-instagram" d="M 27.2 6.1 c -5.1 0 -5.8 0 -7.8 0.1 s -3.4 0.4 -4.6 0.9 c -1.2 0.5 -2.3 1.1 -3.3 2.2 c -1.1 1 -1.7 2.1 -2.2 3.3 c -0.5 1.2 -0.8 2.6 -0.9 4.6 c -0.1 2 -0.1 2.7 -0.1 7.8 s 0 5.8 0.1 7.8 s 0.4 3.4 0.9 4.6 c 0.5 1.2 1.1 2.3 2.2 3.3 c 1 1.1 2.1 1.7 3.3 2.2 c 1.2 0.5 2.6 0.8 4.6 0.9 c 2 0.1 2.7 0.1 7.8 0.1 s 5.8 0 7.8 -0.1 s 3.4 -0.4 4.6 -0.9 c 1.2 -0.5 2.3 -1.1 3.3 -2.2 c 1.1 -1 1.7 -2.1 2.2 -3.3 c 0.5 -1.2 0.8 -2.6 0.9 -4.6 c 0.1 -2 0.1 -2.7 0.1 -7.8 s 0 -5.8 -0.1 -7.8 s -0.4 -3.4 -0.9 -4.6 c -0.5 -1.2 -1.1 -2.3 -2.2 -3.3 c -1 -1.1 -2.1 -1.7 -3.3 -2.2 c -1.2 -0.5 -2.6 -0.8 -4.6 -0.9 c -2 -0.1 -2.7 -0.1 -7.8 -0.1 Z m 0 3.4 c 5 0 5.6 0 7.6 0.1 c 1.9 0.1 2.9 0.4 3.5 0.7 c 0.9 0.3 1.6 0.7 2.2 1.4 c 0.7 0.6 1.1 1.3 1.4 2.2 c 0.3 0.6 0.6 1.6 0.7 3.5 c 0.1 2 0.1 2.6 0.1 7.6 s 0 5.6 -0.1 7.6 c -0.1 1.9 -0.4 2.9 -0.7 3.5 c -0.3 0.9 -0.7 1.6 -1.4 2.2 c -0.7 0.7 -1.3 1.1 -2.2 1.4 c -0.6 0.3 -1.7 0.6 -3.5 0.7 c -2 0.1 -2.6 0.1 -7.6 0.1 c -5.1 0 -5.7 0 -7.7 -0.1 c -1.8 -0.1 -2.9 -0.4 -3.5 -0.7 c -0.9 -0.3 -1.5 -0.7 -2.2 -1.4 c -0.7 -0.7 -1.1 -1.3 -1.4 -2.2 c -0.3 -0.6 -0.6 -1.7 -0.7 -3.5 c 0 -2 -0.1 -2.6 -0.1 -7.6 c 0 -5.1 0.1 -5.7 0.1 -7.7 c 0.1 -1.8 0.4 -2.8 0.7 -3.5 c 0.3 -0.9 0.7 -1.5 1.4 -2.2 c 0.7 -0.6 1.3 -1.1 2.2 -1.4 c 0.6 -0.3 1.6 -0.6 3.5 -0.7 h 7.7 Z m 0 5.8 c -5.4 0 -9.7 4.3 -9.7 9.7 c 0 5.4 4.3 9.7 9.7 9.7 c 5.4 0 9.7 -4.3 9.7 -9.7 c 0 -5.4 -4.3 -9.7 -9.7 -9.7 Z m 0 16 c -3.5 0 -6.3 -2.8 -6.3 -6.3 s 2.8 -6.3 6.3 -6.3 s 6.3 2.8 6.3 6.3 s -2.8 6.3 -6.3 6.3 Z m 12.4 -16.4 c 0 1.3 -1.1 2.3 -2.3 2.3 c -1.3 0 -2.3 -1 -2.3 -2.3 c 0 -1.2 1 -2.3 2.3 -2.3 c 1.2 0 2.3 1.1 2.3 2.3 Z" ></path></svg></a>    </li>
+        <a class="inline-block p1" aria-label="Link to AMP HTML Instagram" href="https://www.instagram.com/utmed_mayfes/" rel="noopener" target="_blank" aria-label="東大医学部五月祭企画公式Instagramアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" width="24" height="24"><title>instagram</title><path class="ampstart-icon ampstart-icon-instagram" d="M 27.2 6.1 c -5.1 0 -5.8 0 -7.8 0.1 s -3.4 0.4 -4.6 0.9 c -1.2 0.5 -2.3 1.1 -3.3 2.2 c -1.1 1 -1.7 2.1 -2.2 3.3 c -0.5 1.2 -0.8 2.6 -0.9 4.6 c -0.1 2 -0.1 2.7 -0.1 7.8 s 0 5.8 0.1 7.8 s 0.4 3.4 0.9 4.6 c 0.5 1.2 1.1 2.3 2.2 3.3 c 1 1.1 2.1 1.7 3.3 2.2 c 1.2 0.5 2.6 0.8 4.6 0.9 c 2 0.1 2.7 0.1 7.8 0.1 s 5.8 0 7.8 -0.1 s 3.4 -0.4 4.6 -0.9 c 1.2 -0.5 2.3 -1.1 3.3 -2.2 c 1.1 -1 1.7 -2.1 2.2 -3.3 c 0.5 -1.2 0.8 -2.6 0.9 -4.6 c 0.1 -2 0.1 -2.7 0.1 -7.8 s 0 -5.8 -0.1 -7.8 s -0.4 -3.4 -0.9 -4.6 c -0.5 -1.2 -1.1 -2.3 -2.2 -3.3 c -1 -1.1 -2.1 -1.7 -3.3 -2.2 c -1.2 -0.5 -2.6 -0.8 -4.6 -0.9 c -2 -0.1 -2.7 -0.1 -7.8 -0.1 Z m 0 3.4 c 5 0 5.6 0 7.6 0.1 c 1.9 0.1 2.9 0.4 3.5 0.7 c 0.9 0.3 1.6 0.7 2.2 1.4 c 0.7 0.6 1.1 1.3 1.4 2.2 c 0.3 0.6 0.6 1.6 0.7 3.5 c 0.1 2 0.1 2.6 0.1 7.6 s 0 5.6 -0.1 7.6 c -0.1 1.9 -0.4 2.9 -0.7 3.5 c -0.3 0.9 -0.7 1.6 -1.4 2.2 c -0.7 0.7 -1.3 1.1 -2.2 1.4 c -0.6 0.3 -1.7 0.6 -3.5 0.7 c -2 0.1 -2.6 0.1 -7.6 0.1 c -5.1 0 -5.7 0 -7.7 -0.1 c -1.8 -0.1 -2.9 -0.4 -3.5 -0.7 c -0.9 -0.3 -1.5 -0.7 -2.2 -1.4 c -0.7 -0.7 -1.1 -1.3 -1.4 -2.2 c -0.3 -0.6 -0.6 -1.7 -0.7 -3.5 c 0 -2 -0.1 -2.6 -0.1 -7.6 c 0 -5.1 0.1 -5.7 0.1 -7.7 c 0.1 -1.8 0.4 -2.8 0.7 -3.5 c 0.3 -0.9 0.7 -1.5 1.4 -2.2 c 0.7 -0.6 1.3 -1.1 2.2 -1.4 c 0.6 -0.3 1.6 -0.6 3.5 -0.7 h 7.7 Z m 0 5.8 c -5.4 0 -9.7 4.3 -9.7 9.7 c 0 5.4 4.3 9.7 9.7 9.7 c 5.4 0 9.7 -4.3 9.7 -9.7 c 0 -5.4 -4.3 -9.7 -9.7 -9.7 Z m 0 16 c -3.5 0 -6.3 -2.8 -6.3 -6.3 s 2.8 -6.3 6.3 -6.3 s 6.3 2.8 6.3 6.3 s -2.8 6.3 -6.3 6.3 Z m 12.4 -16.4 c 0 1.3 -1.1 2.3 -2.3 2.3 c -1.3 0 -2.3 -1 -2.3 -2.3 c 0 -1.2 1 -2.3 2.3 -2.3 c 1.2 0 2.3 1.1 2.3 2.3 Z" ></path></svg></a>    </li>
     <li>
-        <a href="mailto:utmed2018mayfes@gmail.com" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML E-mail"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
+        <a href="mailto:utmed2018mayfes@gmail.com" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式e-mailアドレスへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
     </li>
 </ul>
     <p class="center">
@@ -2698,7 +2706,7 @@ amp-lightbox ul.buttons .notarget {
   <amp-lightbox id="vr" layout="nodisplay" scrollable="">
     <figure>
       <button class="close" aria-label="close vr" on="tap:vr.close">✕</button>
-      <amp-img src="./img/contents/experience/vr.jpg" width="460" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
+      <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
     </figure>
     <article>
       <h1>VR医学体験</h1>
@@ -2714,17 +2722,17 @@ amp-lightbox ul.buttons .notarget {
       <p>本企画では以下のVR の機械を体験できます。</p>
       <h3>Heart Explorer( 富士通株式会社)</h3>
       <p>高度なシミュレーションによって生成された心臓の３D モデルを用いて、心臓の構造や疾患状態をさまざまな視点で分析できるツールです。まるで心臓がそこにあるかのようにリアルに再現されているので、心筋の出す力や仕事、心室内・血管内の血圧など、疾患状態の心臓で何が起こっているのかを詳細に観察し、早く正確に知識を習得できます。健康な心臓と左冠状動脈狭窄による心筋梗塞を起こした心臓のモデルを観察できます。</p>
-      <ul class="buttons">
-      <li><button class="notarget" aria-label="before vr" on="tap:vr.close">&lt 前の企画</button></li>
+      <ul class="lightbox-nav">
+      <li><button class="notarget" aria-label="before vr" on="tap:vr.close">&lt; 前の企画</button></li>
       <li><button aria-label="close vr" on="tap:vr.close">✕</button></li>
-      <li><button aria-label="next vr" on="tap:vr.close,quiz">次の企画 &gt</button></li>
+      <li><button aria-label="next vr" on="tap:vr.close,quiz">次の企画 &gt;</button></li>
     </ul>
     </article>
   </amp-lightbox>
-  <amp-lightbox id="quiz" layout="nodisplay">
+  <amp-lightbox id="quiz" layout="nodisplay" scrollable="">
   <figure>
     <button class="close" aria-label="close quiz" on="tap:quiz.close">✕</button>
-    <amp-img src="./img/contents/experience/quiz.jpg" width="460" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
+    <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
   </figure>
   <article>
     <h1>クイズラリー</h1>
@@ -2735,10 +2743,472 @@ amp-lightbox ul.buttons .notarget {
     <p>赤血球、白血球</p>
     <h2>引用文献</h2>
     <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
-    <ul class="buttons">
-    <li><button class="" aria-label="before quiz" on="tap:quiz.close,vr">&lt 前の企画</button></li>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before quiz" on="tap:quiz.close,vr">&lt; 前の企画</button></li>
     <li><button aria-label="close quiz" on="tap:quiz.close">✕</button></li>
-    <li><button class="notarget" aria-label="next quiz" on="tap:quiz.close">次の企画 &gt</button></li>
+    <li><button class="" aria-label="next quiz" on="tap:quiz.close,emergency">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="emergency" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
+    <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>救急救命体験</h1>
+    <hr /><br />
+    <h2>救急救命体験とは?</h2>
+    <p>内容</p>
+    <h2></h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before emergency" on="tap:emergency.close,quiz">&lt; 前の企画</button></li>
+    <li><button aria-label="close emergency" on="tap:emergency.close">✕ 閉じる</button></li>
+    <li><button class="" aria-label="next emergency" on="tap:emergency.close,bp">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="bp" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close bp" on="tap:bp.close">✕</button>
+    <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>血圧測定</h1>
+    <hr /><br />
+    <h2>血圧測定とは?</h2>
+    <p>内容</p>
+    <h2></h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before bp" on="tap:bp.close,emergency">&lt; 前の企画</button></li>
+    <li><button aria-label="close bp" on="tap:bp.close">✕ 閉じる</button></li>
+    <li><button class="" aria-label="next bp" on="tap:bp.close,surgery">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="surgery" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close surgery" on="tap:surgery.close">✕</button>
+    <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>手術体験</h1>
+    <hr /><br />
+    <h2>血圧測定とは?</h2>
+    <p>内容</p>
+    <h2></h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before surgery" on="tap:surgery.close,bp">&lt; 前の企画</button></li>
+    <li><button aria-label="close surgery" on="tap:surgery.close">✕ 閉じる</button></li>
+    <li><button class="" aria-label="next surgery" on="tap:surgery.close,organ">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="organ" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close organ" on="tap:organ.close">✕</button>
+    <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>手術体験</h1>
+    <hr /><br />
+    <h2>血圧測定とは?</h2>
+    <p>内容</p>
+    <h2></h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before organ" on="tap:organ.close,surgery">&lt; 前の企画</button></li>
+    <li><button aria-label="close organ" on="tap:organ.close">✕ 閉じる</button></li>
+    <li><button class="" aria-label="next organ" on="tap:organ.close,beat">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="beat" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close beat" on="tap:beat.close">✕</button>
+    <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>鼓動を感じる</h1>
+    <hr /><br />
+    <h2>鼓動を感じるとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before beat" on="tap:beat.close,organ">&lt; 前の企画</button></li>
+    <li><button aria-label="close beat" on="tap:beat.close">✕</button></li>
+    <li><button class="" aria-label="next beat" on="tap:beat.close,artery">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="artery" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close artery" on="tap:artery.close">✕</button>
+    <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>動脈観察</h1>
+    <hr /><br />
+    <h2>動脈観察とは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before atery" on="tap:artery.close,beat">&lt; 前の企画</button></li>
+    <li><button aria-label="close artery" on="tap:artery.close">✕</button></li>
+    <li><button class="" aria-label="next artery" on="tap:artery.close,coat">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="coat" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close coat" on="tap:coat.close">✕</button>
+    <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>白衣体験</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before coat" on="tap:coat.close,artery">&lt; 前の企画</button></li>
+    <li><button aria-label="close coat" on="tap:coat.close">✕</button></li>
+    <li><button class="" aria-label="next coat" on="tap:coat.close,sketch">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="sketch" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
+    <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>医学部生のスケッチ</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before sketch" on="tap:sketch.close,coat">&lt; 前の企画</button></li>
+    <li><button aria-label="close sketch" on="tap:sketch.close">✕</button></li>
+    <li><button class="" aria-label="next sketch" on="tap:sketch.close,muscle">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="muscle" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close muscle" on="tap:muscle.close">✕</button>
+    <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>筋肉体操</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before muscle" on="tap:muscle.close,sketch">&lt; 前の企画</button></li>
+    <li><button aria-label="close muscle" on="tap:muscle.close">✕</button></li>
+    <li><button class="" aria-label="next muscle" on="tap:muscle.close,drama">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="drama" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close drama" on="tap:drama.close">✕</button>
+    <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>医学ドラマの世界</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before drama" on="tap:drama.close,muscle">&lt; 前の企画</button></li>
+    <li><button aria-label="close drama" on="tap:drama.close">✕</button></li>
+    <li><button class="" aria-label="next drama" on="tap:drama.close,history">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="history" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close history" on="tap:history.close">✕</button>
+    <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>医学部史</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before history" on="tap:history.close,drama">&lt; 前の企画</button></li>
+    <li><button aria-label="close history" on="tap:history.close">✕</button></li>
+    <li><button class="" aria-label="next history" on="tap:history.close,bookshelf">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="bookshelf" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close bookshelf" on="tap:bookshelf.close">✕</button>
+    <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>医学部生の本棚</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before bookshelf" on="tap:bookshelf.close,history">&lt; 前の企画</button></li>
+    <li><button aria-label="close bookshelf" on="tap:bookshelf.close">✕</button></li>
+    <li><button class="" aria-label="next bookshelf" on="tap:bookshelf.close,narrative">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="narrative" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
+    <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>ことばで感じる医療</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before narrative" on="tap:narrative.close,bookshelf">&lt; 前の企画</button></li>
+    <li><button aria-label="close narrative" on="tap:narrative.close">✕</button></li>
+    <li><button class="" aria-label="next narrative" on="tap:narrative.close,research">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="research" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close research" on="tap:research.close">✕</button>
+    <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>最先端研究</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before research" on="tap:research.close,narrative">&lt; 前の企画</button></li>
+    <li><button aria-label="close research" on="tap:research.close">✕</button></li>
+    <li><button class="" aria-label="next research" on="tap:research.close,disaster">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="disaster" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close disaster" on="tap:disaster.close">✕</button>
+    <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>災害医療</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before disaster" on="tap:disaster.close,research">&lt; 前の企画</button></li>
+    <li><button aria-label="close disaster" on="tap:disaster.close">✕</button></li>
+    <li><button class="" aria-label="next disaster" on="tap:disaster.close,toxin">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="toxin" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
+    <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>毒物</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before toxin" on="tap:toxin.close,disaster">&lt; 前の企画</button></li>
+    <li><button aria-label="close toxin" on="tap:toxin.close">✕</button></li>
+    <li><button class="" aria-label="next toxin" on="tap:toxin.close,cafe">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="cafe" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
+    <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>カフェ</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before cafe" on="tap:cafe.close,toxin">&lt; 前の企画</button></li>
+    <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
+    <li><button class="" aria-label="next cafe" on="tap:cafe.close,goods">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="goods" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
+    <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>グッズ</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
+    <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>
+    <li><button class="" aria-label="next goods" on="tap:goods.close,lecture">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="lecture" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close lecture" on="tap:lecture.close">✕</button>
+    <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>講演会</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before lecture" on="tap:lecture.close,goods">&lt; 前の企画</button></li>
+    <li><button aria-label="close lecture" on="tap:lecture.close">✕</button></li>
+    <li><button class="" aria-label="next lecture" on="tap:lecture.close,piano">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="piano" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
+    <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>鉄門ピアノの会</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before piano" on="tap:piano.close,lecture">&lt; 前の企画</button></li>
+    <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
+    <li><button class="" aria-label="next piano" on="tap:piano.close,chamber">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="chamber" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
+    <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>鉄門室内楽の会</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before chamber" on="tap:chamber.close,piano">&lt; 前の企画</button></li>
+    <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
+    <li><button class="" aria-label="next chamber" on="tap:chamber.close,art">次の企画 &gt;</button></li>
+  </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="art" layout="nodisplay" scrollable="">
+  <figure>
+    <button class="close" aria-label="close art" on="tap:art.close">✕</button>
+    <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+  </figure>
+  <article>
+    <h1>踏朱会</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before art" on="tap:art.close,chamber">&lt; 前の企画</button></li>
+    <li><button aria-label="close art" on="tap:art.close">✕</button></li>
+    <li><button class="disabled" aria-label="next art" on="tap:art.close,vr">次の企画 &gt;</button></li>
   </ul>
   </article>
   </amp-lightbox>
