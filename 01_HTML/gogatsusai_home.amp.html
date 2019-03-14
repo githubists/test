@@ -822,6 +822,9 @@ canvas {
     padding-left: 2rem;
     padding-right: 2rem
 }
+.pt5 {
+    padding-top: 2.5rem
+}
 .col {
     float: left
 }
@@ -1843,6 +1846,12 @@ amp-carousel .ampstart-image-with-caption {
     z-index: 999;
     box-shadow: 0 0 5px 2px rgba(0,0,0,.1)
 }
+@supports(position:sticky) or (position:-webkit-sticky){
+  .ampstart-headerbar {
+    position:-webkit-sticky;
+    position: sticky
+  }
+}
 
 .ampstart-headerbar+:not(amp-sidebar),.ampstart-headerbar+amp-sidebar+* {
     margin-top: 0rem
@@ -2166,42 +2175,107 @@ section>a>svg+div>p {
     z-index: 2
 }
 .top-header {
-    text-align: center;
-    background: none;
+    background: rgba(255,255,255,0.6);
     color: #000;
-    -webkit-text-stroke-color: #fff;
+    top: calc(18vh + 4vw);
+    left:22vw;
+    width:52vw;
+    height:18vw;
+    text-align:left;
     font-family: 'Kosugi Maru', sans-serif
 }
 
 .top-title {
-    top: calc(28vh + 6vw);
-    width: 100%;
-    left: 0px;
     font-size: 6.4vw;
-    -webkit-text-stroke-width: .14vw
+    line-height:7vw;
 }
 
 .top-credit {
     font-size: 3.8vw;
-    top: calc(28vh + 1.1vw);
-    width: 100%;
-    left: 0px;
-    -webkit-text-stroke-width: .06vw
+    line-height:3.8vw;
 }
 .top-date {
-    font-size: 3vw;
-    top: calc(28vh - 3vw);
-    -webkit-text-stroke-width: .04vw;
-    width: 100%;
-    left: 0px
+    font-size: 3.8vw;
 }
-
+.dock{
+  top:calc(47vh + 10vw);
+  left:21.4vw;
+  width:54vw;
+}
+.dock-item>h2{
+  text-align: center;
+  color:#fff;
+  font-size:0.4vw;
+  line-height:2vw
+}
+.dock-item{
+  width:15%;
+  text-decoration: none;
+}
+.dock-item>amp-img:active{
+  filter:brightness(0.5)
+}
 @media(orientation: portrait) {
-}
+  .top-header {
+      color: #000;
+      top: calc(18vh + 2vw);
+      left:18vw;
+      width:64vw;
+      height:30vw
+  }
+  .top-title {
+      font-size: 8vw;
+      line-height:8vw;
+  }
 
-@media(orientation: portrait) and (min-width:768px) {
+  .top-credit {
+      font-size: 4.6vw;
+      line-height:6vw;
+  }
+  .top-date {
+      font-size: 5vw;
+      line-height:5vw;
+  }
+  .dock{
+    top:calc(54vh + 8vw);
+    left:18vw;
+    width:64vw;
+    font-size:1rem;
+  }
+  .dock-item{
+    width:15%;
+  }
+  .dock-item>h2{
+    font-size:0.4vw;
+  }
 }
-figure button,li>button {
+@media (min-width:960px) {
+  .dock{
+    top:calc(54vh + 2vw);
+    left:22vw;
+    width:52vw;
+    z-index:3;
+  }
+  .dock-item>h2{
+    font-size:1vw;
+    line-height:1vw;
+
+  }
+}
+@media (orientation: portrait) and (min-width:720px) {
+  .dock{
+    top:calc(76vh + 8vw);
+    left:18vw;
+    width:64vw;
+    font-size:1rem;
+    z-index:3;
+  }
+  .dock-item>h2{
+    font-size:1vw;
+    line-height:1.6vw
+  }
+}
+button {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -2209,6 +2283,13 @@ figure button,li>button {
     background: none;
     border: none;
     text-align: inherit
+}
+
+i button{
+  overflow: hidden;
+  width: 45%;
+  margin-bottom: 1rem;
+  position: relative
 }
 
 section button>amp-img {
@@ -2222,7 +2303,7 @@ section button>amp-img:hover {
     transition: transform .4s
 }
 section button>h3 {
-    font-size: 4.5vw;
+    font-size: 4.1vw;
     line-height: calc(1.5rem + 5vw);
     position: absolute;
     font-weight: 600;
@@ -2239,7 +2320,7 @@ section button>h3 {
 
 section button>p{
     position: absolute;
-    bottom: calc(1rem + 5vw);
+    bottom: calc(1rem + 2.4vw);
     right: 5px;
     z-index: 2;
     font-size: calc(0.5rem + 1vw);
@@ -2251,7 +2332,7 @@ section button>p{
         line-height: 5rem
     }
     section button>p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         bottom: 4rem
     }
 }
@@ -2268,13 +2349,13 @@ section button>p{
 amp-lightbox {
     background: rgba(0,0,0,0.8)
 }
-amp-lightbox article,amp-lightbox figure {
+amp-lightbox article,amp-lightbox amp-img {
     width: 60%;
     background: #fff;
     margin: auto
 }
 @media(orientation: portrait) {
-    amp-lightbox article,amp-lightbox figure {
+    amp-lightbox article,amp-lightbox amp-img {
         width:100%
     }
     amp-lightbox .close {
@@ -2303,7 +2384,7 @@ amp-lightbox h2 {
 amp-lightbox h3 {
     font-size: 1rem
 }
-amp-lightbox .close {
+.close {
     position: fixed;
     right: 1rem;
     top: 0;
@@ -2336,16 +2417,6 @@ amp-lightbox .close {
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 <body  id="top"><amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TSDD9QV&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
-  <!-- Start Navbar -->
-  <header class="ampstart-headerbar fixed flex justify-between items-center top-0 left-0 right-0 pl2 pr4">
-	<div class="ampstart-headerbar-title mx0 h3 flex justify-start items-center controls">
-    <amp-img src="./img/menulogo.png" width="56" height="56" layout="fixed" class="my0 left mr1" alt="Logo"></amp-img>
-    <span class="inline-block">医へのいざない<span>
-  </div>
-	<div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
-    </div>
-  </header>
-
 <!-- Start Sidebar -->
 <amp-sidebar id="header-sidebar" class="ampstart-sidebar  " layout="nodisplay" side="right">
   <div class="flex justify-start items-center ampstart-sidebar-header px3">
@@ -2397,30 +2468,44 @@ amp-lightbox .close {
     </ul>
 </amp-sidebar>
 <!-- End Sidebar -->
-  <!-- End Navbar -->
 
   <!-- Start Fullpage Hero -->
-  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img width="404" height="720" alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
-    <amp-img height="720" width="1200" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header-4x3-2x-50.jpg" media="(orientation:landscape)"></amp-img>
+  <figure class="ampstart-image-fullpage-hero m0 relative">
+    <amp-img width="404" height="720" alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
+    <amp-img height="720" width="1200" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header2-4x3-2x-50.jpg" media="(orientation:landscape)"></amp-img>
     <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-      <header class="top-header p3">
-        <div class="top-date absolute">
-          2019.5.18(土)-19(日)
-        </div>
-        <div class="top-credit absolute inline-block">
-          東京大学医学部五月祭企画
-        </div>
-        <h1 class="top-heading">
-          <span class="top-title absolute inline-block">
-          医へのいざない
-          </span>
-        </h1>
+      <header class="top-header absolute p1">
+        <div class="top-credit  inline-block">東京大学医学部五月祭企画</div><br />
+        <h1 class="top-title inline-block"><div>医へのいざない</div></h1><br />
+        <div class="top-date">2019.5.18(土)-19(日)</div>
         <amp-position-observer on="enter:hideAnim.start,hidebar.start; exit:showAnim.start,showbar.start" layout="nodisplay"></amp-position-observer>
     </header>
-    <!--<footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-    </footer>-->
+    <nav class="dock flex justify-between absolute">
+      <button class="dock-item flex flex-column items-stretch"on="tap:about.scrollTo(duration=200)">
+        <amp-img src="./img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2><span class="inline-block">「医への</span><span class="inline-block">いざない」</span><span class="inline-block">について</span></h2>
+      </button>
+      <button class="dock-item flex flex-column items-stretch"on="tap:contents.scrollTo(duration=200)">
+        <amp-img src="./img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2>企画紹介</h2>
+      </button>
+      <a class="dock-item flex flex-column items-stretch" href="/contents">
+        <amp-img src="./img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2>おすすめ企画</h2>
+      </a>
+      <a class="dock-item flex flex-column items-stretch" href="/timetable">
+        <amp-img src="./img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2><span class="inline-block">タイムテーブル</span><span class="inline-block">整理券</span></h2>
+      </a>
+      <button class="dock-item flex flex-column items-stretch"on="tap:sns.scrollTo(duration=200)">
+        <amp-img src="./img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2>SNS</h2>
+      </button>
+      <a class="dock-item flex flex-column items-stretch" href="access">
+        <amp-img src="./img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+        <h2>アクセス</h2>
+      </a>
+    </nav>
     </figcaption>
   </figure>
   <amp-animation id="showbar" layout="nodisplay">
@@ -2439,11 +2524,20 @@ amp-lightbox .close {
   </script>
   </amp-animation>
   <amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{"duration":"100ms","fill":"both","iterations":"1","direction":"alternate","animations":[{"selector":".controls","keyframes":[{"opacity":"0","visibility":"hidden"}]}]}</script></amp-animation>
-
+  <!-- Start Navbar -->
+  <header class="ampstart-headerbar fixed flex justify-between items-center top-0 left-0 right-0 pl2 pr4">
+	<div class="ampstart-headerbar-title mx0 h3 flex justify-start items-center controls">
+    <amp-img src="./img/menulogo.png" width="56" height="56" layout="fixed" class="my0 left mr1" alt="Logo"></amp-img>
+    <span class="inline-block">医へのいざない<span>
+  </div>
+	<div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
+    </div>
+  </header>
+  <!-- End Navbar -->
   <!-- End Fullpage Hero -->
   <main id="content" role="main" class="">
-    <article class="photo-article px4 md-px0 pt4">
-      <section>
+    <article class="photo-article px4 md-px0">
+      <section id="about" class="pt5">
       <h2 class="h3 block pt2 mb2">「医へのいざない」とは</h2>
       <hr/>
       <p class="mb4">医へのいざない。それは東京大学医学部4年生たちによる五月祭企画です。盛りだくさんの企画が皆様を医学の世界へご案内します。ぜひお越しください。</p>
@@ -2452,146 +2546,144 @@ amp-lightbox .close {
       <h2 class="h3 block pt2 mb2">企画紹介（体験企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-around">
-        <li><button on="tap:vr">
+      <i class="flex flex-wrap justify-between px2">
+        <button on="tap:vr">
           <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
           <h3>VR体験企画</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:quiz">
+        </button>
+        <button on="tap:quiz">
           <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>クイズラリー</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:emergency">
+        </button>
+        <button on="tap:emergency">
           <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <h3>救急救命体験</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:bp">
+        </button>
+        <button on="tap:bp">
           <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>血圧測定</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:surgery">
+        </button>
+        <button on="tap:surgery">
           <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>手術体験</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:organ">
+        </button>
+        <button on="tap:organ">
           <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>臓器あて</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:beat">
+        </button>
+        <button on="tap:beat">
           <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
           <h3>鼓動を感じる</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:artery">
+        </button>
+        <button on="tap:artery">
           <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>動脈観察</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:coat">
+        </button>
+        <button on="tap:coat">
           <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
           <h3>白衣体験</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li></li>
-      </ul>
+        </button>
+      </i>
       </section>
-      <section>
+      <section id="contents" class="pt5">
       <h2 class="h3 block pt2 mb2">企画紹介（展示企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-around">
-        <li><button on="tap:sketch">
+      <i class="flex flex-wrap justify-between px2">
+        <button on="tap:sketch">
           <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>スケッチ</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:muscle">
+        </button>
+        <button on="tap:muscle">
           <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>筋肉体操</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:drama">
+        </button>
+        <button on="tap:drama">
           <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学ドラマ</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:history">
+        </button>
+        <button on="tap:history">
           <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学部史</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:bookshelf">
+        </button>
+        <button on="tap:bookshelf">
           <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>医学部生の本棚</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:narrative">
+        </button>
+        <button on="tap:narrative">
           <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>言葉と医療</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:research">
+        </button>
+        <button on="tap:research">
           <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>最先端研究</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:disaster">
+        </button>
+        <button on="tap:disaster">
           <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>災害医療</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:toxin">
+        </button>
+        <button on="tap:toxin">
           <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>毒物</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li></li>
-      </ul>
+        </button>
+      </i>
       </section>
       <section>
       <h2 class="h3 block pt2 mb2">企画紹介（その他の企画）</h2>
       <hr/>
       <p>タイムテーブルは<a href="#">こちら</a></p>
-      <ul class="flex flex-wrap justify-around">
-        <li><button on="tap:cafe">
+      <i class="flex flex-wrap justify-between px2">
+        <button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>カフェ</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:goods">
+        </button>
+        <button on="tap:goods">
           <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>グッズ販売</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:lecture">
+        </button>
+        <button on="tap:lecture">
           <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>講演会</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:piano">
+        </button>
+        <button on="tap:piano">
           <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>鉄門ピアノの会</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:chamber">
+        </button>
+        <button on="tap:chamber">
           <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>鉄門室内楽の会</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-        <li><button on="tap:art">
+        </button>
+        <button on="tap:art">
           <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
           <h3>踏朱会</h3>
           <p>本館2階 13:00〜14:00</p>
-        </button></li>
-      </ul>
+        </button>
+      </i>
       </section>
-      <section>
+      <section id="sns" class="pt5">
       <h2 class="h3 block pt2 mb2">Social Media</h2>
       <hr />
       <a href="https://twitter.com/utmedmayfes">
@@ -2704,11 +2796,9 @@ amp-lightbox .close {
   </footer>
   <!-- End Footer -->
   <amp-lightbox id="vr" layout="nodisplay" scrollable="">
-    <figure>
-      <button class="close" aria-label="close vr" on="tap:vr.close">✕</button>
-      <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
-    </figure>
+    <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
     <article>
+      <button class="close" aria-label="close vr" on="tap:vr.close">✕</button>
       <h1>VR医学体験</h1>
       <hr /><br />
       <h2>VR とは？</h2>
@@ -2726,15 +2816,13 @@ amp-lightbox .close {
       <li><button class="notarget" aria-label="before vr" on="tap:vr.close">&lt; 前の企画</button></li>
       <li><button aria-label="close vr" on="tap:vr.close">✕</button></li>
       <li><button aria-label="next vr" on="tap:vr.close,quiz">次の企画 &gt;</button></li>
-    </ul>
+      </ul>
     </article>
   </amp-lightbox>
   <amp-lightbox id="quiz" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close quiz" on="tap:quiz.close">✕</button>
-    <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close quiz" on="tap:quiz.close">✕</button>
     <h1>クイズラリー</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2747,15 +2835,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before quiz" on="tap:quiz.close,vr">&lt; 前の企画</button></li>
     <li><button aria-label="close quiz" on="tap:quiz.close">✕</button></li>
     <li><button class="" aria-label="next quiz" on="tap:quiz.close,emergency">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="emergency" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
-    <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
     <h1>救急救命体験</h1>
     <hr /><br />
     <h2>救急救命体験とは?</h2>
@@ -2768,15 +2854,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before emergency" on="tap:emergency.close,quiz">&lt; 前の企画</button></li>
     <li><button aria-label="close emergency" on="tap:emergency.close">✕ 閉じる</button></li>
     <li><button class="" aria-label="next emergency" on="tap:emergency.close,bp">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="bp" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close bp" on="tap:bp.close">✕</button>
-    <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close bp" on="tap:bp.close">✕</button>
     <h1>血圧測定</h1>
     <hr /><br />
     <h2>血圧測定とは?</h2>
@@ -2789,15 +2873,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before bp" on="tap:bp.close,emergency">&lt; 前の企画</button></li>
     <li><button aria-label="close bp" on="tap:bp.close">✕ 閉じる</button></li>
     <li><button class="" aria-label="next bp" on="tap:bp.close,surgery">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="surgery" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close surgery" on="tap:surgery.close">✕</button>
-    <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close surgery" on="tap:surgery.close">✕</button>
     <h1>手術体験</h1>
     <hr /><br />
     <h2>血圧測定とは?</h2>
@@ -2810,15 +2892,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before surgery" on="tap:surgery.close,bp">&lt; 前の企画</button></li>
     <li><button aria-label="close surgery" on="tap:surgery.close">✕ 閉じる</button></li>
     <li><button class="" aria-label="next surgery" on="tap:surgery.close,organ">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="organ" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close organ" on="tap:organ.close">✕</button>
-    <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close organ" on="tap:organ.close">✕</button>
     <h1>手術体験</h1>
     <hr /><br />
     <h2>血圧測定とは?</h2>
@@ -2831,15 +2911,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before organ" on="tap:organ.close,surgery">&lt; 前の企画</button></li>
     <li><button aria-label="close organ" on="tap:organ.close">✕ 閉じる</button></li>
     <li><button class="" aria-label="next organ" on="tap:organ.close,beat">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="beat" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close beat" on="tap:beat.close">✕</button>
-    <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close beat" on="tap:beat.close">✕</button>
     <h1>鼓動を感じる</h1>
     <hr /><br />
     <h2>鼓動を感じるとは?</h2>
@@ -2852,15 +2930,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before beat" on="tap:beat.close,organ">&lt; 前の企画</button></li>
     <li><button aria-label="close beat" on="tap:beat.close">✕</button></li>
     <li><button class="" aria-label="next beat" on="tap:beat.close,artery">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="artery" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close artery" on="tap:artery.close">✕</button>
-    <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close artery" on="tap:artery.close">✕</button>
     <h1>動脈観察</h1>
     <hr /><br />
     <h2>動脈観察とは?</h2>
@@ -2873,15 +2949,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before atery" on="tap:artery.close,beat">&lt; 前の企画</button></li>
     <li><button aria-label="close artery" on="tap:artery.close">✕</button></li>
     <li><button class="" aria-label="next artery" on="tap:artery.close,coat">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="coat" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close coat" on="tap:coat.close">✕</button>
-    <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close coat" on="tap:coat.close">✕</button>
     <h1>白衣体験</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2894,15 +2968,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before coat" on="tap:coat.close,artery">&lt; 前の企画</button></li>
     <li><button aria-label="close coat" on="tap:coat.close">✕</button></li>
     <li><button class="" aria-label="next coat" on="tap:coat.close,sketch">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="sketch" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
-    <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
     <h1>医学部生のスケッチ</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2915,15 +2987,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before sketch" on="tap:sketch.close,coat">&lt; 前の企画</button></li>
     <li><button aria-label="close sketch" on="tap:sketch.close">✕</button></li>
     <li><button class="" aria-label="next sketch" on="tap:sketch.close,muscle">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="muscle" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close muscle" on="tap:muscle.close">✕</button>
-    <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close muscle" on="tap:muscle.close">✕</button>
     <h1>筋肉体操</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2936,15 +3006,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before muscle" on="tap:muscle.close,sketch">&lt; 前の企画</button></li>
     <li><button aria-label="close muscle" on="tap:muscle.close">✕</button></li>
     <li><button class="" aria-label="next muscle" on="tap:muscle.close,drama">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="drama" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close drama" on="tap:drama.close">✕</button>
-    <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close drama" on="tap:drama.close">✕</button>
     <h1>医学ドラマの世界</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2957,15 +3025,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before drama" on="tap:drama.close,muscle">&lt; 前の企画</button></li>
     <li><button aria-label="close drama" on="tap:drama.close">✕</button></li>
     <li><button class="" aria-label="next drama" on="tap:drama.close,history">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="history" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close history" on="tap:history.close">✕</button>
-    <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close history" on="tap:history.close">✕</button>
     <h1>医学部史</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2978,15 +3044,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before history" on="tap:history.close,drama">&lt; 前の企画</button></li>
     <li><button aria-label="close history" on="tap:history.close">✕</button></li>
     <li><button class="" aria-label="next history" on="tap:history.close,bookshelf">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="bookshelf" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close bookshelf" on="tap:bookshelf.close">✕</button>
-    <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close bookshelf" on="tap:bookshelf.close">✕</button>
     <h1>医学部生の本棚</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -2999,15 +3063,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before bookshelf" on="tap:bookshelf.close,history">&lt; 前の企画</button></li>
     <li><button aria-label="close bookshelf" on="tap:bookshelf.close">✕</button></li>
     <li><button class="" aria-label="next bookshelf" on="tap:bookshelf.close,narrative">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="narrative" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
-    <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
     <h1>ことばで感じる医療</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3020,15 +3082,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before narrative" on="tap:narrative.close,bookshelf">&lt; 前の企画</button></li>
     <li><button aria-label="close narrative" on="tap:narrative.close">✕</button></li>
     <li><button class="" aria-label="next narrative" on="tap:narrative.close,research">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="research" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close research" on="tap:research.close">✕</button>
-    <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close research" on="tap:research.close">✕</button>
     <h1>最先端研究</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3041,15 +3101,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before research" on="tap:research.close,narrative">&lt; 前の企画</button></li>
     <li><button aria-label="close research" on="tap:research.close">✕</button></li>
     <li><button class="" aria-label="next research" on="tap:research.close,disaster">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="disaster" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close disaster" on="tap:disaster.close">✕</button>
-    <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close disaster" on="tap:disaster.close">✕</button>
     <h1>災害医療</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3062,15 +3120,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before disaster" on="tap:disaster.close,research">&lt; 前の企画</button></li>
     <li><button aria-label="close disaster" on="tap:disaster.close">✕</button></li>
     <li><button class="" aria-label="next disaster" on="tap:disaster.close,toxin">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="toxin" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
-    <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
     <h1>毒物</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3083,15 +3139,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before toxin" on="tap:toxin.close,disaster">&lt; 前の企画</button></li>
     <li><button aria-label="close toxin" on="tap:toxin.close">✕</button></li>
     <li><button class="" aria-label="next toxin" on="tap:toxin.close,cafe">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="cafe" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
-    <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
     <h1>カフェ</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3104,16 +3158,14 @@ amp-lightbox .close {
     <li><button class="" aria-label="before cafe" on="tap:cafe.close,toxin">&lt; 前の企画</button></li>
     <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
     <li><button class="" aria-label="next cafe" on="tap:cafe.close,goods">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="goods" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
-    <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
     <h1>グッズ</h1>
+    <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
     <p>内容</p>
@@ -3125,15 +3177,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
     <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>
     <li><button class="" aria-label="next goods" on="tap:goods.close,lecture">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="lecture" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close lecture" on="tap:lecture.close">✕</button>
-    <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close lecture" on="tap:lecture.close">✕</button>
     <h1>講演会</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3146,15 +3196,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before lecture" on="tap:lecture.close,goods">&lt; 前の企画</button></li>
     <li><button aria-label="close lecture" on="tap:lecture.close">✕</button></li>
     <li><button class="" aria-label="next lecture" on="tap:lecture.close,piano">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="piano" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
-    <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
     <h1>鉄門ピアノの会</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3167,15 +3215,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before piano" on="tap:piano.close,lecture">&lt; 前の企画</button></li>
     <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
     <li><button class="" aria-label="next piano" on="tap:piano.close,chamber">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="chamber" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
-    <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
     <h1>鉄門室内楽の会</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3188,15 +3234,13 @@ amp-lightbox .close {
     <li><button class="" aria-label="before chamber" on="tap:chamber.close,piano">&lt; 前の企画</button></li>
     <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
     <li><button class="" aria-label="next chamber" on="tap:chamber.close,art">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <amp-lightbox id="art" layout="nodisplay" scrollable="">
-  <figure>
-    <button class="close" aria-label="close art" on="tap:art.close">✕</button>
-    <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
-  </figure>
+  <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
   <article>
+    <button class="close" aria-label="close art" on="tap:art.close">✕</button>
     <h1>踏朱会</h1>
     <hr /><br />
     <h2>クイズラリーとは?</h2>
@@ -3209,7 +3253,7 @@ amp-lightbox .close {
     <li><button class="" aria-label="before art" on="tap:art.close,chamber">&lt; 前の企画</button></li>
     <li><button aria-label="close art" on="tap:art.close">✕</button></li>
     <li><button class="disabled" aria-label="next art" on="tap:art.close,vr">次の企画 &gt;</button></li>
-  </ul>
+    </ul>
   </article>
   </amp-lightbox>
   <button class="controls scrollToTop p0"on="tap:top.scrollTo(duration=200)"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>ScrollToTop</title><polyline stroke="#fff" fill="none" points="10 32 25 18 40 32"/></svg></button>
