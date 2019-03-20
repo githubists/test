@@ -2174,6 +2174,30 @@ section>a>svg+div>p {
     background-color: #333;
     z-index: 2
 }
+.header-background{
+    width:100vw;
+    height:178vw;
+    background-image:url(./img/header/mobile-header-background-50.jpg);
+    background-attachment: fixed;
+    background-size:100vw 178vw;
+}
+.header-tablet{
+    top:0;
+    left:0;
+    width:100vw;
+    height:178vw;
+    background-image:url(./img/header/mobile-header-tablet.png);
+    background-size:100vw 178vw;
+}
+.header-screen{
+    top:23vw;
+    left:16vw;
+    width:69vw;
+    height:103vw;
+    background-image:url(./img/header/mobile-header-screen-50.jpg);
+    background-attachment: fixed;
+    background-size:100vw 178vw;
+}
 .top-header {
     background: rgba(255,255,255,0.5);
     border-style: solid;
@@ -2256,9 +2280,9 @@ section>a>svg+div>p {
     width:69vw;
     padding:2vw;
     font-size:1rem;
-    background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
-    background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
+    background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.5));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.5));
   }
   .dock-item{
     width:33%;
@@ -2488,8 +2512,13 @@ amp-lightbox h3 {
 
 
 <figure class="m0 realative">
+    <!--
     <amp-img width=100vw height=178vw alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
     <amp-img width="2560" height="1920" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header2-4x3-2x-50-trimmed.jpg" media="(orientation:landscape)"></amp-img>
+-->
+    <div class="header-background relative"></div>
+    <div class="header-tablet absolute"></div>
+    <div class="header-screen absolute"></div>
 
     <figcaption class="absolute top-0 right-0 bottom-0 left-0">
         <header class="top-header absolute p1">
