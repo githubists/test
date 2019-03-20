@@ -2175,19 +2175,21 @@ section>a>svg+div>p {
     z-index: 2
 }
 .top-header {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-color: #FFFFFF;
     color: #000;
-    top: calc(18vh + 4vw);
-    left:22vw;
-    width:52vw;
-    height:18vw;
+    /*top: calc(18vh + 4vw);*/
+    top:12vw;
+    left:18vw;
+    width:66vw;
     text-align:left;
     font-family: 'Kosugi Maru', sans-serif
 }
 
 .top-title {
     font-size: 6.4vw;
-    line-height:7vw;
+    line-height:9vw;
 }
 
 .top-credit {
@@ -2195,87 +2197,118 @@ section>a>svg+div>p {
     line-height:3.8vw;
 }
 .top-date {
-    font-size: 3.8vw;
+    font-size: 4.5vw;
+    line-height:4.5vw;
 }
 .dock{
-  top:calc(47vh + 10vw);
-  left:21.4vw;
-  width:54vw;
-  background:rgba(0,0,0,0.1)
+  /*top:calc(47vh + 10vw);*/
+  top:44vw;
+  left:16vw;
+  width:70vw;
+  background:linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.5));
+  background: -moz-linear-gradient();
+  background: -webkit-linear-gradient(t);
 }
 .dock-item>h2{
   text-align: center;
   color:#fff;
   font-size:0.4vw;
   line-height:2vw;
+  font-weight:600;
 }
 .dock-item{
   width:15%;
+  height:13vw;
   text-decoration: none;
 }
+
+.dock-item>amp-img{
+  margin:0vw 2vw;
+  }
 .dock-item>amp-img:active{
   filter:brightness(0.5)
 }
+
 @media(orientation: portrait) {
   .top-header {
-      color: #000;
-      top: calc(18vh + 2vw);
+      /*color: #000;*/
+      /*top: calc(18vh + 2vw);*/
+      top: 26vw;
       left:18vw;
       width:64vw;
-      height:26vw
+      height:26vw;
   }
   .top-title {
       font-size: 8vw;
-      line-height:8vw;
+      line-height:11vw;
   }
 
   .top-credit {
       font-size: 4.6vw;
+      letter-spacing:0.1vw;
       line-height:6vw;
   }
   .top-date {
       font-size: 5vw;
-      line-height:5vw;
+      line-height:6vw;
   }
   .dock{
-    top:calc(50vh - 18vw);
-    left:18vw;
-    width:65vw;
+    /*top:calc(50vh - 18vw);*/
+    top:74vw;
+    left:16vw;
+    width:69vw;
+    padding:2vw;
     font-size:1rem;
+    background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
+    background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 80%, rgba(0,0,0,0));
   }
   .dock-item{
     width:33%;
+    height:25vw;
   }
+  
   .dock-item>h2{
-    font-size:0.6vw;
+    margin:auto;
+    padding-bottom:1vw;
+    font-size:2vw;
+    line-height:3vw;
   }
 }
+/*
 @media (min-width:960px) {
   .dock{
     top:calc(54vh + 2vw);
     left:22vw;
     width:52vw;
     z-index:3;
+    
   }
   .dock-item>h2{
     font-size:1vw;
     line-height:1vw;
 
   }
-}
+}*/
 @media (orientation: portrait) and (min-width:720px) {
   .dock{
-    top:calc(76vh + 8vw);
-    left:18vw;
-    width:64vw;
+    /*top:calc(76vh + 8vw);*/
+    top:110vw;
+    left:16vw;
+    width:69vw;
+    padding:1vw;
     font-size:1rem;
     z-index:3;
   }
   .dock-item{
     width:15%;
+    height:14vw;
+  }
+  .dock-item>amp-img{
+  margin:0;
   }
   .dock-item>h2{
-    font-size:1vw;
+    font-size:0.5vw;
     line-height:1.6vw
   }
 }
@@ -2478,44 +2511,53 @@ amp-lightbox h3 {
 <!-- End Sidebar -->
 
   <!-- Start Fullpage Hero -->
-  <figure class="ampstart-image-fullpage-hero m0 relative">
-    <amp-img width="404" height="720" alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
-    <amp-img height="720" width="1200" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header2-4x3-2x-50.jpg" media="(orientation:landscape)"></amp-img>
+
+
+<figure class="m0 realative">
+    <amp-img width=100vw height=178vw alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
+    <amp-img width="2560" height="1920" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header2-4x3-2x-50-trimmed.jpg" media="(orientation:landscape)"></amp-img>
+
     <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-      <header class="top-header absolute p1">
-        <div class="top-credit  block">東京大学医学部五月祭企画</div>
-        <h1 class="top-title block"><div>医へのいざない</div></h1>
-        <div class="top-date block">2019.5.18(土)-19(日)</div>
-        <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
-    </header>
-    <nav class="dock flex flex-wrap justify-between absolute">
-      <button class="dock-item flex flex-column items-stretch"on="tap:about.scrollTo(duration=200)">
-        <amp-img src="./img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2><span class="inline-block">「医への</span><span class="inline-block">いざない」</span><span class="inline-block">について</span></h2>
-      </button>
-      <button class="dock-item flex flex-column items-stretch"on="tap:contents.scrollTo(duration=200)">
-        <amp-img src="./img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2>企画紹介</h2>
-      </button>
-      <a class="dock-item flex flex-column items-stretch" href="/contents">
-        <amp-img src="./img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2>おすすめ企画</h2>
-      </a>
-      <a class="dock-item flex flex-column items-stretch" href="/timetable">
-        <amp-img src="./img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2><span class="inline-block">タイムテーブル</span><span class="inline-block">整理券</span></h2>
-      </a>
-      <button class="dock-item flex flex-column items-stretch"on="tap:sns.scrollTo(duration=200)">
-        <amp-img src="./img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2>SNS</h2>
-      </button>
-      <a class="dock-item flex flex-column items-stretch" href="access">
-        <amp-img src="./img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-        <h2>アクセス</h2>
-      </a>
-    </nav>
+        <header class="top-header absolute p1">
+            <div class="top-credit  block">東京大学医学部五月祭企画</div>
+            <h1 class="top-title block"><div>医へのいざない</div></h1>
+            <div class="top-date block">2019.5.18<small>(土)-</small>19<small>(日)</small></div>
+            <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
+        </header>
+        <nav class="dock flex flex-wrap items-start justify-around absolute">
+                <button class="dock-item flex flex-column items-stretch"on="tap:about.scrollTo(duration=200)">
+                  <amp-img src="./img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>医へのいざない<br>とは</h2>
+                  <!--
+                  <h2><span class="inline-block">「医への</span><span class="inline-block">いざない」</span><span class="inline-block">について</span></h2>
+                  -->
+                </button>
+                <button class="dock-item flex flex-column items-stretch"on="tap:contents.scrollTo(duration=200)">
+                  <amp-img src="./img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>企画紹介</h2>
+                </button>
+                <a class="dock-item flex flex-column items-stretch" href="/contents">
+                  <amp-img src="./img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>おすすめ企画</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/timetable">
+                  <amp-img src="./img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>タイムテーブル<br>整理券</h2>
+                </a>
+                <button class="dock-item flex flex-column items-stretch"on="tap:sns.scrollTo(duration=200)">
+                  <amp-img src="./img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>SNS</h2>
+                </button>
+                <a class="dock-item flex flex-column items-stretch" href="access">
+                  <amp-img src="./img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>アクセス</h2>
+                </a>
+              </nav>
     </figcaption>
-  </figure>
+</figure>
+
+
+
   <amp-animation id="showAnim" layout="nodisplay">
   <script type="application/json">{"duration":"100ms","fill":"both","iterations":"1","direction":"alternate",
       "animations":[{"selector":".controls","keyframes":[{"opacity":"1","visibility":"visible"}]}]}
