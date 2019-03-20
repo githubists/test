@@ -2179,7 +2179,6 @@ section>a>svg+div>p {
     border-style: solid;
     border-color: #FFFFFF;
     color: #000;
-    /*top: calc(18vh + 4vw);*/
     top:12vw;
     left:18vw;
     width:66vw;
@@ -2198,11 +2197,10 @@ section>a>svg+div>p {
 }
 .top-date {
     font-size: 4.5vw;
-    line-height:4.5vw;
+    line-height:5vw;
 }
 .dock{
-  /*top:calc(47vh + 10vw);*/
-  top:44vw;
+  top:45vw;
   left:16vw;
   width:70vw;
   background:linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.5));
@@ -2212,13 +2210,15 @@ section>a>svg+div>p {
 .dock-item>h2{
   text-align: center;
   color:#fff;
-  font-size:0.4vw;
+  font-size:1.3vw;
   line-height:2vw;
   font-weight:600;
+  padding-bottom:2vw;
+  margin:auto;
 }
 .dock-item{
   width:15%;
-  height:13vw;
+  height:12vw;
   text-decoration: none;
 }
 
@@ -2231,29 +2231,26 @@ section>a>svg+div>p {
 
 @media(orientation: portrait) {
   .top-header {
-      /*color: #000;*/
-      /*top: calc(18vh + 2vw);*/
       top: 26vw;
       left:18vw;
       width:64vw;
       height:26vw;
   }
   .top-title {
-      font-size: 8vw;
+      font-size: 7.5vw;
       line-height:11vw;
   }
 
   .top-credit {
-      font-size: 4.6vw;
+      font-size: 4vw;
       letter-spacing:0.1vw;
       line-height:6vw;
   }
   .top-date {
-      font-size: 5vw;
+      font-size: 4vw;
       line-height:6vw;
   }
   .dock{
-    /*top:calc(50vh - 18vw);*/
     top:74vw;
     left:16vw;
     width:69vw;
@@ -2275,25 +2272,10 @@ section>a>svg+div>p {
     line-height:3vw;
   }
 }
-/*
-@media (min-width:960px) {
-  .dock{
-    top:calc(54vh + 2vw);
-    left:22vw;
-    width:52vw;
-    z-index:3;
-    
-  }
-  .dock-item>h2{
-    font-size:1vw;
-    line-height:1vw;
 
-  }
-}*/
 @media (orientation: portrait) and (min-width:720px) {
   .dock{
-    /*top:calc(76vh + 8vw);*/
-    top:110vw;
+    top:86vw;
     left:16vw;
     width:69vw;
     padding:1vw;
@@ -2301,15 +2283,15 @@ section>a>svg+div>p {
     z-index:3;
   }
   .dock-item{
-    width:15%;
-    height:14vw;
+    height:20vw;
   }
   .dock-item>amp-img{
-  margin:0;
+    margin:0vw 5vw;
   }
   .dock-item>h2{
-    font-size:0.5vw;
-    line-height:1.6vw
+    font-size:2.3vw;
+    line-height:2.7vw;
+    padding-bottom:2vw;
   }
 }
 button {
@@ -2530,9 +2512,6 @@ amp-lightbox h3 {
                 <button class="dock-item flex flex-column items-stretch"on="tap:about.scrollTo(duration=200)">
                   <amp-img src="./img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                   <h2>医へのいざない<br>とは</h2>
-                  <!--
-                  <h2><span class="inline-block">「医への</span><span class="inline-block">いざない」</span><span class="inline-block">について</span></h2>
-                  -->
                 </button>
                 <button class="dock-item flex flex-column items-stretch"on="tap:contents.scrollTo(duration=200)">
                   <amp-img src="./img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
