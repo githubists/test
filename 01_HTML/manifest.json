@@ -46,6 +46,6 @@
     "start_url": "/01_HTML/gogatsusai_home.amp.html",
     "display": "standalone",
     "theme_color": "#1EAA39",
-    "background-color":"#322B29",
+    "background_color":"#322B29",
     "Scope": "/01_HTML/"
 }
