@@ -2014,6 +2014,19 @@ section button>p{
     }
 }
 
+i>button>div {
+    right:2vw;
+    left:2vw;
+    bottom:2vw;
+}
+
+amp-fit-text {
+    z-index:3;
+    color:white;
+    text-align:right;
+    font-weight:600;
+}
+
 
 
 amp-lightbox {
@@ -2216,11 +2229,19 @@ amp-lightbox h3 {
       <p class="mb2">タイムテーブルは<a href="#">こちら</a><br>
             館内図は<a href="#">こちら</a></p>
       <i class="flex flex-wrap justify-between">
+
         <button on="tap:vr">
-          <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
-          <h3>VR医学体験</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute">
+                <amp-fit-text height=3vw width=auto layout="fixed-height">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text height=4vw width=auto layout="fixed-height">
+                    VR医学体験
+                </amp-fit-text>
+            </div>
         </button>
+
         <button on="tap:quiz">
           <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <h3>クイズラリー</h3>
