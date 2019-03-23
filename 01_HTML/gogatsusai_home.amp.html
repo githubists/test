@@ -1940,92 +1940,42 @@ section button>amp-img:hover {
     opacity: .8;
     transition: transform .4s
 }
-/*
-section button>h3{
-    position:absolute;
-    font-size:4vw;
-    line-height:4vw;
-    font-weight:700;
-    text-decoration:underline;
-    bottom:2vw;
-    right:2vw;
-    z-index:2;
-    color:#fff;
-    max-width:90%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    
-}
 
-section button>p{
-    position:absolute;
-    font-size:2vw;
-    bottom:7vw;
-    right:2vw;
-    z-index:2;
-    color:#fff;
-    font-weight:600;
-}
-*/
 
-section button>h3 {
-    font-size: 4.1vw;
-    line-height: calc(1.5rem + 5vw);
-    position: absolute;
-    font-weight: 600;
-    text-decoration: underline;
-    bottom: 0px;
-    right: 5px;
-    z-index: 2;
-    color: #fff;
-    max-width: 90%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-section button>p{
-    position: absolute;
-    bottom: calc(0.8rem + 4vw);
-    right: 5px;
-    z-index: 2;
-    font-size: calc(0.5rem + 1vw);
-    color: #fff
-}
-@media(min-width: 768px) {
-    section button>h3 {
-        font-size:2.2rem;
-        line-height: 5rem
-    }
-    section button>p {
-        font-size: 1.2rem;
-        bottom: 4rem
-    }
-}
-@media(min-width: 62rem) {
-    section button>h3 {
-        font-size:3rem
-    }
-
-    section button>p {
-        font-size: 2rem;
-        bottom: 6rem
-    }
-}
-
-i>button>div {
+.proj-container{
     right:2vw;
     left:2vw;
     bottom:2vw;
-}
-
-amp-fit-text {
-    z-index:3;
+    z-index:2;
     color:white;
     text-align:right;
     font-weight:600;
 }
+.proj-desc{
+    height:3.5vw;
+    margin-bottom:0.5vw;
+    font-weight:500;
+}
+.proj-name{
+    height:6vw;
+}
+@media(min-width:768px){
+    .proj-desc{
+        height:2vw;
+    }
+    .proj-name{
+        height:4vw;
+    }
+}
+@media(min-width:1024px){
+    .proj-desc{
+        height:1.5vw;
+    }
+    .proj-name{
+        height:3vw;
+    }
+}
+
 
 
 
@@ -2232,55 +2182,102 @@ amp-lightbox h3 {
 
         <button on="tap:vr">
             <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
-            <div class="absolute">
-                <amp-fit-text height=3vw width=auto layout="fixed-height">
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
                     本館2階 13:00〜14:00
                 </amp-fit-text>
-                <amp-fit-text height=4vw width=auto layout="fixed-height">
-                    VR医学体験
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>VR医学体験</u>
                 </amp-fit-text>
             </div>
         </button>
-
         <button on="tap:quiz">
-          <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>クイズラリー</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>クイズラリー</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:emergency">
-          <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
-          <h3>ER-救急救命体験</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>ER-救急救命体験</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:bp">
-          <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>血圧測定体験</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>血圧測定体験</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:surgery">
-          <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>手術体験</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>手術体験</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:organ">
-          <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>臓器当て</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>臓器当て</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:beat">
-          <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
-          <h3>鼓動を感じる</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>鼓動を感じる</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:artery">
-          <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>動脈観察</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>動脈観察</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:coat">
-          <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
-          <h3>白衣体験</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>白衣体験</u>
+                </amp-fit-text>
+            </div>
         </button>
       </i>
       </section>
@@ -2291,49 +2288,103 @@ amp-lightbox h3 {
         館内図は<a href="#">こちら</a></p>
       <i class="flex flex-wrap justify-between">
         <button on="tap:sketch">
-          <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>医学部生のスケッチ</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>医学生のスケッチ</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:muscle">
-          <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>筋肉体操</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>筋肉体操</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:drama">
-          <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>医学ドラマの世界</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>医学ドラマの世界</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:history">
           <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>医学部史</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>医学部史</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:bookshelf">
           <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>医学部生の本棚</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>医学部生の本棚</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:narrative">
           <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>ことばで感じる医療</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>ことばで感じる医療</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:research">
           <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>最先端研究</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>最先端研究</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:disaster">
           <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>災害医療</h3>
-          <p>本館2階 13:00〜14:00</p>
+            <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>災害医療</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:toxin">
           <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>毒物</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>毒物</u>
+                </amp-fit-text>
+            </div>
         </button>
       </i>
       </section>
@@ -2345,33 +2396,69 @@ amp-lightbox h3 {
       <i class="flex flex-wrap justify-between">
         <button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>カフェ</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>カフェ</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:goods">
           <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>グッズ</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>グッズ</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:lecture">
           <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>講演会</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>講演会</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:piano">
           <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>ピアノの会</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>ピアノの会</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:chamber">
           <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
-          <h3>室内楽の会</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>室内楽の会</u>
+                </amp-fit-text>
+            </div>
         </button>
         <button on="tap:art">
           <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
-          <h3>踏朱会</h3>
-          <p>本館2階 13:00〜14:00</p>
+          <div class="absolute flex flex-column proj-container">
+                <amp-fit-text layout="flex-item" class="proj-desc">
+                    本館2階 13:00〜14:00
+                </amp-fit-text>
+                <amp-fit-text layout="flex-item" class="proj-name">
+                    <u>朱踏会</u>
+                </amp-fit-text>
+            </div>
         </button>
       </i>
       </section>
