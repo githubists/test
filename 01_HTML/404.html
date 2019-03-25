@@ -1574,6 +1574,32 @@ section>a>svg+div>p {
     background-color: #333;
     z-index: 2
 }
+
+
+
+main{
+    overflow:hidden;
+}
+
+section>h2 {
+    font-size: 3em;
+    line-height:1em;
+    margin: 1em 0 1.5em;
+}
+
+section>h2::before{
+    content:'';
+    position:absolute;
+    height:80%;
+    width:1000%;
+    left:50px;
+    top:50px;
+    background-color:rgb(220,220,220);
+    z-index:-1;
+}
+
+
+
 /*
 .header-background{
     width:100vw;
@@ -1924,7 +1950,17 @@ amp-lightbox h3 {
   </header>
   <!-- End Navbar -->
   <main id="content" role="main" class="">
-    <article class="">
+    <article class="px2">
+        <section class="pt5">
+            <h2 class="relative">Page not found</h2>
+            <p class="m2 relative">
+                お探しのページは見つかりません。<br>
+                トップページは <a href="./gogatsusai_home.amp.html">こちら</a> 。
+            </p>
+        </section>
+
+
+
     </article>
   </main>
 
