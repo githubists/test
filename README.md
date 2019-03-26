@@ -46,14 +46,14 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 
 # CodeIgniterについて
 heroku上である程度作ることにしました。  
-https://gogatsusai.herokuapp.com/CodeIgniter-3.1.10  
-のURLにアクセスするとCodeIgniterに繋がります。  
+https://gogatsusai.herokuapp.com/01_HTML  
+以外のURLにアクセスするとCodeIgniterに繋がります。  
 CodeIgniterでのURLと呼び出されるコントローラーの関係は以下のようになってます。  
-https://gogatsusai.herokuapp.com/CodeIgniter-3.1.10/[controller-class]/[controller-method]/[arguments]  
+https://gogatsusai.herokuapp.com/[controller-class]/[controller-method]/[arguments]  
 ローカルで試したいときは  
 ```shell
-$ php -S localhost:3000
+$ php -S localhost:3000 index.php
 ```
 を実行して、ブラウザーで  
-http://localhost:3000/CodeIgniter-3.1.10/index.php/[controller-class]/[controller-method]/[arguments]  
+http://localhost:3000/[controller-class]/[controller-method]/[arguments]  
 にアクセスすると試すことができます。
