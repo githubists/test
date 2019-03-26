@@ -1907,6 +1907,32 @@ section>a>svg+div>p {
     }
 }
 
+main{
+    overflow:hidden;
+}
+
+section>h2 {
+    font-size: 2.5em;
+    line-height:1em;
+    margin: 1em 0 1.5em;
+}
+
+section>h2::before{
+    content:'';
+    position:absolute;
+    height:80%;
+    width:100vw;
+    left:50px;
+    top:40px;
+    /*background-color:rgb(220,220,220);*/
+    background:linear-gradient(-135deg,#1E00FF,#05FBFF);
+    opacity:0.8;
+    z-index:-1;
+}
+
+
+
+
 button {
     width: 100%;
     height: 100%;
@@ -1934,13 +1960,15 @@ section button>amp-img {
     filter: brightness(0.7);
     transition: transform .4s;
 }
-section button>amp-img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    opacity: .8;
-    transition: transform .4s
-}
 
+@media (min-width: 64.06rem) {
+    section button>amp-img:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        opacity: .8;
+        transition: transform .4s
+    }
+}
 
 .proj-container{
     right:2vw;
@@ -2167,18 +2195,16 @@ amp-lightbox h3 {
   <!-- End Navbar -->
   <main id="content" role="main" class="">
     <article class="photo-article px2">
-      <section id="about" class="pt5">
-      <h2 class="h3 block pt2 mb2">「医へのいざない」とは</h2>
-      <hr/>
-      <p class="mb4">医へのいざない。それは東京大学医学部4年生たちによる五月祭企画です。盛りだくさんの企画が皆様を医学の世界へご案内します。ぜひお越しください。</p>
+      <section id="about" class="">
+      <h2 class="relative">医へのいざない</h2>
+      <p class="p2">医へのいざない。それは東京大学医学部4年生たちによる五月祭企画です。盛りだくさんの企画が皆様を医学の世界へご案内します。ぜひお越しください。</p>
       </section>
 
-      <section id="contents" class="pt5">
-      <h2 class="h3 block pt2 mb2">企画紹介（体験企画）</h2>
-      <hr/>
-      <p class="mb2">タイムテーブルは<a href="#">こちら</a><br>
+      <section id="contents" class="">
+      <h2 class="relative">体験企画</h2>
+      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
             館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between">
+      <i class="flex flex-wrap justify-between mt2">
 
         <button on="tap:vr">
             <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
@@ -2282,11 +2308,10 @@ amp-lightbox h3 {
       </i>
       </section>
       <section>
-      <h2 class="h3 block pt5 mb2">企画紹介（展示企画）</h2>
-      <hr/>
-      <p class="mb2">タイムテーブルは<a href="#">こちら</a><br>
+      <h2 class="relative">展示企画</h2>
+      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
         館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between">
+      <i class="flex flex-wrap justify-between mt2">
         <button on="tap:sketch">
             <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
             <div class="absolute flex flex-column proj-container">
@@ -2389,11 +2414,10 @@ amp-lightbox h3 {
       </i>
       </section>
       <section>
-      <h2 class="h3 block pt5 mb2">企画紹介（その他の企画）</h2>
-      <hr/>
-      <p class="mb2">タイムテーブルは<a href="#">こちら</a><br>
+      <h2 class="relative">その他の企画</h2>
+      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
          館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between">
+      <i class="flex flex-wrap justify-between mt2">
         <button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -2463,8 +2487,7 @@ amp-lightbox h3 {
       </i>
       </section>
       <section id="sns" class="pt5">
-      <h2 class="h3 block pt2 mb2">Social Media</h2>
-      <hr />
+      <h2 class="relative">Social Media</h2>
       <a href="https://twitter.com/utmedmayfes">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-1 0 46 40" class="left"><title>Twitter</title><path fill="#00aced" d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon-twitter"></path></svg>
       <div><h3 class="h5">Twitter:</h3><p>@utmedmayfes</p></div>
@@ -2480,13 +2503,10 @@ amp-lightbox h3 {
       <div><h3 class="h5">YouTube:</h3><p>医学部五月祭</p></div></a>
       </section>
       <section>
-      <h2 class="block pt2 mb2">協賛</h2>
-      <hr/>
+      <h2 class="relative">協賛</h2>
       <ul class="flex flex-wrap justify-around" id="sponsors">
       <li><a href="https://www.fujigakuin.jp/" aria-label="本企画にご協賛いただいた富士学院様サイトへのリンクです"><amp-img srcset="./img/clients/fujigakuin-banner-1x.jpg 240w,./img/clients/fujigakuin-banner-2x.jpg 480w,./img/clients/fujigakuin-banner-4x.jpg 960w" width="125" height="80" alt="富士学院様ロゴ" layout="responsive" class=""></amp-img></a></li>
       <li><a href="http://www.riso-kyoikugroup.com/" aria-label="本企画にご協賛いただいたリソー教育様サイトへのリンクです"><amp-img src="./img/clients/client_1.jpg" width="125" height="80" alt="リソー教育様ロゴ" layout="responsive" class=""></amp-img></a></li>
-      <li></li>
-      <li></li>
       </ul>
       </section>
     </article>
