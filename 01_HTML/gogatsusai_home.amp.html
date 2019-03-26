@@ -1910,6 +1910,16 @@ section>a>svg+div>p {
 main{
     overflow:hidden;
 }
+.photo-article>section::before{
+    content:'';
+    background: rgba(200, 200, 200, .4);
+    position:absolute;
+    top:65px;
+    bottom:-21px;
+    left:-6px;
+    right:-6px;
+    z-index:-2;
+}
 
 section>h2 {
     font-size: 2.5em;
@@ -1926,7 +1936,6 @@ section>h2::before{
     top:40px;
     /*background-color:rgb(220,220,220);*/
     background:linear-gradient(-135deg,#1E00FF,#05FBFF);
-    opacity:0.8;
     z-index:-1;
 }
 
@@ -2195,12 +2204,12 @@ amp-lightbox h3 {
   <!-- End Navbar -->
   <main id="content" role="main" class="">
     <article class="photo-article px2">
-      <section id="about" class="">
+      <section id="about" class="relative">
       <h2 class="relative">医へのいざない</h2>
       <p class="p2">医へのいざない。それは東京大学医学部4年生たちによる五月祭企画です。盛りだくさんの企画が皆様を医学の世界へご案内します。ぜひお越しください。</p>
       </section>
 
-      <section id="contents" class="">
+      <section id="contents" class="relative">
       <h2 class="relative">体験企画</h2>
       <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
             館内図は<a href="#">こちら</a></p>
@@ -2307,7 +2316,7 @@ amp-lightbox h3 {
         </button>
       </i>
       </section>
-      <section>
+      <section class="relative">
       <h2 class="relative">展示企画</h2>
       <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
         館内図は<a href="#">こちら</a></p>
@@ -2413,7 +2422,7 @@ amp-lightbox h3 {
         </button>
       </i>
       </section>
-      <section>
+      <section class="relative">
       <h2 class="relative">その他の企画</h2>
       <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
          館内図は<a href="#">こちら</a></p>
@@ -2486,7 +2495,7 @@ amp-lightbox h3 {
         </button>
       </i>
       </section>
-      <section id="sns" class="pt5">
+      <section id="sns" class="relative mt5">
       <h2 class="relative">Social Media</h2>
       <a href="https://twitter.com/utmedmayfes">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-1 0 46 40" class="left"><title>Twitter</title><path fill="#00aced" d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon-twitter"></path></svg>
@@ -2502,7 +2511,7 @@ amp-lightbox h3 {
       <a href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26 17" class="left"><title>YouTube</title><path fill="#ff0000" class="ampstart-icon-youtube" fill-rule="evenodd" d="M 16.837 8.242 v 0.126 l -6.742 3.396 V 4.719 l 6.742 3.396 v 0.127 Z m 8.167 -4.707 c 0.05 0.399 0.244 2.102 0.26 3.805 v 0.126 c -0.018 -1.946 -0.27 -3.893 -0.27 -3.893 s -0.245 -1.651 -1.003 -2.384 c -0.96 -0.961 -2.04 -0.961 -2.528 -1.02 C 17.94 -0.075 12.64 0.017 12.64 0.017 S 7.348 -0.075 3.817 0.17 C 3.32 0.228 2.25 0.228 1.29 1.189 C 0.531 1.913 0.287 3.573 0.287 3.573 S 0.05 5.52 0 7.466 v 1.602 c 0.05 1.946 0.287 3.893 0.287 3.893 s 0.244 1.66 1.002 2.384 c 0.96 0.961 2.031 0.961 2.528 1.02 c 3.531 0.244 8.823 0.202 8.823 0.202 s 5.3 0.042 8.823 -0.202 c 0.488 -0.059 1.567 -0.059 2.528 -1.02 c 0.758 -0.733 1.003 -2.384 1.003 -2.384 s 0.252 -1.947 0.27 -3.893 v 0.126 c -0.018 1.946 -0.27 3.893 -0.27 3.893 s -0.061 0.404 -0.211 0.9 c 0.157 -0.508 0.219 -0.925 0.219 -0.925 s 0.253 -1.947 0.27 -3.893 V 7.34 a 38.672 38.672 0 0 0 -0.268 -3.805 Z" ></path></svg>
       <div><h3 class="h5">YouTube:</h3><p>医学部五月祭</p></div></a>
       </section>
-      <section>
+      <section class="relative">
       <h2 class="relative">協賛</h2>
       <ul class="flex flex-wrap justify-around" id="sponsors">
       <li><a href="https://www.fujigakuin.jp/" aria-label="本企画にご協賛いただいた富士学院様サイトへのリンクです"><amp-img srcset="./img/clients/fujigakuin-banner-1x.jpg 240w,./img/clients/fujigakuin-banner-2x.jpg 480w,./img/clients/fujigakuin-banner-4x.jpg 960w" width="125" height="80" alt="富士学院様ロゴ" layout="responsive" class=""></amp-img></a></li>
@@ -2513,7 +2522,7 @@ amp-lightbox h3 {
   </main>
 
   <!-- Start Footer -->
-  <footer class="ampstart-footer flex flex-column items-center px2 ">
+  <footer class="ampstart-footer flex flex-column items-center px2 mt2">
     <h2 class="line-height-3 mb2 center"><span class="inline-block">東京大学医学部五月祭企画</span> <span class="footer-h2 inline-block">医へのいざない</span></h2>
     <ul class="flex flex-wrap sm-col-11 lg-col-11 items-start center mx2">
       <li class="md-pt0 md-px0 col-12 sm-col-4 lg-col-4 footer-left">
