@@ -31,6 +31,7 @@
 <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
 <script custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js" async=""></script>
 <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
