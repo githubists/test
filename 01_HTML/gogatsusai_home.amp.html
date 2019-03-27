@@ -1928,6 +1928,7 @@ section>h2 {
     line-height:1em;
     margin: 1em 0 1.5em;
     padding-top:4rem;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.2);
 }
 
 section>h2::before{
@@ -1945,7 +1946,12 @@ section>h2::before{
     margin-top:0;
 }
 
-
+section>p{
+    margin-left:1%;
+    margin-right:1%;
+    box-shadow: 4px 4px 8px silver;
+    background:white;
+}
 
 
 button {
@@ -1969,10 +1975,12 @@ i button{
   width: 48%;
   margin: 1%;
   position: relative;
-  border-style:solid;
+  /*border-style:solid;
   border-color:silver;
-  border-width:1px;
+  border-width:1px;*/
+  box-shadow: 4px 4px 8px silver;
 }
+
 section button>amp-img {
     background-color:#333;
     /*filter: brightness(0.8);*/
@@ -2005,20 +2013,32 @@ section button>amp-img {
 .proj-name{
     height:6vw;
 }
-@media(min-width:768px){
+@media(min-width:600px){
+    i button{
+        width:31.3%;
+    }
+    .proj-container{
+        padding:1.5vw;
+    }
     .proj-desc{
         height:2vw;
     }
     .proj-name{
-        height:4vw;
+        height:3vw;
     }
 }
 @media(min-width:1024px){
+    i button{
+        width:23%;
+    }
+    .proj-container{
+        padding:1vw;
+    }
     .proj-desc{
         height:1.5vw;
     }
     .proj-name{
-        height:3vw;
+        height:2vw;
     }
 }
 
@@ -2222,7 +2242,7 @@ amp-lightbox h3 {
       <h2 class="relative">体験企画</h2>
       <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
             ・館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between mt2">
+      <i class="flex flex-wrap justify-start mt2">
 
         <button on="tap:vr">
             <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
@@ -2329,7 +2349,7 @@ amp-lightbox h3 {
       <h2 class="relative">展示企画</h2>
       <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
         ・館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between mt2">
+      <i class="flex flex-wrap justify-start mt2">
         <button on="tap:sketch">
             <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
             <div class="absolute flex flex-column proj-container">
@@ -2435,7 +2455,7 @@ amp-lightbox h3 {
       <h2 class="relative">その他の企画</h2>
       <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
          ・館内図は<a href="#">こちら</a></p>
-      <i class="flex flex-wrap justify-between mt2">
+      <i class="flex flex-wrap justify-start mt2">
         <button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
