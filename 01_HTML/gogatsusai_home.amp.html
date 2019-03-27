@@ -1715,10 +1715,11 @@ section a>p {
 }
 section>a>svg {
     padding-top: 2px;
-    float: left
+    float: left;
+    margin-left:1.5rem;
 }
 section>a>svg+div {
-    padding-left: 3rem;
+    padding-left: 4.5rem;
     margin-bottom: 2.4rem
 }
 section>a>svg+div>h3 {
@@ -1912,9 +1913,10 @@ main{
 }
 .photo-article>section::before{
     content:'';
-    background: rgba(200, 200, 200, .4);
+    background: #f4f4f4;
+    background: #eeeeee;
     position:absolute;
-    top:65px;
+    top:110px;
     bottom:-21px;
     left:-6px;
     right:-6px;
@@ -1925,18 +1927,22 @@ section>h2 {
     font-size: 2.5em;
     line-height:1em;
     margin: 1em 0 1.5em;
+    padding-top:4rem;
 }
 
 section>h2::before{
     content:'';
     position:absolute;
-    height:80%;
+    height:45%;
     width:100vw;
     left:50px;
-    top:40px;
+    top:85px;
     /*background-color:rgb(220,220,220);*/
-    background:linear-gradient(-135deg,#1E00FF,#05FBFF);
+    background:linear-gradient(150deg,rgb(104, 207, 255), rgb(50,100,255));
     z-index:-1;
+}
+.header-about{
+    margin-top:0;
 }
 
 
@@ -1963,10 +1969,13 @@ i button{
   width: 48%;
   margin: 1%;
   position: relative;
+  border-style:solid;
+  border-color:silver;
+  border-width:1px;
 }
 section button>amp-img {
     background-color:#333;
-    filter: brightness(0.7);
+    /*filter: brightness(0.8);*/
     transition: transform .4s;
 }
 
@@ -1980,11 +1989,11 @@ section button>amp-img {
 }
 
 .proj-container{
-    right:2vw;
-    left:2vw;
-    bottom:2vw;
+    position:relative;
+    padding:2vw;
+    background:white;
     z-index:2;
-    color:white;
+    color:black;
     text-align:right;
     font-weight:600;
 }
@@ -2205,14 +2214,14 @@ amp-lightbox h3 {
   <main id="content" role="main" class="">
     <article class="photo-article px2">
       <section id="about" class="relative">
-      <h2 class="relative">医へのいざない</h2>
-      <p class="p2">医へのいざない。それは東京大学医学部4年生たちによる五月祭企画です。盛りだくさんの企画が皆様を医学の世界へご案内します。ぜひお越しください。</p>
+      <h2 class="relative header-about">医へのいざない</h2>
+      <p class="p2">東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見！　最高峰の学生たちが魅せる医の世界をぜひお楽しみください。</p>
       </section>
 
       <section id="contents" class="relative">
       <h2 class="relative">体験企画</h2>
-      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
-            館内図は<a href="#">こちら</a></p>
+      <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
+            ・館内図は<a href="#">こちら</a></p>
       <i class="flex flex-wrap justify-between mt2">
 
         <button on="tap:vr">
@@ -2318,8 +2327,8 @@ amp-lightbox h3 {
       </section>
       <section class="relative">
       <h2 class="relative">展示企画</h2>
-      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
-        館内図は<a href="#">こちら</a></p>
+      <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
+        ・館内図は<a href="#">こちら</a></p>
       <i class="flex flex-wrap justify-between mt2">
         <button on="tap:sketch">
             <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
@@ -2424,8 +2433,8 @@ amp-lightbox h3 {
       </section>
       <section class="relative">
       <h2 class="relative">その他の企画</h2>
-      <p class="p2">タイムテーブルは<a href="#">こちら</a><br>
-         館内図は<a href="#">こちら</a></p>
+      <p class="p2">・タイムテーブルは<a href="#">こちら</a><br>
+         ・館内図は<a href="#">こちら</a></p>
       <i class="flex flex-wrap justify-between mt2">
         <button on="tap:cafe">
           <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
