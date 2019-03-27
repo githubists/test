@@ -1,0 +1,715 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html ⚡="" lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8">
+  <title>医へのいざない | 東京大学 第92回 五月祭 医学部企画</title>
+  <link rel="canonical" href="https://henry-weyl.github.io/sw-test/">
+  <meta name="description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。"/>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="amp-google-client-id-api" content="googleanalytics">
+  <link href="favicon.ico" rel="icon" type="image/ico">
+  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+  <meta property="og:title" content="医へのいざない | 東大医学部 五月祭企画 医へのいざない" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://henry-weyl.github.io/sw-test/" />
+  <meta property="og:image" content="https://henry-weyl.github.io/sw-test/img/header/header-og-1x-50-withtext.jpg" />
+  <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。" />
+  <meta property="og:site_name" content="医へのいざない" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="fb:app_id" content="" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@utmedmayfes"/>
+  <meta name="twitter:creator" content="@utmedmayfes">
+  <meta name="twitter:title" content="医へのいざない">
+  <meta name="twitter:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。皆様のご来場をお待ちしております。">
+  <meta name="twitter:image" content="https://henry-weyl.github.io/sw-test/img/header/header-og-1x-50-withtext.jpg">
+  <meta name="theme-color" content="#1EAA39">
+  <link rel="apple-touch-icon" href="/sw-test/img/icon/icon180.png"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="/sw-test/img/icon/icon57.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="/sw-test/img/icon/icon72.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/sw-test/img/icon/icon76.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="/sw-test/img/icon/icon114.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="/sw-test/img/icon/icon120.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="/sw-test/img/icon/icon144.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/sw-test/img/icon/icon152.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/sw-test/img/icon/icon180.png"/>
+  <meta name="msapplication-TileColor" content="#1EAA39">
+  <meta name="msapplication-TileImage" content="/sw-test/img/icon/icon144.png">
+  <link rel="manifest" href="/sw-test/manifest.json">
+
+  <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+<script custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js" async=""></script>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+<script type="application/ld+json">
+[
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "東京大学 第92回 五月祭 医学部企画 医へのいざない",
+  "startDate": "2018-05-18T09:00+09:00",
+  "location": {
+    "@type": "Place",
+    "name": "医学部2号館, 東京大学本郷キャンパス",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "本郷7丁目3-1",
+      "addressLocality": "文京区",
+      "postalCode": "1138654",
+      "addressRegion": "東京都",
+      "addressCountry": "JP"
+    }
+  },
+  "image": [
+   ],
+  "description": "医へのいざない、それは東大医学部4年生たちによる五月祭企画です。胃へのいざないではありません。胃にいざなわれても、酸が強すぎて大変でしょうからね（そういう問題ではない）。よいこのみんなは間違えないよね! *パソコンを見るときには、部屋を明るくして、画面からよく離れて見ましょう",
+  "endDate": "2019-05-19T18:00+09:00",
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "東京大学医学部五月祭実行委員"
+  }
+},
+{
+  "@context":"http://schema.org",
+  "@type":"WebSite",
+  "name":"医へのいざない公式サイト",
+  "url":"http://utmed-mayfes.net/",
+  "inLanguage":"ja",
+  "keywords":"五月祭,医学部,医へのいざない,五月祭企画,医学部企画,理科三類,東大,東京大学,東大医学部",
+  "description":"東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。",
+  "publisher":{
+    "@type":"Corporation",
+    "name":"東京大学医学部五月祭実行委員",
+    "url":"http://utmed-mayfes.net/"
+  }
+}
+]
+</script>
+
+
+  <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate *//*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;color:#333}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;border-color:#000;overflow:visible}pre{font-family:monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:focus,a:hover{transition:all.5s;color:#7beec7;outline-width:0}abbr[title]{border-bottom:0;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}.h00{font-size:4rem}.h0,.h1{font-size:3rem}.h2{font-size:2rem}.h3{font-size:1.5rem}.h4{font-size:1.125rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:700}.regular{font-weight:400}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1rem}.line-height-2{line-height:1.125rem}.line-height-3{line-height:1.5rem}.line-height-4{line-height:2rem}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0,.mx0{margin-left:0}.mx0{margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1,.mx1{margin-left:.5rem}.mx1{margin-right:.5rem}.my1{margin-top:.5rem;margin-bottom:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2,.mx2{margin-left:1rem}.mx2{margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:1.5rem}.mt3{margin-top:1.5rem}.mr3{margin-right:1.5rem}.mb3{margin-bottom:1.5rem}.ml3,.mx3{margin-left:1.5rem}.mx3{margin-right:1.5rem}.my3{margin-top:1.5rem;margin-bottom:1.5rem}.m4{margin:2rem}.mt4{margin-top:2rem}.mr4{margin-right:2rem}.mb4{margin-bottom:2rem}.ml4,.mx4{margin-left:2rem}.mx4{margin-right:2rem}.my4{margin-top:2rem;margin-bottom:2rem}.mxn1{margin-left:-0.5rem;margin-right:-0.5rem}.mxn2{margin-left:-1rem;margin-right:-1rem}.mxn3{margin-left:-1.5rem;margin-right:-1.5rem}.mxn4{margin-left:-2rem;margin-right:-2rem}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto,.mx-auto{margin-left:auto}.mx-auto{margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0,.px0{padding-left:0}.px0{padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:.5rem}.pt1{padding-top:.5rem}.pr1{padding-right:.5rem}.pb1{padding-bottom:.5rem}.pl1{padding-left:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:1.5rem}.pt3{padding-top:1.5rem}.pr3{padding-right:1.5rem}.pb3{padding-bottom:1.5rem}.pl3{padding-left:1.5rem}.py3{padding-top:1.5rem;padding-bottom:1.5rem}.px3{padding-left:1.5rem;padding-right:1.5rem}.p4{padding:2rem}.pt4{padding-top:2rem}.pr4{padding-right:2rem}.pb4{padding-bottom:2rem}.pl4{padding-left:2rem}.py4{padding-top:2rem;padding-bottom:2rem}.px4{padding-left:2rem;padding-right:2rem}.pt5{padding-top:2.5rem}.col{float:left}.col,.col-right{box-sizing:border-box}.col-right{float:right}.col-1{width:8.33333%}.col-2{width:16.66667%}.col-3{width:25%}.col-4{width:33.33333%}.col-5{width:41.66667%}.col-6{width:50%}.col-7{width:58.33333%}.col-8{width:66.66667%}.col-9{width:75%}.col-10{width:83.33333%}.col-11{width:91.66667%}.col-12{width:100%}@media(min-width:28rem){.xs-col{float:left;box-sizing:border-box}.xs-col-right{float:right;box-sizing:border-box}.xs-col-1{width:8.33333%}.xs-col-2{width:16.66667%}.xs-col-3{width:25%}.xs-col-4{width:33.33333%}.xs-col-5{width:41.66667%}.xs-col-6{width:50%}.xs-col-7{width:58.33333%}.xs-col-8{width:66.66667%}.xs-col-9{width:75%}.xs-col-10{width:83.33333%}.xs-col-11{width:91.66667%}.xs-col-12{width:100%}}@media(min-width:40.06rem){.sm-col{float:left;box-sizing:border-box}.sm-col-right{float:right;box-sizing:border-box}.sm-col-1{width:8.33333%}.sm-col-2{width:16.66667%}.sm-col-3{width:25%}.sm-col-4{width:33.33333%}.sm-col-5{width:41.66667%}.sm-col-6{width:50%}.sm-col-7{width:58.33333%}.sm-col-8{width:66.66667%}.sm-col-9{width:75%}.sm-col-10{width:83.33333%}.sm-col-11{width:91.66667%}.sm-col-12{width:100%}}@media(min-width:768px){.md-px0{padding-left:0;padding-right:0}.md-col{float:left;box-sizing:border-box}.md-col-right{float:right;box-sizing:border-box}.md-col-1{width:8.33333%}.md-col-2{width:16.66667%}.md-col-3{width:25%}.md-col-4{width:33.33333%}.md-col-5{width:41.66667%}.md-col-6{width:50%}.md-col-7{width:58.33333%}.md-col-8{width:66.66667%}.md-col-9{width:75%}.md-col-10{width:83.33333%}.md-col-11{width:91.66667%}.md-col-12{width:100%}}@media(min-width:64.06rem){.lg-col{float:left;box-sizing:border-box}.lg-col-right{float:right;box-sizing:border-box}.lg-col-1{width:8.33333%}.lg-col-2{width:16.66667%}.lg-col-3{width:25%}.lg-col-4{width:33.33333%}.lg-col-5{width:41.66667%}.lg-col-6{width:50%}.lg-col-7{width:58.33333%}.lg-col-8{width:66.66667%}.lg-col-9{width:75%}.lg-col-10{width:83.33333%}.lg-col-11{width:91.66667%}.lg-col-12{width:100%}}.flex{display:-ms-flexbox;display:flex}@media(min-width:40.06rem){.sm-flex{display:-ms-flexbox;display:flex}}@media(min-width:768px){.md-flex{display:-ms-flexbox;display:flex}}@media(min-width:64.06rem){.lg-flex{display:-ms-flexbox;display:flex}}.flex-column{-ms-flex-direction:column;flex-direction:column}.flex-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;align-items:flex-end}.items-center{-ms-flex-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;justify-content:flex-end}.justify-center{-ms-flex-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;justify-content:space-between}.justify-around{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;flex:none}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-last{-ms-flex-order:99999;order:99999}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.z1{z-index:1}.z2{z-index:2}.z3{z-index:3}.z4{z-index:4}.border{border-style:solid;border-width:1px}.border-top{border-top-style:solid;border-top-width:1px}.border-right{border-right-style:solid;border-right-width:1px}.border-bottom{border-bottom-style:solid;border-bottom-width:1px}.border-left{border-left-style:solid;border-left-width:1px}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.rounded-top{border-radius:3px 3px 0 0}.rounded-right{border-radius:0 3px 3px 0}.rounded-bottom{border-radius:0 0 3px 3px}.rounded-left{border-radius:3px 0 0 3px}.not-rounded{border-radius:0}.hide{position:absolute;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}@media(max-width:40.06rem){.xs-hide{display:none}}@media(min-width:40.06rem) and (max-width:52rem){.sm-hide{display:none}}@media(min-width:768px) and (max-width:64rem){.md-hide{display:none}}@media(min-width:64.06rem){.lg-hide{display:none}}.display-none{display:none}*{box-sizing:border-box}body{background:#fff;color:#111;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;min-width:315px;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}article{max-width:750px;margin:0 auto}@media(min-width:62rem){article{max-width:60pc}}p{padding:0;margin:0}.ampstart-footer,.ampstart-small-text{font-size:.85rem;line-height:1.15rem;letter-spacing:.06rem}.h1,h1{font-size:3rem;line-height:3.5rem}.h2,h2{font-size:2rem;line-height:2.5rem}.h3,h3{font-size:1.5rem;line-height:2rem}.h4,h4{font-size:1.125rem;line-height:1.5rem}.h5,h5{font-size:.875rem;line-height:1.125rem}.h6,h6{font-size:.75rem;line-height:1rem}h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}.ampstart-dropcap:first-letter{color:#000;font-size:3rem;font-weight:700;float:left;overflow:hidden;line-height:3rem;margin-left:0;margin-right:.5rem}.ampstart-initialcap{padding-top:1rem;margin-top:1.5rem}.ampstart-initialcap:first-letter{color:#000;font-size:3rem;font-weight:700;margin-left:-2px}.ampstart-pullquote{border:0;border-left:4px solid #000;font-size:1.5rem;padding-left:1.5rem}.ampstart-byline time{font-style:normal;white-space:nowrap}.ampstart-footer{font-size:.85rem;line-height:1.15rem;letter-spacing:.06rem}ampstart-dropdown{min-width:200px}.ampstart-dropdown>section>header{background-color:transparent;border:0;color:#fff}.ampstart-dropdown>section>header:after{display:inline-block;content:"+";padding:0 0 0 1.5rem;color:#fff}.ampstart-dropdown-item{background-color:#000;color:#003f93;opacity:.9}.ampstart-dropdown-item:active,.ampstart-dropdown-item:hover{opacity:1}.ampstart-footer{background-color:#f4f4f4;color:#333;padding-top:2rem;padding-bottom:2rem}.ampstart-footer .ampstart-icon{fill:#333}.ampstart-footer .ampstart-social-follow li:last-child{margin-right:0}.ampstart-headerbar{background-color:hsla(0,0%,100%,.6);color:#000;z-index:5;box-shadow:0 0 5px 2px rgba(0,0,0,.1)}@supports (position:sticky) or (position:-webkit-sticky){.ampstart-headerbar{position:-webkit-sticky;position:sticky}}.ampstart-headerbar+:not(amp-sidebar){margin-top:0}.ampstart-nav-item:active,.ampstart-nav-item:focus,.ampstart-nav-item:hover{opacity:1}.ampstart-navbar-trigger:focus{outline:0}.ampstart-nav a,.ampstart-navbar-trigger,.ampstart-sidebar-faq a{cursor:pointer;text-decoration:none}.ampstart-navbar-trigger{line-height:3.5rem;font-size:2rem}.ampstart-nav-dropdown{min-width:200px}.ampstart-nav-dropdown amp-accordion header{background-color:#fff;border:0}.ampstart-nav-dropdown .ampstart-dropdown-item,.ampstart-nav-dropdown .ampstart-dropdown>section>header{background-color:transparent;color:#fff}.ampstart-nav-dropdown .ampstart-dropdown-item{color:#fff}.ampstart-sidebar{background-image:url(/sw-test/img/nav_bg.jpg);background-size:cover;font-size:30px;color:#fff;width:35%}.ampstart-sidebar .ampstart-icon{fill:#fff}.ampstart-sidebar-header{line-height:3.5rem;min-height:3.5rem}.ampstart-sidebar .ampstart-dropdown header,.ampstart-sidebar .ampstart-dropdown-item,.ampstart-sidebar .ampstart-faq-item,.ampstart-sidebar .ampstart-nav-item,.ampstart-sidebar .ampstart-social-follow{margin:0 0 2rem}.ampstart-sidebar .ampstart-nav-dropdown{margin:0}.ampstart-sidebar .ampstart-navbar-trigger{line-height:inherit}.ampstart-icon{fill:#003f93}.ampstart-instagram{fill:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}ul{list-style:none;padding-left:0}.breadcrumb>li{display:inline-block;list-style:none;font-weight:700}.breadcrumb>li:after{content:'>';padding:0 .75rem}.breadcrumb>li:last-child:after{content:''}.breadcrumb>li>button{display:inline-block}footer>h2>span{font-size:1.4rem;font-weight:500}footer h3{font-size:1.12rem}footer{font-size:.88rem}footer>ul{width:100%}.footer-left{color:#444;line-height:24px}.disc{list-style-type:disc;margin-left:1.5rem;text-align:left;font-size:.8rem}.disc>li{padding:.3rem 0}footer>p{font-size:14px;letter-spacing:1.5pt;color:#444}@media(max-width:40.06rem){.ampstart-sidebar{width:100%}}section>h2{font-size:1.5rem;line-height:2rem;padding-top:1rem;margin-bottom:1rem;display:block;font-weight:700}section>hr{width:40px;margin-bottom:1.2rem;margin-left:0;text-align:left}section>p{font-size:1rem;line-height:2rem}section li{overflow:hidden;width:45%;margin-bottom:1rem;position:relative}section a>h3{font-size:3.8vw;line-height:1.2vw;font-weight:600;text-decoration:underline;bottom:0;max-width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}section a>h3,section a>p{position:absolute;right:5px;z-index:2;color:#fff}section a>p{bottom:1vw;font-size:0.4vw}@media(min-width:768px){section a h3{font-size:2rem;line-height:5rem}section a>p{font-size:1.5rem;bottom:4rem}}@media(min-width:62rem){section a h3,section a>p{font-size:2rem}section a>p{bottom:6rem}}section>a>svg{padding-top:2px;float:left}section>a>svg+div{padding-left:3rem;margin-bottom:2.4rem}section>a>svg+div>h3{font-weight:600;font-size:.87rem;line-height:1.12rem;text-decoration:none}section>a>svg+div>p{letter-spacing:1px;text-decoration:none}#sponsors>li{width:33.4%}@media(min-width:768px){#sponsors>li{width:20.1%}}.scrollToTop{border:0;position:fixed;bottom:15px;right:15px;width:50px;height:50px;background-color:#333;z-index:2}.top-header{background:hsla(0,0%,100%,.5);border-style:solid;border-color:#fff;color:#000;top:12vw;left:18vw;width:66vw;padding:1vw;text-align:left;font-family:Kosugi Maru,sans-serif}.top-title{font-size:6.4vw;line-height:7vw}.top-credit{font-size:3.8vw;line-height:3.8vw}.top-date{font-size:4.5vw;line-height:5vw}.dock{top:45vw;left:16vw;width:70vw;background:linear-gradient(transparent,rgba(0,0,0,.5));background:-moz-linear-gradient();background:-webkit-linear-gradient(t)}.dock-item{width:15%;height:12vw;text-decoration:none}.dock-item>h2{text-align:center;color:#fff;font-size:1.3vw;line-height:2vw;font-weight:600;padding-bottom:1vw;margin:auto}.dock-item>amp-img{margin:0 2vw}.dock-item>amp-img:active{filter:brightness(0.5)}@media(orientation:portrait){.top-header{top:26vw;left:18vw;width:64vw;height:26vw}.top-title{font-size:7.5vw;line-height:11vw}.top-credit{letter-spacing:.1vw}.top-credit,.top-date{font-size:4vw;line-height:6vw}.dock{top:74vw;left:16vw;width:69vw;padding:2vw;font-size:1rem;background:linear-gradient(to bottom,transparent,rgba(0,0,0,.5) 40%,transparent 60%,rgba(0,0,0,.5));background:-moz-linear-gradient(top,transparent,rgba(0,0,0,.5) 40%,transparent 60%,rgba(0,0,0,.5));background:-webkit-linear-gradient(top,transparent,rgba(0,0,0,.5) 40%,transparent 60%,rgba(0,0,0,.5))}.dock-item{width:33%;height:25vw}.dock-item>h2{margin:auto;padding-bottom:1vw;font-size:2.3vw;line-height:3vw}}@media(orientation:portrait) and (min-width:720px){.dock{top:86vw;left:16vw;width:69vw;padding:1vw;font-size:1rem;z-index:3}.dock-item{height:20vw}.dock-item>amp-img{margin:0 5vw}.dock-item>h2{font-size:2.3vw;line-height:2.7vw;padding-bottom:2vw}}@media(min-width:768px){.photo-article{padding-right:2rem;padding-left:2rem}}button{width:100%;height:100%;margin:0;padding:0;background:0;border:0;text-align:inherit}i button{overflow:hidden;width:48%;margin:1%;position:relative}section button>amp-img{background-color:#333;filter:brightness(0.7);transition:transform .4s}section button>amp-img:hover{transform:scale(1.2);-webkit-transform:scale(1.2);opacity:.8;transition:transform .4s}.proj-container{right:2vw;left:2vw;bottom:2vw;z-index:2;color:#fff;text-align:right;font-weight:600}.proj-desc{height:3.5vw;margin-bottom:.5vw;font-weight:500}.proj-name{height:6vw;}.proj-name>div{text-decoration:underline}@media(min-width:768px){.proj-desc{height:2vw}.proj-name{height:4vw}}@media(min-width:1024px){.proj-desc{height:1.5vw}.proj-name{height:3vw}}amp-lightbox{background:rgba(0,0,0,.8)}amp-lightbox amp-img,amp-lightbox article{width:60%;background:#fff;margin:auto}@media(orientation:portrait){amp-lightbox amp-img,amp-lightbox article{width:100%}amp-lightbox .close{background:rgba(0,0,0,.8)}}amp-lightbox article{padding:.5rem 1rem;text-align:left}amp-lightbox hr{margin:0;text-align:left;background:#000;width:4.5rem}amp-lightbox p{text-indent:1rem}amp-lightbox h1{font-size:2rem}amp-lightbox h2{font-size:1.2rem}amp-lightbox h3{font-size:1.1rem}.close{position:fixed;right:1rem;top:0;width:10vw;height:10vw;color:#fff;text-align:center;font-size:9vw;z-index:3}.lightbox-nav{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;width:100%;font-size:1.5rem;margin-bottom:2rem}.lightbox-nav button{padding:1rem 0}.notarget{color:#aaa}@font-face{font-family:Kosugi Maru;src:local('Kosugi Maru'),local('KosugiMaru-Regular'),url('fonts/kosugimaru-regular.woff2') format('woff2'),url('./fonts/kosugimaru-regular.woff') format('woff'),url('./fonts/kosugimaru-regular.ttf') format('truetype'),url('./fonts/kosugimaru-regular.eot') format('embedded-opentype');font-weight:400;font-style:normal;font-display:swap}</style>
+</head>
+<body  id="top"><!-- Google Tag Manager -->
+<amp-install-serviceworker src="/sw-test/sw.js" layout="nodisplay" data-iframe-src="https://henry-weyl.github.io/sw-test/sw.html"></amp-install-serviceworker>
+  <!-- Start Fullpage Hero -->
+<figure class="m0 relative">
+
+    <amp-img width=100vw height=178vw alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="/sw-test/img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
+    <amp-img width="2560" height="1920" alt="医へのいざないヘッダー画像" layout="responsive" src="/sw-test/img/header/header2-4x3-2x-50-trimmed.jpg" media="(orientation:landscape)"></amp-img>
+    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+        <header class="top-header absolute p1">
+            <div class="top-credit  block">東京大学医学部五月祭企画</div>
+            <h1 class="top-title block "><div>Offline</div></h1>
+            <div class="top-date block">2019.5.18<small>(土)-</small>19<small>(日)</small></div>
+        </header>
+        <nav class="dock flex flex-wrap items-start justify-around absolute">
+                <a class="dock-item flex flex-column items-stretch" href="/sw-test/#about">
+                  <amp-img src="/sw-test/img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>医へのいざない<br>とは</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/sw-test/#contents">
+                  <amp-img src="/sw-test/img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>企画紹介</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/contents">
+                  <amp-img src="/sw-test/img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>おすすめ企画</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/timetable">
+                  <amp-img src="/sw-test/img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>タイムテーブル<br>整理券</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/sw-test/#sns">
+                  <amp-img src="/sw-test/img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>SNS</h2>
+                </a>
+                <a class="dock-item flex flex-column items-stretch" href="/access">
+                  <amp-img src="/sw-test/img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                  <h2>アクセス</h2>
+                </a>
+              </nav>
+    </figcaption>
+</figure>
+
+
+
+  <!-- Start Footer -->
+  <footer class="ampstart-footer flex flex-column items-center px2 ">
+    <h2 class="line-height-3 mb2 center"><span class="inline-block">東京大学医学部五月祭企画</span> <span class="footer-h2 inline-block">医へのいざない</span></h2>
+    <ul class="flex flex-wrap sm-col-11 lg-col-11 items-start center mx2">
+      <li class="md-pt0 md-px0 col-12 sm-col-4 lg-col-4 footer-left">
+          <h3>日時</h3>
+          <ul class="md-mx0">
+              <li>2019年5月18日-2019年5月19日</li>
+              <li>東京大学本郷キャンパス</li>
+          </ul>
+          <h3 class="pt1 h7">アクセス</h3>
+          <ul class="md-mx0">
+              <li>本郷三丁目駅から徒歩10分</li>
+              <li>東大前駅から徒歩10分</li>
+              <li>(地図は<a href="#">こちら</a>)</li>
+          </ul>
+          <h3 class="pt1">お問い合わせ</h3>
+          <ul class="pb3 md-mx0">
+              <li><a href="mailto:utmed2018mayfes@gmail.com">utmed2018mayfes@gmail.com</a></li>
+          </ul>
+      </li>
+      <li class ="md-pt0 md-px4 col-12 sm-col-8 lg-col-8">
+      <h3 class="line-height-2 center pb1">企画一覧</h3>
+        <ul class="flex flex-wrap xs-col-12 center">
+        <li class ="md-pt0 col-0 xs-col-2 lg-col-2"></li>
+        <li class="md-pt0 col-6 xs-col-5 lg-col-5 left-align">
+            <ul class="disc">
+            <li><button on="tap:vr">VR医学体験</button></li>
+            <li><button on="tap:quiz">クイズラリー</button></li>
+            <li><button on="tap:emergency">救命救急体験</button></li>
+            <li><button on="tap:bp">血圧測定体験</button></li>
+            <li><button on="tap:surgery">手術体験</button></li>
+            <li><button on="tap:organ">臓器当て</button></li>
+            <li><button on="tap:beat">鼓動を感じる</button></li>
+            <li><button on="tap:artery">動脈観察</button></li>
+            <li><button on="tap:coat">白衣体験</button></li>
+            <li><button on="tap:sketch">スケッチ企画</button></li>
+            <li><button on="tap:muscle">筋肉体操</button></li>
+            <li><button on="tap:drama">医学ドラマの世界</button></li>
+            </ul>
+        </li>
+        <li class="md-pt0 col-6 xs-col-5 lg-col-5 left-align">
+          <ul class="disc">
+          <li><button on="tap:history">医学部史</button></li>
+          <li><button on="tap:bookshelf">医学部生の本棚</button></li>
+          <li><button on="tap:narrative">ことばで感じる医療</button></li>
+          <li><button on="tap:research">最先端研究</button></li>
+          <li><button on="tap:disaster">災害医療</button></li>
+          <li><button on="tap:toxin">毒物</button></li>
+          <li><button on="tap:cafe">カフェ</button></li>
+          <li><button on="tap:goods">グッズ</button></li>
+          <li><button on="tap:lecture">講演会</button></li>
+          <li><button on="tap:piano">鉄門ピアノの会</button></li>
+          <li><button on="tap:chamber">鉄門室内楽の会</button></li>
+          <li><button on="tap:art">踏朱会</button></li>
+          </ul>
+         </li>
+      </ul>
+      </li>
+    </ul>
+
+<ul class="ampstart-social-follow list-reset flex justify-center items-center flex-wrap m0 mb4">
+    <li>
+        <a href="https://twitter.com/utmedmayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="東大医学部五月祭企画公式Twitterアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/utmed.mayfes" rel="noopener" target="_blank" class="inline-block p1" aria-label="東大医学部五月祭企画公式Facebookアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+    </li>
+    <li>
+      <a class="inline-block p1" aria-label="東大医学部五月祭企画公式YouTubeチャネルへのリンク" href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA" rel="noopener" target="_blank" aria-label="東大医学部五月祭企画公式YouTubeチャネルへのリンク"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17" width="24" height="24"><title>YouTube</title><path class="ampstart-icon ampstart-icon-youtube" fill-rule="evenodd" d="M 16.837 8.242 v 0.126 l -6.742 3.396 V 4.719 l 6.742 3.396 v 0.127 Z m 8.167 -4.707 c 0.05 0.399 0.244 2.102 0.26 3.805 v 0.126 c -0.018 -1.946 -0.27 -3.893 -0.27 -3.893 s -0.245 -1.651 -1.003 -2.384 c -0.96 -0.961 -2.04 -0.961 -2.528 -1.02 C 17.94 -0.075 12.64 0.017 12.64 0.017 S 7.348 -0.075 3.817 0.17 C 3.32 0.228 2.25 0.228 1.29 1.189 C 0.531 1.913 0.287 3.573 0.287 3.573 S 0.05 5.52 0 7.466 v 1.602 c 0.05 1.946 0.287 3.893 0.287 3.893 s 0.244 1.66 1.002 2.384 c 0.96 0.961 2.031 0.961 2.528 1.02 c 3.531 0.244 8.823 0.202 8.823 0.202 s 5.3 0.042 8.823 -0.202 c 0.488 -0.059 1.567 -0.059 2.528 -1.02 c 0.758 -0.733 1.003 -2.384 1.003 -2.384 s 0.252 -1.947 0.27 -3.893 v 0.126 c -0.018 1.946 -0.27 3.893 -0.27 3.893 s -0.061 0.404 -0.211 0.9 c 0.157 -0.508 0.219 -0.925 0.219 -0.925 s 0.253 -1.947 0.27 -3.893 V 7.34 a 38.672 38.672 0 0 0 -0.268 -3.805 Z" ></path></svg></a>
+    </li>
+    <li>
+        <a class="inline-block p1" aria-label="東大医学部五月祭企画公式Instagramアカウントへのリンク" href="https://www.instagram.com/utmed_mayfes/" rel="noopener" target="_blank" aria-label="東大医学部五月祭企画公式Instagramアカウントへのリンク"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" width="24" height="24"><title>instagram</title><path class="ampstart-icon ampstart-icon-instagram" d="M 27.2 6.1 c -5.1 0 -5.8 0 -7.8 0.1 s -3.4 0.4 -4.6 0.9 c -1.2 0.5 -2.3 1.1 -3.3 2.2 c -1.1 1 -1.7 2.1 -2.2 3.3 c -0.5 1.2 -0.8 2.6 -0.9 4.6 c -0.1 2 -0.1 2.7 -0.1 7.8 s 0 5.8 0.1 7.8 s 0.4 3.4 0.9 4.6 c 0.5 1.2 1.1 2.3 2.2 3.3 c 1 1.1 2.1 1.7 3.3 2.2 c 1.2 0.5 2.6 0.8 4.6 0.9 c 2 0.1 2.7 0.1 7.8 0.1 s 5.8 0 7.8 -0.1 s 3.4 -0.4 4.6 -0.9 c 1.2 -0.5 2.3 -1.1 3.3 -2.2 c 1.1 -1 1.7 -2.1 2.2 -3.3 c 0.5 -1.2 0.8 -2.6 0.9 -4.6 c 0.1 -2 0.1 -2.7 0.1 -7.8 s 0 -5.8 -0.1 -7.8 s -0.4 -3.4 -0.9 -4.6 c -0.5 -1.2 -1.1 -2.3 -2.2 -3.3 c -1 -1.1 -2.1 -1.7 -3.3 -2.2 c -1.2 -0.5 -2.6 -0.8 -4.6 -0.9 c -2 -0.1 -2.7 -0.1 -7.8 -0.1 Z m 0 3.4 c 5 0 5.6 0 7.6 0.1 c 1.9 0.1 2.9 0.4 3.5 0.7 c 0.9 0.3 1.6 0.7 2.2 1.4 c 0.7 0.6 1.1 1.3 1.4 2.2 c 0.3 0.6 0.6 1.6 0.7 3.5 c 0.1 2 0.1 2.6 0.1 7.6 s 0 5.6 -0.1 7.6 c -0.1 1.9 -0.4 2.9 -0.7 3.5 c -0.3 0.9 -0.7 1.6 -1.4 2.2 c -0.7 0.7 -1.3 1.1 -2.2 1.4 c -0.6 0.3 -1.7 0.6 -3.5 0.7 c -2 0.1 -2.6 0.1 -7.6 0.1 c -5.1 0 -5.7 0 -7.7 -0.1 c -1.8 -0.1 -2.9 -0.4 -3.5 -0.7 c -0.9 -0.3 -1.5 -0.7 -2.2 -1.4 c -0.7 -0.7 -1.1 -1.3 -1.4 -2.2 c -0.3 -0.6 -0.6 -1.7 -0.7 -3.5 c 0 -2 -0.1 -2.6 -0.1 -7.6 c 0 -5.1 0.1 -5.7 0.1 -7.7 c 0.1 -1.8 0.4 -2.8 0.7 -3.5 c 0.3 -0.9 0.7 -1.5 1.4 -2.2 c 0.7 -0.6 1.3 -1.1 2.2 -1.4 c 0.6 -0.3 1.6 -0.6 3.5 -0.7 h 7.7 Z m 0 5.8 c -5.4 0 -9.7 4.3 -9.7 9.7 c 0 5.4 4.3 9.7 9.7 9.7 c 5.4 0 9.7 -4.3 9.7 -9.7 c 0 -5.4 -4.3 -9.7 -9.7 -9.7 Z m 0 16 c -3.5 0 -6.3 -2.8 -6.3 -6.3 s 2.8 -6.3 6.3 -6.3 s 6.3 2.8 6.3 6.3 s -2.8 6.3 -6.3 6.3 Z m 12.4 -16.4 c 0 1.3 -1.1 2.3 -2.3 2.3 c -1.3 0 -2.3 -1 -2.3 -2.3 c 0 -1.2 1 -2.3 2.3 -2.3 c 1.2 0 2.3 1.1 2.3 2.3 Z" ></path></svg></a>    </li>
+    <li>
+        <a href="mailto:utmed2018mayfes@gmail.com" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式e-mailアドレスへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
+    </li>
+</ul>
+    <p class="center">
+      © 2019 東京大学医学部五月祭実行委員, ALL RIGHTS RESERVED
+    </p>
+  </footer>
+  <!-- End Footer -->
+  <amp-lightbox id="vr" layout="nodisplay" scrollable="">
+    <amp-img src="/sw-test/img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
+    <article>
+      <button class="close" aria-label="close vr" on="tap:vr.close">✕</button>
+      <h1>VR医学体験</h1>
+      <hr /><br />
+      <h2>VRとは?</h2>
+      <p>皆さん、VRというものを体験したことはあるでしょうか? VRはVirtual Reality(仮想現実)の略で，コンピュータが作った仮想空間を、まるで自分が本当にそこにいるかのように体験できる技術のことを指しています。近年急速に発達してきた分野で、ビジネス・医療・エンターテインメントなどの幅広い分野で活用されています。皆さんも街中のVR体験コーナーに行列が出来ているのを見たことがあるのではないでしょうか。</p>
+      <h2>医療でのVR</h2>
+      <h3>Heart explorer(富士通)</h3>
+      <p>高度なシミュレーション技術によって作成された心臓の3Dモデルを用いて、心臓の構造や疾患状態を様々な角度から見ることができます。なかなか実際に触れることの出来ない心臓ですが、VRの技術を活用することによって、医療従事者が早く正確に知識を習得することができます。</p>
+      <h3>認知症・統合失調症体験VR(シルバーウッド・ヤンセンファーマ)</h3>
+      <p>皆さんこれらの病気の名前を耳にしたことはあると思いますが，具体的な症状をご存知でしょうか? 恐らく、ほとんどの人が記憶障害、あるいは妄想や幻覚以外の症状を知らないと思います。ですが、自分の友人や家族がこれらの病気になってしまった際に、早期発見や病気の進行に大きく関わるという点で、様々な症状を正しく理解することは非常に大切なことです。これらのVRはそのようなコンセプトのもとで、医療従事者以外の方にも具体的な症状を理解してもらえるように作られました。</p>
+      <p>いずれのVRも非常にリアリティがあり、VRを体験してみたい方や、医療の世界をのぞいてみたいという方にとって、とても貴重な経験となることは間違いありません。それでは皆様のご来場を心よりお待ちしております。</p>
+      <ul class="lightbox-nav">
+      <li><button class="notarget" aria-label="before vr" on="tap:vr.close">&lt; 前の企画</button></li>
+      <li><button aria-label="close vr" on="tap:vr.close">✕</button></li>
+      <li><button aria-label="next vr" on="tap:vr.close,quiz">次の企画 &gt;</button></li>
+      </ul>
+    </article>
+  </amp-lightbox>
+  <amp-lightbox id="quiz" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close quiz" on="tap:quiz.close">✕</button>
+    <h1>クイズラリー</h1>
+    <hr /><br />
+    <h2>クイズラリーとは?</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before quiz" on="tap:quiz.close,vr">&lt; 前の企画</button></li>
+    <li><button aria-label="close quiz" on="tap:quiz.close">✕</button></li>
+    <li><button class="" aria-label="next quiz" on="tap:quiz.close,emergency">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="emergency" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
+    <h1>救急救命体験</h1>
+    <hr /><br />
+    <h2>ある救命実習からの脱出</h2>
+    <h3>ストーリー</h3>
+    <p>「あなたは、医学部生の一員としてこれから救急救命の実習に臨んでもらう。実習を行う教授は非常に厳しいことで有名であった。ミッションは、救急救命の実習をチーム全員で合格すること。TAが教えてくれる合格への手がかりを元にしながら、全てのテストを通過し、実習に合格することはできるのか―――」
+    </p>
+    <p>これは、あなたが実際に謎を解きながら救急救命を行い、実習の合格を目指すゲームイベントです。</p>
+    <h3>「救急救命×リアル脱出ゲーム」!?</h3>
+    <p>この文章を読んでいる皆さんの多くは、保健体育の授業や運転免許の学科で救命講習を受けたことがあるでしょう。胸骨圧迫、人工呼吸、AEDの使用等、これらの講習は教育的ではあるものの、臨場感に欠けていると感じた人も多いのではないでしょうか。筆者もその一人でした。「一般向けの救命講習を、臨場感を出して行うことはできないのか?」このような思いから本企画は始まりました。近年若者の間で大流行しているリアル脱出ゲームと救命講習を組み合わせることで、緊張感の中、救命に必要な手技をマスターできるプログラムを作ることを目指しました。制作に携わったメンバーはリアル脱出ゲームが好きな人ばかりです。諸所に工夫が凝らしてあるので、ぜひ存分に楽しんでいってください!</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before emergency" on="tap:emergency.close,quiz">&lt; 前の企画</button></li>
+    <li><button aria-label="close emergency" on="tap:emergency.close">✕</button></li>
+    <li><button class="" aria-label="next emergency" on="tap:emergency.close,bp">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="bp" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close bp" on="tap:bp.close">✕</button>
+    <h1>血圧測定</h1>
+    <hr /><br />
+    <h2>血圧を"自分で"測ってみよう!</h2>
+    <h3>血圧ってなんだろう?</h3>
+    <p>みなさんは血圧と聞いて何を思い浮かべますか?「上の血圧と下の血圧の2つがある」「高血圧だと病気のリスクが高い」「測る機械が腕を締め付けて痛い」といったところでしょうか。では「上と下の血圧ってなんのことだろう?」「どうして高血圧だと病気になりやすいんだろう?」「測定する機械はなぜ腕を締め付けるんだろう?」と考えたことはありますか?</p>
+    <p>この企画では、そのような血圧に関する疑問に私たち医学部生が答えるとともに、みなさんご自身で血圧を測っていただきます。この冊子ではまず、血圧の上と下とは何かについてのみ簡単に説明しますね。</p>
+    <h3>血圧の「上」と「下」とは</h3>
+    <p>血圧を測定すると、120/80(上が120、下が80)などと上下2つの値が返ってきます。この上の値(ここでは120)は心臓が収縮して血液を送り出す時の血圧の値です。下の値(80)は心臓が拡張して血液を吸い込む時の値です。すなわち、心臓がポンプのように、血液を送り出し吸い込む事を繰り返していて、血管にかかる圧力が絶えず変動しているので、上下2つの値で血圧を表しているというわけですね。</p>
+    <h3>みなさんにも医師になってもらいます!</h3>
+    <p>本企画ではさらに、みなさんに血圧を測る側の立場にもなっていただきます。「血圧って機械で測るんじゃないの?」と思った方、実は聴診器といくつかの道具を使うだけで、電子機器を用いずに、上と下の血圧を両方測ることができるんです! この仕組みはとても良く出来ていて、筆者自身知ったときに感動しました。ですから、気になった方はぜひ本企画にいらしてください。</p>
+    <p>血圧を測る仕組みを理解して、血圧を測定することができるようになったあなたは、医師になった気分になること間違いなし!</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before bp" on="tap:bp.close,emergency">&lt; 前の企画</button></li>
+    <li><button aria-label="close bp" on="tap:bp.close">✕</button></li>
+    <li><button class="" aria-label="next bp" on="tap:bp.close,surgery">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="surgery" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close surgery" on="tap:surgery.close">✕</button>
+    <h1>手術体験</h1>
+    <hr /><br />
+    <h2>1. 手術って?</h2>
+    <p>手術、それは、自分には関係ないと思っていても意外に身近なものです。「おばあちゃんが膝の手術をした」「友達が入院し、手術を受けていた」など、手術について考えさせられた機会を持つ方は多いのではないでしょうか。一生、手術と無関係に暮らせるのならそれが一番ですが、もし、自分が手術でしか治らない重い病気になってしまったら? 手術は、生死を分ける人生の一大イベントとなるのです。そんな手術を仕事とする外科医に対して、尊敬の念を抱く人も少なくないでしょう。
+    <h2>2. 開腹手術体験</h2>
+    <p>外科医になって最初に訓練するのが「糸結び」です。手術で余った糸をもらいうけ、白衣の胸ポケットに忍ばせ、少し時間が空いた時に、白衣のボタンや机、いすの足を利用して、糸をより糸のように交互に結んでいく練習をします。手術を構成する手順の一つにすぎない糸結びですが、手術の時以外に練習できる数少ない技術の一つなのです。</p>
+    <p>開腹手術体験では、そんな糸の結び方を始めとして，手術中に外科医が実際に行っていることを，手術で使う器具や練習キットを使って体験することが出来ます。糸と針の縫合・結び目の結紮など、医学生が優しく教えます!</p>
+    <h2>3. 腹腔鏡手術体験</h2>
+    <p>腹腔鏡手術体験では最先端の技術を使った腹腔鏡を、実際に操作して動かしてみることが出来ます。腹腔鏡とは、体表から腹腔、つまりおなかの中の空間に挿入して、内部を見る器具のことです。この腹腔鏡以外にも，様々な器具をおなかに開けた小さな穴に挿入することにより、メスで身体を切り開くことなく，体の内部を見て様々な処置を行えます。腹腔鏡を用いた手術のことを腹腔鏡下手術といい、メスを使った開腹手術に比べ、患者さんの体への負担が小さいと言われています。あなたも外科医の才能に目覚めるかも? 是非お気軽にお越し下さい!</p>
+    <p>なお今年度から開腹手術体験・腹腔鏡手術体験には整理券をお持ちの方のみご入場いただけます。配布詳細につきましてはweb・冊子などをご確認ください。</p>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before surgery" on="tap:surgery.close,bp">&lt; 前の企画</button></li>
+    <li><button aria-label="close surgery" on="tap:surgery.close">✕</button></li>
+    <li><button class="" aria-label="next surgery" on="tap:surgery.close,organ">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="organ" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close organ" on="tap:organ.close">✕</button>
+    <h1>臓器パズル</h1>
+    <hr /><br />
+    <h2>自分の体の中のこと、知っていますか?</h2>
+    <h3>実は知らない体の内部</h3>
+    <p>皆さん小学校や中学校の理科の授業でヒトの体について学んだと思います。しかしそれらの授業で学ぶのはヒトの体のほんの一部だけです。実際「鼻の内部はどうなっているのか?」、「肋骨は何本あるのか?」、「盲腸はどの辺にあるのか?」などの質問に答えられるでしょうか? 大学で解剖学を学んでいない一般の方で答えられる人は少ないと考えられます。とはいえ自分の体の中のことです。ある程度は知っておきたいと思わないでしょうか。</p>
+    <h3>企画内容について</h3>
+    <p>そこでこの企画では、立体人体模型パズルを解いていただき、その後に医学部生がわかりやすく解説いたします。体の中なんて何も知らないという人から、ある程度知っているという人、はたまた人体模型パズルを解いてみたいという人まで、全ての人に新しい発見があるような解説を用意しております。また実際に立体人体模型パズルを組み立てることで体の内部のイメージができあがります。自分の体の中について、この機会に詳しくなってみてはいかがでしょうか?</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before organ" on="tap:organ.close,surgery">&lt; 前の企画</button></li>
+    <li><button aria-label="close organ" on="tap:organ.close">✕</button></li>
+    <li><button class="" aria-label="next organ" on="tap:organ.close,beat">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="beat" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close beat" on="tap:beat.close">✕</button>
+    <h1>鼓動を感じる</h1>
+    <hr /><br />
+    <h3>えっ?鼓動を、かんじる?</h3>
+    <p>「鼓動」と聞いて、何を連想しますか? それって心臓の動きのことだよね、何を今更。そう言われてしまえばそれまでですが、一度立ち止まって考えて欲しいのです。「最後に、自分の鼓動を感じたのはいつですか?」この企画では、鼓動を手元の振動スピーカーを通して感じてもらいます。鼓動とは全身に血液を送り出している心臓の動きです。自らの手で鼓動に触れることで、今を生きている身体を実感してみてはいかがでしょうか。</p>
+    <h3>企画内容について</h3>
+    <p>本企画は、ワークショップ「心臓ピクニック」を催している坂倉先生(東京都市大学)らのグループに全面的に協力していただき実現しました。胸に当てた聴診器から送られた刺激は手元にある振動スピーカーに振動として伝わります。手元で鼓動をリアルタイムに感じることができるということです。30分ほどの時間の中で、安静時の鼓動を感じてもらった後に少し体を動かし、変化する鼓動も感じてもらいます。せっかくの医学部企画ですので、手術体験などを通して非日常を楽しむのもいいですが、普段から当然のように動いている「心臓」を改めて感じてみるのも、わるくない?</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before beat" on="tap:beat.close,organ">&lt; 前の企画</button></li>
+    <li><button aria-label="close beat" on="tap:beat.close">✕</button></li>
+    <li><button class="" aria-label="next beat" on="tap:beat.close,artery">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="artery" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close artery" on="tap:artery.close">✕</button>
+    <h1>動脈観察</h1>
+    <hr /><br />
+    <h2>医療におけるエコー</h2>
+    <p>近年、看護ケアを行う際のアセスメントや、看護技術の評価に超音波診断装置（エコー）が利用される場面が増えてきています。これまで視診や聴診、打診などにより身体内部の様子を推定しながらアセスメントを実施してきましたが、これに加えて直接体内を可視化するエコー検査を実施することで客観的かつ視覚的な情報を付加し、より詳細かつ正確な情報を得ることができるようになりました。このような進歩は、超音波画像の質が大幅に向上したこと、機器の軽量化が進んだことなどの技術革新によります。さらに、これを利用した看護領域における研究も進展しており、褥瘡のみならず、嚥下観察のための頸部エコー、便秘アセスメントのための大腸エコー、尿量計測のための膀胱エコーなど、看護へのエコーの適応がますます進んできています。エコーには、Bモード画像により組織内部を観察する方法と、大きさや血流の速度、組織の硬さなどを定量的に計測する方法の2通りの利用があります</p>
+    <h3>企画内容について</h3>
+    <p>この企画では、実際に自分の腕にエコーを当ててもらい、動脈の血流を観察できます。エコーでは、超音波（人が聞こえる音の周波数より高い周波数の音）の特性を利用して、組織内部を抽出できます。血管内の血液などの液体は、音の反射がないため、エコー画像は真っ黒になります。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before atery" on="tap:artery.close,beat">&lt; 前の企画</button></li>
+    <li><button aria-label="close artery" on="tap:artery.close">✕</button></li>
+    <li><button class="" aria-label="next artery" on="tap:artery.close,coat">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="coat" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close coat" on="tap:coat.close">✕</button>
+    <h1>白衣体験</h1>
+    <hr /><br />
+    <h2>あなたも医師になりきり体験</h2>
+    <p>白衣と聞いてみなさんは何を想像するでしょうか? おそらくほとんどの人が映画やドラマなどで見かける、丈が長くて白いコートのようなものを思い浮かべるのではないでしょうか。研究者や医師が着ているのをよく見かける例のアレですね。実は一口に白衣といってもいくつか種類があり、医療現場においてもその用途や素材、機能に合わせて着き分けられているのです。本企画「白衣体験」では、来場者の皆さんのために数種類の白衣をご用意しました。来場者はお好きな白衣を着て自由に記念写真を撮ってもらうことができます! 白衣を着ることで、あなたも医師になりきって見ませんか? 今年もナガイレーベン株式会社様のご協力の下、三種類の白衣を用意しました。
+    <strong>なお、撮影は来場者各自のカメラで行なってもらう予定ですので、カメラやスマートフォンなどの撮影機器をお忘れなく!</strong>
+    </p>
+    <h3>ドクターコート</h3>
+    <p>白衣と聞いてみなさんが真っ先に想像するものですね。診察衣として用いられているので、病院で最も目にする回数が多いと思います。真っ白な白衣は患者さんに接する医師にとって必要不可欠な清潔感を与えてくれます。また、万が一血液や薬品によって汚れてしまっても、真っ白な白衣ならその汚れにいち早く気付くことができ感染防止にもつながります。</p>
+    <h3>スクラブ</h3>
+    <p>スクラブは半袖で首元がVネックになっている白衣です。その名前は、「ゴシゴシ洗う」という意味の英単語である「Scrub」を語源としていて、頑丈な素材でできているため容易に洗濯が可能です。また軽さや動きやすさも兼ねそろえています。</p>
+    <h3>手術用ガウン</h3>
+    <h2>参考文献</h2>
+    <p>手術の際に手術現場の清潔な環境を保ち、医師を血液・汚染などから保護するために用いられます。術場で長時間赤色の血液を見続ける医師の目を気遣ってか、赤の補色である緑系統のものが多くなっています。</p>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before coat" on="tap:coat.close,artery">&lt; 前の企画</button></li>
+    <li><button aria-label="close coat" on="tap:coat.close">✕</button></li>
+    <li><button class="" aria-label="next coat" on="tap:coat.close,sketch">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="sketch" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
+    <h1>医学部生のスケッチ</h1>
+    <hr /><br />
+    <h2>東大医学部生の「絵心」や如何に</h2>
+    <h3>医学部に、まるで美術の授業のような時間があります</h3>
+    <p>皆さんは、医学部で普段行われる授業についてどのようなイメージをお持ちでしょうか?医学生が避けては通れない試練(?)の一つに、「様々な臓器・身体の部位の一部を顕微鏡で見て、スケッチする」というものがあります(東大医学部では2年生の後半にこの授業が実施されます)。顕微鏡を覗きながら見えるものを絵に描くのは、非常に骨の折れる作業なのです。</p>
+    <h3>医学生の描いた渾身の絵を御覧あれ!</h3>
+    <p>この企画は、その医学生が苦労して描いたスケッチを皆さんに手にとって見て頂こうというものです。同じ東大医学部生でもそのスケッチは十人十色。まるで写真かと思うような美しいスケッチもあれば、描いた人の苦労が感じ取れるような、小さなところまで丁寧に描かれたものもあるでしょう。中には抽象画のような、違う意味で芸術的な(?)スケッチもあるかもしれません。そんなスケッチを是非パラパラと眺めて楽しんで頂けると幸いです。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before sketch" on="tap:sketch.close,coat">&lt; 前の企画</button></li>
+    <li><button aria-label="close sketch" on="tap:sketch.close">✕</button></li>
+    <li><button class="" aria-label="next sketch" on="tap:sketch.close,muscle">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="muscle" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close muscle" on="tap:muscle.close">✕</button>
+    <h1>筋肉体操</h1>
+    <hr /><br />
+    <h2>東大医学部生ってどんな体しているの?</h2>
+    <h3>意外に運動好き?</h3>
+    <p>東大医学部生ともなれば、中高大とずっと教科書とにらめっこしながら過ごし、運動なんて全然ダメ、なんて、勝手なイメージを持たれがちですが、その蓋を開けてみれば、100名少々の医学科の中だけでも優に50名以上は運動部(医学部の部活を含む)に属しているんです。授業が終われば数人で連れ立ってジムへ行くという姿も珍しくない。さらに、彼らの多くは大学から運動を始めたわけではなく、中高では運動部の部長であったなんて人たちもざらです。実は、勉学と運動は決して相反するものではないのです。</p>
+    <h3>筋肉から親しむ「解剖学」</h3>
+    <p>解剖学、と聞くと多くの方はカエルの解剖を思い受けべて、気持ち悪いな、よしてくれよ。と敬遠してしまいがち。しかし、解剖学というのは体の成り立ちを詳しく見ることでそのほかのあらゆる医学を学ぶ基礎となる学問。あまり難しい展示で医学から距離を感じてしまうより、東大生医学部生の筋肉を使った世にも奇妙な解剖学講義から医学に親しんでみるのはいかがでしょうか</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before muscle" on="tap:muscle.close,sketch">&lt; 前の企画</button></li>
+    <li><button aria-label="close muscle" on="tap:muscle.close">✕</button></li>
+    <li><button class="" aria-label="next muscle" on="tap:muscle.close,drama">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="drama" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close drama" on="tap:drama.close">✕</button>
+    <h1>医学ドラマの世界</h1>
+    <hr /><br />
+    <h2>医学ドラマの世界に迫る</h2>
+    <h3>あの名シーンを東大医学部生はどう見るのか?</h3>
+    <p>医療ドラマといえば、いつの時代もドラマの花形。江戸時代にタイムスリップした医師の運命の物語「仁」や、"失敗しない"フリーランス女性医師の活躍を描く「ドクターX」などなど。しかし一方で、ドラマや映画の医療シーンには「今、何が起こっているんだろう?」「こんなことって本当にあるのかな」と様々な「?」があふれることもしばしば。「白い巨塔」の総回診のシーンに目を疑った方も少なくないはずです! そこで、東大医学部生が医学知識を総動員し、必要とあらば現役の医師をも訪ねて、あなたの「?」に答えました!</p>
+    <h3>企画内容について</h3>
+    <p>実際にテレビで放映されたシーンを画面に流しつつ、これらのシーンの解説を試みます。身近なお薬の話から現場で実装されている最先端医療の話まで、幅広いテーマについてご紹介できるように、解説するシーンについては厳選しました。また、普段はドラマを見ないという方にも楽しんでいただけるように、そのドラマのあらすじにも多少踏み込みます。この機会に、医学部生が観る医療ドラマの世界の一端をのぞいてみませんか?</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before drama" on="tap:drama.close,muscle">&lt; 前の企画</button></li>
+    <li><button aria-label="close drama" on="tap:drama.close">✕</button></li>
+    <li><button class="" aria-label="next drama" on="tap:drama.close,history">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="history" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close history" on="tap:history.close">✕</button>
+    <h1>医学部史</h1>
+    <hr /><br />
+    <p>みなさんが今訪れている東京大学医学部は、どのような経緯を経て今あるのでしょうか。なぜ「東大医学部付属病院創立160周年」が「東大創立150周年」より早く来るのでしょうか。あるいはなぜ、一昔前まで、「医学部といえば第二外国語はドイツ語でしょ」という流れがあったのでしょうか。</p>
+    <p>東大医学部は、江戸時代の神田・お玉ヶ池種痘所がその始まりと言われています。以来、大学東校、東京医学校、帝国大学医科大学、など名称を様々に変えながら、160年以上の歴史を積み重ねてきました。今回、その歴史の全貌をお見せすることはできませんが、現在のキャンパスに残る様々な「痕跡」をもとに、その歴史を少しだけ覗き見してみようと思います。医学部本館の周りを少し歩くと、東大医学部ひいては日本の医学の歴史を作った偉人の業績をちょっぴり感じられるかもしれません。そんなささやかな楽しみを共有する展示です。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before history" on="tap:history.close,drama">&lt; 前の企画</button></li>
+    <li><button aria-label="close history" on="tap:history.close">✕</button></li>
+    <li><button class="" aria-label="next history" on="tap:history.close,bookshelf">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="bookshelf" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close bookshelf" on="tap:bookshelf.close">✕</button>
+    <h1>医学部生の本棚</h1>
+    <hr /><br />
+    <h2>医学書の事なんか全然好きじゃないんだからねっ!</h2>
+    <h3>医学生の本性を暴こう</h3>
+    <p>皆さんは、難関試験を通った猛者たちが集う医学部医学科にどんな偏見をお持ちですか? 頭でっかちで勉強大好き、三度の飯より学術書、 ラブレターより参考書貰った方が嬉しい等、なんて訳はありません(一部除く)。ふたを開ければ、どこにでもいる学生です。恋バナ大好き、ゲーム大好き、スポーツ大好き、アニメ大好き、SF大好き! いやいや、嘘じゃないですよ</p>
+    <h3>医学生の本棚見て見ない?</h3>
+    <p>じゃあこっちに来て、こいつらが今まで読んできた本を見てみて下さい。もちろん勉強の本も多いですけど、漫画やラノベに小説・雑誌もあります。医学書? ああ、学校指定の本が何冊かはありますね…。うわぁ、こんな本まで…。</p>
+    <p>五月祭のこちら「医学書の事なんて全然好きじゃないんだからねっ!」では、彼らが受験期に“使ってよかった参考書”の傑作選にとどまらず、何となく医学・勉学に関係しそうな本から、ただ趣味全開の本まで幅広く展示しています。</p>
+    <p>参考書が気になる学生も、付き添いのご家族も、理III生の実態が何となく気になるそこのあなたも! 束の間の休憩もかねて、一度ご覧になってはいかがでしょう?</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before bookshelf" on="tap:bookshelf.close,history">&lt; 前の企画</button></li>
+    <li><button aria-label="close bookshelf" on="tap:bookshelf.close">✕</button></li>
+    <li><button class="" aria-label="next bookshelf" on="tap:bookshelf.close,narrative">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="narrative" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
+    <h1>ことばで感じる医療</h1>
+    <hr /><br />
+    <h2>患者さんとの語り</h2>
+    <p>医療の一側面である医療者と患者のコミュニケーションに焦点を当てた企画である。学生が解説・誘導を行いつつ来場者と具体的なケースを想定したロールプレイを行い、医療における適切なコミュニケーションについて来場者に考えてもらうことが目的である。</p>
+    <p>ここで考える適切なコミュニケーションはケースによって異なるが、「患者の心理的不安を取り除く」「患者と医療者が一体となって治療方針を決定する」などを念頭に置いている。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before narrative" on="tap:narrative.close,bookshelf">&lt; 前の企画</button></li>
+    <li><button aria-label="close narrative" on="tap:narrative.close">✕</button></li>
+    <li><button class="" aria-label="next narrative" on="tap:narrative.close,research">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="research" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close research" on="tap:research.close">✕</button>
+    <h1>最先端研究</h1>
+    <hr /><br />
+    <h2>この企画――最先端研究について</h2>
+    <p>この企画では、昨年に東大の研究室から発表された論文をいくつか選び、ポスターの形式で紹介いたします。東大の医学系研究は、本郷キャンパスや東大病院、また各地の附置研究所にあるさまざまな領域の研究室で日々行われています。論文は、その日々の研究の営みが成果となり、世界中で読めるように専門雑誌などに投稿されたものです。今回の五月祭企画では、神経病理学教室、免疫学教室、システムズ薬理学教室、健康環境医工学部門から発表された各論文の紹介ポスターと、東大病院のがん遺伝子パネル検査についての解説ポスターの計5つを用意しました。基礎研究から臨床まで幅広いテーマから選んだつもりです。ここ本郷の医学部建物内で、実際に毎日どのような研究が行われているか、少しだけ覗いてみてください!</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before research" on="tap:research.close,narrative">&lt; 前の企画</button></li>
+    <li><button aria-label="close research" on="tap:research.close">✕</button></li>
+    <li><button class="" aria-label="next research" on="tap:research.close,disaster">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="disaster" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close disaster" on="tap:disaster.close">✕</button>
+    <h1>災害医療</h1>
+    <hr /><br />
+    <h2>災害医療とは</h2>
+    <p>災害医療という言葉をお聞きになったことがある方も多いでしょうか。日本は昨年だけでも北海道や大阪での地震、また西日本での豪雨など、多くの自然災害に見舞われました。こうしたとき災害の被害を受けた地域では、医療の需要が供給を上回り、他の地域からの医療支援が必要な状況となりえます。こうした際に提供される医療を災害医療と呼んでいます。また自然災害だけでなく、大規模な事故やテロは人為の災害です。さらに2020年のオリンピック・パラリンピックのような行事でも、大勢の人が集まるためにこうした災害が起きると大きな被害が懸念され、災害医療の観点からの対策が重要となります。本企画では、そうした災害医療にまつわるトピックをポスター展示にて紹介します。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before disaster" on="tap:disaster.close,research">&lt; 前の企画</button></li>
+    <li><button aria-label="close disaster" on="tap:disaster.close">✕</button></li>
+    <li><button class="" aria-label="next disaster" on="tap:disaster.close,toxin">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="toxin" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
+    <h1>毒物</h1>
+    <hr /><br />
+    <h2>毒物</h2>
+    <p>内容</p>
+    <h2>働く細胞</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before toxin" on="tap:toxin.close,disaster">&lt; 前の企画</button></li>
+    <li><button aria-label="close toxin" on="tap:toxin.close">✕</button></li>
+    <li><button class="" aria-label="next toxin" on="tap:toxin.close,cafe">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="cafe" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
+    <h1>カフェ</h1>
+    <hr /><br />
+    <h2>カフェとは?</h2>
+    <p>内容</p>
+    <h2>医学にちなんだメニュー</h2>
+    <p>赤血球、白血球</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before cafe" on="tap:cafe.close,toxin">&lt; 前の企画</button></li>
+    <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
+    <li><button class="" aria-label="next cafe" on="tap:cafe.close,goods">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="goods" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <h1>グッズ</h1>
+    <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
+    <hr /><br />
+    <h2>東大医学部限定グッズとは?</h2>
+    <p>内容</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
+    <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>
+    <li><button class="" aria-label="next goods" on="tap:goods.close,lecture">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="lecture" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close lecture" on="tap:lecture.close">✕</button>
+    <h1>講演会</h1>
+    <hr /><br />
+    <h2>今年は豪華三本立て</h2>
+    <h3>最近話題の再生医療ってなに?</h3>
+    <p>「再生医療って興味をひかれてるけど、いざ自分で調べてみてもiPSみたいな難しい単語が並んでいてさっぱり」そんな経験ありませんか? そこで本企画では、再生医療のフロンティアで活躍されている先生方をお招きして再生医療の今、そして未来を熱く語っていただきます</p>
+    <h3>お医者さんってどうやって診断してるの?</h3>
+    <p>「朝起きたら突然の発熱と倦怠感。それに少し体の節々も痛みを感じる気がする」この1文からどんな病気を思い浮かべますか? 普段目にするお医者さんの診察の中には、実は予想をはるかに超えて奥深く面白い世界が眠っています。今回は、日ごろから臨床現場で活躍なさっている診断のプロたちをお招きして、臨床推論の世界に皆さんを誘います</p>
+    <h3>医療×芸術!? これからの医療の形とは?</h3>
+    <p>近年医療分野におけるアートの効果が急速に注目を集めており、実際の臨床現場での活用も始まりつつあります。今回は今まさに盛り上がりつつある医療×芸術という新領域を、医療と芸術のそれぞれの分野から講師をお招きしてパネルディスカッション形式で講演を行います。</p>    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before lecture" on="tap:lecture.close,goods">&lt; 前の企画</button></li>
+    <li><button aria-label="close lecture" on="tap:lecture.close">✕</button></li>
+    <li><button class="" aria-label="next lecture" on="tap:lecture.close,piano">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="piano" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
+    <h1>鉄門ピアノの会</h1>
+    <hr /><br />
+    <h2>五月祭演奏会</h2>
+    <h3>鉄門ピアノの会の紹介</h3>
+    <p>本日は東京大学医学部五月祭企画にお越し下さりありがとうございます。鉄門ピアノの会は，現役の医学部医学科の学生とOB，OGからなるピアノサークルで，五月祭演奏会のほか，学会や病院などで演奏機会を頂いております。本サークルの会員はピアノ好きばかりで，演奏される曲もバラエティーに富んでいます。最近は近現代の作曲家の作品に取り組む人もおり，新しい曲に出会える場となっています。</p>
+    <h3>お誘い</h3>
+    <p>さて，今年も恒例の五月祭演奏会を，2日目の5月19日に本館3階の大講堂で開催いたします。医学部企画の展示をご覧になられたついでに，ピアノの美しい音色に浸ってみませんか? 会員一同，ご来場を心からお待ちしております。</p>
+    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before piano" on="tap:piano.close,lecture">&lt; 前の企画</button></li>
+    <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
+    <li><button class="" aria-label="next piano" on="tap:piano.close,chamber">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="chamber" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
+    <h1>鉄門室内楽の会</h1>
+    <hr /><br />
+    <h2>五月祭演奏会</h2>
+    <p>本日は医学部五月祭企画にお越しくださり誠にありがとうございます。鉄門室内楽の会は、東京大学医学部の学生を中心とした音楽好きな学生が総勢60人以上所属し、活動を行っております。演奏する楽器は、弦楽器、管楽器、また合唱など多岐にわたります。オーケストラなど他の音楽系団体にも所属している会員も多く、それぞれのスタイルで音楽を楽しんでいるのが特徴です。年間の演奏活動としては、学園祭(五月祭、駒場祭)の他、学会や病院など外部での演奏も行っており、地域の皆様に好評を頂いております。今年も、下記の日時で五月祭演奏会を開催致します。どうぞお越しください!会員一同お待ちしております。</p>
+    <h3>日程</h3>
+    <strong>1日目 5/18(土)  11:00?14:45(予定)於 医学部本館(2号館) 3階 大講堂</strong>
+    <p>学年も楽器編成もバラエティに富んだメンバーたちの演奏をお楽しみください♪<p>    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before chamber" on="tap:chamber.close,piano">&lt; 前の企画</button></li>
+    <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
+    <li><button class="" aria-label="next chamber" on="tap:chamber.close,art">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+  <amp-lightbox id="art" layout="nodisplay" scrollable="">
+  <amp-img src="/sw-test/img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+  <article>
+    <button class="close" aria-label="close art" on="tap:art.close">✕</button>
+    <h1>踏朱会</h1>
+    <hr /><br />
+    <h2>展覧会</h2>
+    <p>美術と聞くと、皆さんは何を思い浮かべるでしょうか。絵画やデザインなどの作品制作をイメージする方も多いでしょう。もしくは、美術館巡りを真っ先に思い浮かべる方もいるかもしれません。作品制作に関わることは芸術の本質とも言えますが、歴史の風雪に耐えた数々の名画を美術館という非日常な世界で眺めるというのもまた、なんとも乙なものです。</p>
+    <p>さて、私たち美術部 ( 踏朱会 ) の活動としては大きく分 けて、制作と美術館巡りの2つがあります。  まず制作に関しては、油彩・水彩・鉛筆画などの作品 制作を中心に、展覧会へ向けて作品を制作しています。 昨年度は、五月祭、OB 組織である煉瓦の会の展覧会へ の出展、東大病院での煉瓦の会との合同展を行いました。</p>
+    <p>美術館巡りに関しては、部員が行きたいところに 皆で行くといったかたちで、1・2 ヶ月に 1 回ほどの頻 度で行っています。大きな展覧会をメインに、規模が小さくても面白そうなものには行っており、4月始めには新歓として毎年新入生と行っています。直近の大きな展覧会としてはクリムト展などを考えています。</p>
+    <h2>Art Meets Science</h2>
+    <p>今年度は、東京藝術大学との合同プロジェクトArts meet Scienceが東京大学医学部の学生と東京藝術大学の学生で行われており、それの美術部門のポスターをこちら踏朱会のブースでも紹介しようと思います。踏朱会部員の作品に加え、こちらもご覧いただければ幸いです。</p>    <h2>引用文献</h2>
+    <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
+    <ul class="lightbox-nav">
+    <li><button class="" aria-label="before art" on="tap:art.close,chamber">&lt; 前の企画</button></li>
+    <li><button aria-label="close art" on="tap:art.close">✕</button></li>
+    <li><button class="disabled" aria-label="next art" on="tap:art.close,vr">次の企画 &gt;</button></li>
+    </ul>
+  </article>
+  </amp-lightbox>
+</body>
+</html>

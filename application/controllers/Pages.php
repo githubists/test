@@ -4,7 +4,13 @@ class Pages extends CI_Controller {
     if ( !file_exists(APPPATH.'views/pages/'.$page.'.php')) {
       show_404();
     }
-    $data['title']='医へのいざない | 東京大学 第92回 五月祭 医学部企画';
+    $data['prefix']=$this->load->view('templates/prefix','',TRUE);
+    $data['header']=$this->load->view('templates/header','',TRUE);
+    $data['menu']=$this->load->view('templates/menu','',TRUE);
+    $data['navbar']=$this->load->view('templates/navbar','',TRUE);
+    $data['sponsors']=$this->load->view('parts/sponsors','',TRUE);
+    $data['vote']=$this->load->view('parts/vote','',TRUE);
+    $data['footer']=$this->load->view('templates/footer','',TRUE);
     $this->load->view('pages/'.$page, $data);
   }
 }
