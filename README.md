@@ -45,15 +45,16 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 デザインに悩んだ際はA/Bテストが有用である。[Google Optimize](https://optimize.google.com/optimize/home/)を使用する。AMPページの場合は[amp-experiment](https://www.ampproject.org/docs/reference/components/amp-experiment)を使用する。
 
 # CodeIgniterについて
-heroku上である程度作ることにしました。  
-https://gogatsusai.herokuapp.com/01_HTML  
-以外のURLにアクセスするとCodeIgniterに繋がります。  
-CodeIgniterでのURLと呼び出されるコントローラーの関係は以下のようになってます。  
-https://gogatsusai.herokuapp.com/[controller-class]/[controller-method]/[arguments]  
-ローカルで試したいときは  
+heroku上である程度作ることにしました。
+https://gogatsusai.herokuapp.com/01_HTML
+以外のURLにアクセスするとCodeIgniterに繋がります。
+CodeIgniterでのURLと呼び出されるコントローラーの関係は以下のようになってます。
+https://gogatsusai.herokuapp.com/[controller-class]/[controller-method]/[arguments]
+ローカルで試したいときは
 ```shell
 $ php -S localhost:3000 index.php
 ```
-を実行して、ブラウザーで  
-http://localhost:3000/[controller-class]/[controller-method]/[arguments]  
+を実行して、ブラウザーで
+http://localhost:3000/[controller-class]/[controller-method]/[arguments]
 にアクセスすると試すことができます。
+application/views/parts/template.phpに分割のデモがあります。
