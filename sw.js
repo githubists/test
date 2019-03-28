@@ -58,7 +58,7 @@ self.__precacheManifest = [
     "revision": "f989dc95067d17c8cbc50f8f4f5debf2"
   },
   {
-    "url": "img/clients/tomas-1x.jpg",
+    "url": "img/clients/tomas-banner.jpg",
     "revision": "49b41140a82ada91e6dbc9aa255022db"
   },
   {
