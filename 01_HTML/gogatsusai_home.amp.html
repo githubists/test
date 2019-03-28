@@ -1801,7 +1801,7 @@ section>a>svg+div>p {
 
 .top-title {
     font-size: 6.4vw;
-    line-height:7vw;
+    line-height:9vw;
 }
 
 .top-credit {
@@ -1812,6 +1812,14 @@ section>a>svg+div>p {
     font-size: 4.5vw;
     line-height:5vw;
 }
+
+header>amp-fit-text,{
+    letter-spacing:1px;
+}
+.top-title{
+    letter-spacing:3px;
+}
+
 .dock{
   top:45vw;
   left:16vw;
@@ -2183,9 +2191,17 @@ amp-lightbox h3 {
         <header class="top-header absolute p1">
             <div class="top-credit  block">東京大学医学部五月祭企画</div>
             <h1 class="top-title block"><div>医へのいざない</div></h1>
+            <!--
             <div class="top-date block"><small>2019.</small>5.18<small>(土)-</small>19<small>(日) </small>9:00-17:00</div>
             <div class="top-date block"><small>本郷キャンパス</small></div>
             <div class="top-date block"><small>医学部本館(赤門から直進して正面)</small>
+            -->
+            <amp-fit-text height=12vw layout="fixed-height" max-font-size="30">
+                <small>2019.</small>5.18<small>(土)-</small>19<small>(日) </small>9:00-17:00
+                <br><small>本郷キャンパス</small>
+                <br><small>医学部本館（赤門から直進して正面）</small>
+            </amp-fit-text>
+            
             <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
         </header>
         <nav class="dock flex flex-wrap items-start justify-around absolute">
