@@ -1473,6 +1473,11 @@ section>p {
     box-shadow: 4px 4px 8px silver;
     background:white
 }
+section li {
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
 #sponsors>li {
     width: 45%;
     max-width:230px;
@@ -1487,6 +1492,12 @@ section>p {
     height: 50px;
     background-color: #333;
     z-index: 2
+}
+@media (min-width:768px){
+    .photo-article{
+        padding-right:2rem;
+        padding-left:2rem;
+    }
 }
 main{
     overflow:hidden;

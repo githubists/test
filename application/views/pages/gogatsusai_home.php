@@ -176,33 +176,6 @@
   ]
   </script>
 <?=$header?>
-  section>h2 {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      padding-top: 1rem;
-      margin-bottom: 1rem;
-      display: block;
-      font-weight: bold;
-  }
-
-  section>hr {
-      width: 40px;
-      margin-bottom: 1.2rem;
-      margin-left: 0px;
-      text-align: left
-  }
-
-  section>p {
-      font-size: 1rem;
-      line-height: 2rem;
-  }
-  section li {
-      overflow: hidden;
-      width: 45%;
-      margin-bottom: 1rem;
-      position: relative;
-  }
-
   section>a>svg {
       padding-top: 2px;
       float: left
@@ -222,7 +195,6 @@
       letter-spacing: 1px;
       text-decoration: none
   }
-
   .top-header {
       background: rgba(255,255,255,0.5);
       border-style: solid;
@@ -238,7 +210,7 @@
 
   .top-title {
       font-size: 6.4vw;
-      line-height:7vw;
+      line-height:9vw;
   }
 
   .top-credit {
@@ -249,6 +221,14 @@
       font-size: 4.5vw;
       line-height:5vw;
   }
+
+  header>amp-fit-text,{
+      letter-spacing:1px;
+  }
+  .top-title{
+      letter-spacing:3px;
+  }
+
   .dock{
     top:45vw;
     left:16vw;
@@ -261,6 +241,7 @@
     width:15%;
     height:12vw;
     text-decoration: none;
+    cursor:pointer;
   }
   .dock-item>h2{
     text-align: center;
@@ -283,7 +264,6 @@
         top: 26vw;
         left:18vw;
         width:64vw;
-        height:26vw;
     }
     .top-title {
         font-size: 7.5vw;
@@ -300,7 +280,7 @@
         line-height:6vw;
     }
     .dock{
-      top:74vw;
+      top:76vw;
       left:16vw;
       width:69vw;
       padding:2vw;
@@ -311,9 +291,11 @@
     }
     .dock-item{
       width:33%;
-      height:25vw;
+      height:23vw;
     }
-
+    .dock-item>amp-img{
+      margin:0vw 3.5vw;
+    }
     .dock-item>h2{
       margin:auto;
       padding-bottom:1vw;
@@ -335,7 +317,7 @@
       height:20vw;
     }
     .dock-item>amp-img{
-      margin:0vw 5vw;
+      margin:0vw 5.5vw;
     }
     .dock-item>h2{
       font-size:2.3vw;
@@ -343,27 +325,6 @@
       padding-bottom:2vw;
     }
   }
-  @media (min-width:768px){
-      .photo-article{
-          padding-right:2rem;
-          padding-left:2rem;
-      }
-  }
-
-  main{
-      overflow:hidden;
-  }
-  .photo-article>section::before{
-      content:'';
-      background: rgba(200, 200, 200, .4);
-      position:absolute;
-      top:65px;
-      bottom:-21px;
-      left:-6px;
-      right:-6px;
-      z-index:-2;
-  }
-
   section>h2 {
       font-size: 2.5em;
       line-height:1em;
@@ -386,10 +347,13 @@
     width: 48%;
     margin: 1%;
     position: relative;
+    box-shadow: 4px 4px 8px silver;
+    cursor:pointer
   }
+
   section button>amp-img {
       background-color:#333;
-      filter: brightness(0.7);
+      /*filter: brightness(0.8);*/
       transition: transform .4s;
   }
 
@@ -403,11 +367,11 @@
   }
 
   .proj-container{
-      right:2vw;
-      left:2vw;
-      bottom:2vw;
+      position:relative;
+      padding:2vw;
+      background:white;
       z-index:2;
-      color:white;
+      color:black;
       text-align:right;
       font-weight:600;
   }
@@ -419,22 +383,35 @@
   .proj-name{
       height:6vw;
   }
-  @media(min-width:768px){
+  @media(min-width:600px){
+      i button{
+          width:31.3%;
+      }
+      .proj-container{
+          padding:1.5vw;
+      }
       .proj-desc{
           height:2vw;
-      }
-      .proj-name{
-          height:4vw;
-      }
-  }
-  @media(min-width:1024px){
-      .proj-desc{
-          height:1.5vw;
       }
       .proj-name{
           height:3vw;
       }
   }
+  @media(min-width:1024px){
+      i button{
+          width:23%;
+      }
+      .proj-container{
+          padding:1vw;
+      }
+      .proj-desc{
+          height:1.5vw;
+      }
+      .proj-name{
+          height:2vw;
+      }
+  }
+
 <?=$menu?>
 <!-- Start Fullpage Hero -->
 
