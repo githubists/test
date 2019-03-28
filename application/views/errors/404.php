@@ -1,6 +1,6 @@
 <?=$prefix?>
-  <title>オフライン | 東京大学 第92回 五月祭 医学部企画</title>
-  <link rel="canonical" href="https://gogatsusai.herokuapp.com/offline">
+  <title>404 Page not found | 東京大学 第92回 五月祭 医学部企画</title>
+  <link rel="canonical" href="https://gogatsusai.herokuapp.com/">
   <meta name="description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。"/>
   <meta property="og:title" content="医へのいざない | 東大医学部 五月祭企画 医へのいざない" />
   <meta property="og:type" content="website" />
