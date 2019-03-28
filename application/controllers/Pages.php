@@ -9,9 +9,11 @@ class Pages extends CI_Controller {
     $data['header']=$this->load->view('templates/header','',TRUE);
     $data['menu']=$this->load->view('templates/menu','',TRUE);
     $data['navbar']=$this->load->view('templates/navbar','',TRUE);
+    $data['comingsoon']=$this->load->view('parts/comingsoon','',TRUE);
     $data['sponsors']=$this->load->view('parts/sponsors','',TRUE);
     $data['vote']=$this->load->view('parts/vote','',TRUE);
     $data['footer']=$this->load->view('templates/footer','',TRUE);
+    $data['pageurl']=$page;
     $this->load->view('pages/'.$page, $data);
   }
 }

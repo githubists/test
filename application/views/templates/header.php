@@ -1,18 +1,20 @@
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, viewport-fit=cover">
 <meta name="amp-google-client-id-api" content="googleanalytics">
 <meta property="og:site_name" content="医へのいざない" />
 <meta property="og:locale" content="ja_JP" />
 <!-- Facebook引継ぎ後に入力 -->
 <meta property="fb:app_id" content="" />
-
+<meta name="apple-mobile-web-app-title" content="医へのいざない">
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@utmedmayfes"/>
 <meta name="twitter:creator" content="@utmedmayfes">
-<meta name="theme-color" content="#1EAA39">
+<meta name="theme-color" content="#3264FF">
 <link href="/favicon.ico" rel="icon" type="image/ico">
 <link rel="icon" href="/img/icon/icon16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="/img/icon/icon32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/img/icon/icon48.png" sizes="48x48" type="image/png">
-<link rel="apple-touch-icon" href="/img/icon/icon180.png"/>
+<link rel="apple-touch-icon" href="/img/icon/icon192.png"/>
+<link rel="shortcut icon" href="/img/icon/icon192.png">
 <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/icon57.png"/>
 <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/icon72.png"/>
 <link rel="apple-touch-icon" sizes="76x76" href="/img/icon/icon76.png"/>
@@ -21,8 +23,10 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/img/icon/icon144.png"/>
 <link rel="apple-touch-icon" sizes="152x152" href="/img/icon/icon152.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/icon180.png"/>
-<meta name="msapplication-TileColor" content="#1EAA39">
+<meta name="msapplication-TileColor" content="#3264FF">
 <meta name="msapplication-TileImage" content="/img/icon/icon144.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="/manifest.json">
 
 <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -73,7 +77,7 @@ a {
 }
 a:active,a:hover,a:focus {
   transition: all.5s;
-  color: #7beec7;
+  color: #ffaa22;
   outline-width: 0
 }
 abbr[title] {
@@ -1351,7 +1355,7 @@ ampstart-dropdown {
   color: #fff
 }
 .ampstart-sidebar {
-  background-image: url('/img/nav_bg.jpg');
+  background-image: url('./img/nav_bg.jpg');
   background-size: cover;
   font-size: 30px;
   color: #fff;
@@ -1384,70 +1388,95 @@ ampstart-dropdown {
   fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 ul {
-    list-style: none;
-    padding-left: 0
+  list-style: none;
+  padding-left: 0
 }
 .breadcrumb>li {
-    display: inline-block;
-    list-style: none;
-    font-weight: bold;
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
 }
 
 .breadcrumb>li:after {
-    content: '>';
-    padding: 0 .75rem;
+  content: '>';
+  padding: 0 .75rem;
 }
 .breadcrumb>li:last-child:after {
-    content: '';
+  content: '';
 }
 .breadcrumb>li>button {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer>h2>span {
-    font-size: 1.4rem;
-    font-weight: 500
+  font-size: 1.4rem;
+  font-weight: 500
 }
 footer h3 {
-    font-size: 1.12rem
+  font-size: 1.12rem
 }
 footer {
-    font-size: .88rem
+  font-size: .88rem
 }
 footer>ul {
-    width: 100%
+  width: 100%
 }
 .footer-left{
-    color: #444;
-    line-height: 24px
+  color: #444;
+  line-height: 24px
 }
 .disc {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    text-align: left;
-    font-size:0.8rem
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  text-align: left;
+  font-size:0.8rem
 }
 
 .disc>li {
-    padding: 0.3rem 0rem;
+  padding: 0.3rem 0rem;
+}
+.disc>li>button{
+  text-decoration:underline;
+  cursor:pointer;
 }
 footer>p {
-    font-size: 14px;
-    letter-spacing: 1.5pt;
-    color: #444
+  font-size: 14px;
+  letter-spacing: 1.5pt;
+  color: #444
 }
 @media (max-width: 40.06rem) {
-    .ampstart-sidebar {
-        width:100%
-    }
+  .ampstart-sidebar {
+      width:100%
+  }
+}
+section>h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+section>hr {
+    width: 40px;
+    margin-bottom: 1.2rem;
+    margin-left: 0px;
+    text-align: left
+}
+
+section>p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-left:1%;
+    margin-right:1%;
+    box-shadow: 4px 4px 8px silver;
+    background:white
 }
 #sponsors>li {
-    width: 33.4%
-}
-@media(min-width: 768px) {
-    #sponsors>li {
-        width:20.1%
-    }
+    width: 45%;
+    max-width:230px;
+    box-shadow:4px 4px 8px silver;
 }
 .scrollToTop {
     border: none;
@@ -1459,6 +1488,43 @@ footer>p {
     background-color: #333;
     z-index: 2
 }
+main{
+    overflow:hidden;
+}
+.photo-article>section::before{
+    content:'';
+    background: #ececec;
+    position:absolute;
+    top:110px;
+    bottom:-21px;
+    left:-6px;
+    right:-6px;
+    z-index:-2;
+}
+
+section>h2 {
+    font-size: 2.5em;
+    line-height:1em;
+    margin: 1em 0 1.5em;
+    padding-top:4rem;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+
+section>h2::before{
+    content:'';
+    position:absolute;
+    height:45%;
+    width:100vw;
+    left:50px;
+    top:85px;
+    /*background-color:rgb(220,220,220);*/
+    background:linear-gradient(150deg,rgb(104, 207, 255), rgb(50,100,255));
+    z-index:-1;
+}
+.header-about{
+    margin-top:0;
+}
+
 button {
     width: 100%;
     height: 100%;
@@ -1473,9 +1539,11 @@ amp-lightbox {
 }
 amp-lightbox article,amp-lightbox amp-img {
     width: 60%;
+    max-width:none;
     background: #fff;
     margin: auto
 }
+
 @media(orientation: portrait) {
     amp-lightbox article,amp-lightbox amp-img {
         width:100%
