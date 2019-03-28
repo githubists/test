@@ -1714,13 +1714,21 @@ section a>p {
     }
 }
 section>a>svg {
-    padding-top: 2px;
+    padding-top: 0;
     float: left;
     margin-left:1.5rem;
+    margin-top:21px;
+}
+section>a>div{
+    background:white;
+    border-radius:10px;
+    box-shadow:4px 4px 8px silver;
+    
 }
 section>a>svg+div {
+    padding:17px;
     padding-left: 4.5rem;
-    margin-bottom: 2.4rem
+    margin-bottom: 15px
 }
 section>a>svg+div>h3 {
     font-weight: 600;
@@ -1734,12 +1742,9 @@ section>a>svg+div>p {
     text-decoration: none
 }
 #sponsors>li {
-    width: 33.4%
-}
-@media(min-width: 768px) {
-    #sponsors>li {
-        width:20.1%
-    }
+    width: 35%;
+    max-width:230px;
+    box-shadow:4px 4px 8px silver;
 }
 .scrollToTop {
     border: none;
@@ -1913,8 +1918,7 @@ main{
 }
 .photo-article>section::before{
     content:'';
-    background: #f4f4f4;
-    background: #eeeeee;
+    background: #ececec;
     position:absolute;
     top:110px;
     bottom:-21px;
@@ -2180,7 +2184,18 @@ amp-lightbox h3 {
         <header class="top-header absolute p1">
             <div class="top-credit  block">東京大学医学部五月祭企画</div>
             <h1 class="top-title block"><div>医へのいざない</div></h1>
-            <div class="top-date block">2019.5.18<small>(土)-</small>19<small>(日)</small></div>
+            <!--
+            <div class="top-date block">
+                日時：2019.5.18<small>(土)-</small>19<small>(日)</small> 9:00~18:00<br>
+                場所：東京大学本郷キャンパス 医学部2号館</div>
+            -->
+            <amp-fit-text height=10vw layout="fixed-height" class="relative">
+                <small>2019.</small>5.18<small>(土)-</small>19<small>(日)</small> 9:00~18:00
+            
+                <br>東京大学本郷キャンパス 医学部本館
+            </amp-fit-text>
+
+
             <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
         </header>
         <nav class="dock flex flex-wrap items-start justify-around absolute">
