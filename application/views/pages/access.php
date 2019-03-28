@@ -7,6 +7,7 @@
   <meta property="og:url" content="https://gogatsusai.herokuapp.com/access" />
   <meta property="og:image" content="https://gogatsusai.herokuapp.com/img/header/header-og-1x-50-withtext.jpg" />
   <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。" />
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script type="application/ld+json">
   [
   {
@@ -66,8 +67,8 @@ amp-iframe{
               <div class="m2">
                   <h3>東京大学医学部2号館</h3>
                   <ul>
-                      <li>・本郷三丁目から徒歩10分</li>
-                      <li>・東大前駅から徒歩10分</li>
+                      <li>・東京メトロ丸ノ内線/都営大江戸線 本郷三丁目から徒歩10分</li>
+                      <li>・東京メトロ南北線 東大前駅から徒歩10分</li>
                   </ul>
                   <amp-iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6146.977162794968!2d139.75918394058687!3d35.7116350246039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99802b86ec338614!2sGraduate+School+of+Medicine+and+Faculty+of+Medicine%2C+The+University+of+Tokyo!5e0!3m2!1sen!2sjp!4v1553486257945"
                       title="Google Mapによる医学部本館周辺の地図" width=auto height="450" layout="fixed-height" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups">
