@@ -1,12 +1,12 @@
 <?=$prefix?>
-  <title>医へのいざない | 東京大学 第92回 五月祭 医学部企画</title>
+  <title>アクセス | 東京大学 第92回 五月祭 医学部企画</title>
   <link rel="canonical" href="https://gogatsusai.herokuapp.com/01_HTML/gogatsusai_home.amp.html">
   <meta name="description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。"/>
-  <meta property="og:title" content="医へのいざない | 東大医学部 五月祭企画 医へのいざない" />
+  <meta property="og:title" content="アクセス | 東大医学部 五月祭企画 医へのいざない" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gogatsusai.herokuapp.com/access" />
   <meta property="og:image" content="https://gogatsusai.herokuapp.com/img/header/header-og-1x-50-withtext.jpg" />
-  <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。" />
+  <meta property="og:description" content="東京大学本郷キャンパス 医学部2号館にて開催" />
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script type="application/ld+json">
   [
@@ -65,7 +65,7 @@ amp-iframe{
           <section class="pt5">
               <h2 class="relative">アクセス</h2>
               <div class="m2">
-                  <h3>東京大学医学部2号館</h3>
+                  <h3>東京大学本郷キャンパス 医学部2号館</h3>
                   <ul>
                       <li>・東京メトロ丸ノ内線/都営大江戸線 本郷三丁目から徒歩10分</li>
                       <li>・東京メトロ南北線 東大前駅から徒歩10分</li>

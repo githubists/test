@@ -46,16 +46,8 @@ self.__precacheManifest = [
     "revision": "8ad58e852ca47b6d9278b239474a57f3"
   },
   {
-    "url": "license_for_codeigniter.txt",
-    "revision": "cd087d003847b42f2a9ff7e542d8a103"
-  },
-  {
     "url": "manifest.json",
-    "revision": "18c6b877db4fa735f819df8a645cc4e7"
-  },
-  {
-    "url": "robots.txt",
-    "revision": "66b080c740c3aa34338be842e96083a7"
+    "revision": "c687b3c181f56cdf7b86e260646bc99d"
   },
   {
     "url": "user_guide/_static/ci-icon.ico",
@@ -67,11 +59,11 @@ self.__precacheManifest = [
   },
   {
     "url": "offline",
-    "revision": "ecc2f336d5b7ebe25aebd07338384c86"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
   {
     "url": "fonts/kosugimaru-regular.woff2",
-    "revision": "8077d7f665194fae5c2310c45af1edf3"
+    "revision": "d4f0464b535f1b489fe9350a57f0e675"
   },
   {
     "url": "img/clients/fujigakuin-banner-1x.jpg",
@@ -343,7 +335,7 @@ self.__precacheManifest = [
   },
   {
     "url": "img/menulogo.png",
-    "revision": "1ada632daba8dff772c997d93642ec71"
+    "revision": "0cf13f14b702371a35be0c560d27b565"
   },
   {
     "url": "img/nav_bg.jpg",

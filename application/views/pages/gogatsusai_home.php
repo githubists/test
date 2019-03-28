@@ -6,7 +6,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gogatsusai.herokuapp.com/" />
   <meta property="og:image" content="https://gogatsusai.herokuapp.com/img/header/header-og-1x-50-withtext.jpg" />
-  <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。" />
+  <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。東京大学本郷キャンパス 医学部2号館にて9:00から開催しております。" />
   <script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async=""></script>
   <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
