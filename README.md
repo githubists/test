@@ -20,6 +20,7 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 - 画像の解像度が大きすぎないか確認
 - [Tiny PNG](https://tinypng.com/)等でデザインが崩れない範囲で.jpg、.pngファイルを最適化
 - `alt=""`に正しく内容を設定しているか確認
+- [Font Squirrel Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator)等によるフォントのサブセット化
 - 監査ツールでの監査
     - [W3C Validator](https://validator.w3.org/)
     - [AMP テストツール](https://search.google.com/test/amp)

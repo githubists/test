@@ -4,6 +4,7 @@ class Pages extends CI_Controller {
     if ( !file_exists(APPPATH.'views/pages/'.$page.'.php')) {
       show_404();
     }
+	  /*$this->output->cache(10000);*/
     $data['prefix']=$this->load->view('templates/prefix','',TRUE);
     $data['header']=$this->load->view('templates/header','',TRUE);
     $data['menu']=$this->load->view('templates/menu','',TRUE);
