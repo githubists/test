@@ -3,7 +3,7 @@ class Errors extends CI_Controller {
   function __construct(){
 		parent::__construct();
 	}
-  function error_404() {
+  public function error_404() {
     $this->output->set_status_header('404');
     $data['prefix']=$this->load->view('templates/prefix','',TRUE);
     $data['header']=$this->load->view('templates/header','',TRUE);
