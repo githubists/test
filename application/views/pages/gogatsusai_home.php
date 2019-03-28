@@ -418,8 +418,8 @@
 
 <figure class="m0 relative">
 
-  <amp-img width=100vw height=178vw alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="./img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
-  <amp-img width="2560" height="1920" alt="医へのいざないヘッダー画像" layout="responsive" src="./img/header/header2-4x3-2x-50-trimmed.jpg" media="(orientation:landscape)"></amp-img>
+  <amp-img width=100vw height=178vw alt="医へのいざないヘッダー画像縦長版" layout="responsive" src="/img/header/header2-mobile-1x-50.jpg" media="(orientation:portrait)"></amp-img>
+  <amp-img width="2560" height="1920" alt="医へのいざないヘッダー画像" layout="responsive" src="/img/header/header2-4x3-2x-50-trimmed.jpg" media="(orientation:landscape)"></amp-img>
 
   <figcaption class="absolute top-0 right-0 bottom-0 left-0">
       <header class="top-header absolute p1">
@@ -434,27 +434,27 @@
       </header>
       <nav class="dock flex flex-wrap items-start justify-around absolute">
               <button class="dock-item flex flex-column items-stretch"on="tap:about.scrollTo(duration=200)">
-                <amp-img src="./img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-about-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>医へのいざない<br />とは</h2>
               </button>
               <button class="dock-item flex flex-column items-stretch"on="tap:contents.scrollTo(duration=200)">
-                <amp-img src="./img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>企画紹介</h2>
               </button>
               <a class="dock-item flex flex-column items-stretch" href="/contents">
-                <amp-img src="./img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>おすすめ企画</h2>
               </a>
               <a class="dock-item flex flex-column items-stretch" href="/timetable">
-                <amp-img src="./img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>タイムテーブル<br />整理券</h2>
               </a>
               <button class="dock-item flex flex-column items-stretch"on="tap:sns.scrollTo(duration=200)">
-                <amp-img src="./img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-sns-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>SNS</h2>
               </button>
               <a class="dock-item flex flex-column items-stretch" href="access">
-                <amp-img src="./img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/dock/dock-access-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>アクセス</h2>
               </a>
             </nav>
@@ -486,7 +486,7 @@
     <i class="flex flex-wrap justify-start mt2">
 
       <button on="tap:vr">
-          <amp-img src="./img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/vr.jpg" width="450" height="300" alt="VR医学体験企画イメージ画像として魚眼パースで撮影した部屋内の光景を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階 整理券制
@@ -497,7 +497,7 @@
           </div>
       </button>
       <button on="tap:quiz">
-          <amp-img src="./img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   屋外
@@ -508,7 +508,7 @@
           </div>
       </button>
       <button on="tap:emergency">
-          <amp-img src="./img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階 整理券制
@@ -519,7 +519,7 @@
           </div>
       </button>
       <button on="tap:bp">
-          <amp-img src="./img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階 整理券制
@@ -530,7 +530,7 @@
           </div>
       </button>
       <button on="tap:surgery">
-          <amp-img src="./img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/surgery.jpg" width="450" height="300" alt="手術体験イメージ画像として手術室の画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階 整理券制
@@ -541,7 +541,7 @@
           </div>
       </button>
       <button on="tap:organ">
-          <amp-img src="./img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階
@@ -552,7 +552,7 @@
           </div>
       </button>
       <button on="tap:beat">
-          <amp-img src="./img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/beat.jpg" width="450" height="300" alt="体を感じるのイメージ画像として太陽をバックに走る人の姿を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -563,7 +563,7 @@
           </div>
       </button>
       <button on="tap:artery">
-          <amp-img src="./img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/artery.jpg" width="450" height="300" alt="動脈観察体験のイメージ画像として血管壁と、血管の内部を流れる赤血球の画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階 整理券制
@@ -574,7 +574,7 @@
           </div>
       </button>
       <button on="tap:coat">
-          <amp-img src="./img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/coat.jpg" width="450" height="300" alt="白衣体験のイメージ画像として白衣を着て、首に聴診器をかけ、胸ポケットにボールペンとシャープペンシル、マーカーペンを差している人の写真を使用した" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階
@@ -592,7 +592,7 @@
       ・館内図は<a href="/map">こちら</a></p>
     <i class="flex flex-wrap justify-start mt2">
       <button on="tap:sketch">
-          <amp-img src="./img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
@@ -603,7 +603,7 @@
           </div>
       </button>
       <button on="tap:muscle">
-          <amp-img src="./img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -614,7 +614,7 @@
           </div>
       </button>
       <button on="tap:drama">
-          <amp-img src="./img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/exhibition/drama.jpg" width="450" height="300" alt="医学ドラマの世界のイメージ画像として夕日の光景が何枚も収められたフィルムの写真を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館2階
@@ -625,7 +625,7 @@
           </div>
       </button>
       <button on="tap:history">
-        <amp-img src="./img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/history.jpg" width="450" height="300" alt="医学部史のイメージ画像として医学書が二冊木のテーブルの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
@@ -636,7 +636,7 @@
           </div>
       </button>
       <button on="tap:bookshelf">
-        <amp-img src="./img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/bookshelf.jpg" width="450" height="300" alt="医学部生の本棚のイメージ画像として本棚の写真を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
@@ -647,7 +647,7 @@
           </div>
       </button>
       <button on="tap:narrative">
-        <amp-img src="./img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -658,7 +658,7 @@
           </div>
       </button>
       <button on="tap:research">
-        <amp-img src="./img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -669,7 +669,7 @@
           </div>
       </button>
       <button on="tap:disaster">
-        <amp-img src="./img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -680,7 +680,7 @@
           </div>
       </button>
       <button on="tap:toxin">
-        <amp-img src="./img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館1階
@@ -698,7 +698,7 @@
        ・館内図は<a href="/map">こちら</a></p>
     <i class="flex flex-wrap justify-start mt2">
       <button on="tap:cafe">
-        <amp-img src="./img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   屋外
@@ -709,7 +709,7 @@
           </div>
       </button>
       <button on="tap:goods">
-        <amp-img src="./img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   屋外
@@ -720,7 +720,7 @@
           </div>
       </button>
       <button on="tap:lecture">
-        <amp-img src="./img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階 事前予約あり
@@ -731,7 +731,7 @@
           </div>
       </button>
       <button on="tap:piano">
-        <amp-img src="./img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
@@ -742,7 +742,7 @@
           </div>
       </button>
       <button on="tap:chamber">
-        <amp-img src="./img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
@@ -753,7 +753,7 @@
           </div>
       </button>
       <button on="tap:art">
-        <amp-img src="./img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
+        <amp-img src="/img/contents/misc/art.jpg" width="450" height="300" alt="踏朱会のイメージ画像として絵筆と絵具が木でできたパレットの上に置かれている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階
