@@ -30,32 +30,12 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "01_HTML/bookend.json",
-    "revision": "ce3b0da93c83afc953cb6fac75e268e8"
-  },
-  {
-    "url": "01_HTML/favicon.ico",
-    "revision": "8ad58e852ca47b6d9278b239474a57f3"
-  },
-  {
-    "url": "01_HTML/manifest.json",
-    "revision": "18c6b877db4fa735f819df8a645cc4e7"
-  },
-  {
     "url": "favicon.ico",
     "revision": "8ad58e852ca47b6d9278b239474a57f3"
   },
   {
     "url": "manifest.json",
-    "revision": "c687b3c181f56cdf7b86e260646bc99d"
-  },
-  {
-    "url": "user_guide/_static/ci-icon.ico",
-    "revision": "b0a102991e7332643ae57365023c00c8"
-  },
-  {
-    "url": "user_guide/_static/images/ci-icon.ico",
-    "revision": "076148553767126b1886e4526c8dce43"
+    "revision": "635ba1e16dcc8c33ea9cee92160ce4a1"
   },
   {
     "url": "offline",

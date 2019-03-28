@@ -43,7 +43,7 @@
           "type": "image/png"
         }
     ],
-    "start_url": "/gogatsusai_home.amp.html",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#3264FF",
     "background_color":"#322B29",
