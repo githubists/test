@@ -38,10 +38,6 @@ self.__precacheManifest = [
     "revision": "635ba1e16dcc8c33ea9cee92160ce4a1"
   },
   {
-    "url": "offline",
-    "revision": "d41d8cd98f00b204e9800998ecf8427e"
-  },
-  {
     "url": "fonts/kosugimaru-regular.woff2",
     "revision": "d4f0464b535f1b489fe9350a57f0e675"
   },
@@ -327,7 +323,7 @@ self.__precacheManifest = [
   },
   {
     "url": "js/sw-custom.js",
-    "revision": "d88218b7f6f77fcd6c379e1b67428895"
+    "revision": "58a5144824a52a4adf495c5607a4404f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -335,3 +331,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 workbox.routing.registerRoute(/\/[^\.]*$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"pages", plugins: [new workbox.expiration.Plugin({ maxEntries: 30, maxAgeSeconds: 28800, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/^https:\/\/cdn.ampproject.org/, new workbox.strategies.StaleWhileRevalidate({ plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/^https:\/\/www.googletagmanager.com/, new workbox.strategies.StaleWhileRevalidate({ plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
+
+workbox.googleAnalytics.initialize({});

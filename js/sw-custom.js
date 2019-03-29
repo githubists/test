@@ -4,5 +4,6 @@ workbox.routing.setDefaultHandler(
 );
 workbox.routing.setCatchHandler(({event}) => {
   console.log(event.request.destination);
-      return caches.match(workbox.precaching.getCacheKeyForURL('/offline.html'));
+      return caches.match(workbox.precaching.getCacheKeyForURL('/offline'));
 });
+workbox.precaching.precacheAndRoute(['/offline']);
