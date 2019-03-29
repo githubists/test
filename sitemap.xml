@@ -24,4 +24,10 @@
     <changefreq>daily</changefreq>
     <priority></priority>
   </url>
+  <url>
+    <loc>https://utmed-mayfes.net/map</loc>
+    <lastmod></lastmod>
+    <changefreq>daily</changefreq>
+    <priority></priority>
+  </url>
 </urlset>

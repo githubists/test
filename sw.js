@@ -178,36 +178,24 @@ self.__precacheManifest = [
     "revision": "344bf31089dcd3d1dfef97451163f2e3"
   },
   {
+    "url": "img/header/header-16x9-2x-50-withtext.jpg",
+    "revision": "324a784e5a32741ed0154fb9e236c8f8"
+  },
+  {
+    "url": "img/header/header-1x1-2x-50-withtext.jpg",
+    "revision": "803346837513ce175dcaba0ed5716c35"
+  },
+  {
+    "url": "img/header/header-4x3-2x-50-withtext.jpg",
+    "revision": "58dfdde7c455c22460552af89e2de740"
+  },
+  {
     "url": "img/header/header-og-1x-50-withtext.jpg",
     "revision": "3605713380caaad510d0a774a6837ff4"
   },
   {
-    "url": "img/header/header2-16x9-1x-50.jpg",
-    "revision": "b9c30d6e3d62b1d5d6bb53ac57d412d8"
-  },
-  {
-    "url": "img/header/header2-16x9-2x-50.jpg",
-    "revision": "305f9b9201b7e4f65a5df5e2928de61c"
-  },
-  {
-    "url": "img/header/header2-1x1-1x-50.jpg",
-    "revision": "d56d7cc3315f9f21b6470d495470bc34"
-  },
-  {
-    "url": "img/header/header2-1x1-2x-50.jpg",
-    "revision": "c88bfb6f2ad6c3e38bb6ccc48497234d"
-  },
-  {
-    "url": "img/header/header2-4x3-1x-50.jpg",
-    "revision": "e04256fc1e1b019843d6da181cc6e3eb"
-  },
-  {
     "url": "img/header/header2-4x3-2x-50-trimmed.jpg",
     "revision": "572aceffb79416822acb163de6577d45"
-  },
-  {
-    "url": "img/header/header2-4x3-2x-50.jpg",
-    "revision": "379e74b128650bda309cafcdd4e39e65"
   },
   {
     "url": "img/header/header2-mobile-1x-50.jpg",
@@ -216,18 +204,6 @@ self.__precacheManifest = [
   {
     "url": "img/header/header2-mobile-2x-50.jpg",
     "revision": "5c2ad9252e24c70c1fdabf1538c1c42f"
-  },
-  {
-    "url": "img/header/mobile-header-background-50.jpg",
-    "revision": "0670210d024e8f0911e92530ed359323"
-  },
-  {
-    "url": "img/header/mobile-header-screen-50.jpg",
-    "revision": "b69d9bb32cd04e18ea821d42e748c675"
-  },
-  {
-    "url": "img/header/mobile-header-tablet.png",
-    "revision": "76e62d31ec83f4422e486167c43594b9"
   },
   {
     "url": "img/icon/icon114.png",
@@ -323,7 +299,7 @@ self.__precacheManifest = [
   },
   {
     "url": "js/sw-custom.js",
-    "revision": "58a5144824a52a4adf495c5607a4404f"
+    "revision": "7ba97e2871fc1273b6c9d5d06063cb09"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

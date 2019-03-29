@@ -1,4 +1,3 @@
-workbox.googleAnalytics.initialize();
 workbox.routing.setDefaultHandler(
   new workbox.strategies.StaleWhileRevalidate()
 );

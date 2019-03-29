@@ -1,3 +1,62 @@
+<script type="application/ld+json">
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "東京大学 第92回 五月祭 医学部企画 医へのいざない",
+    "startDate": "2018-05-18T09:00+09:00",
+    "location": {
+      "@type": "Place",
+      "name": "医学部2号館, 東京大学本郷キャンパス",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "本郷7丁目3-1",
+        "addressLocality": "文京区",
+        "postalCode": "1138654",
+        "addressRegion": "東京都",
+        "addressCountry": "JP"
+      }
+    },
+    "image": [
+      "https://gogatsusai.herokuapp.com/img/header/header-1x1-2x-50-withtext.jpg",
+      "https://gogatsusai.herokuapp.com/img/header/header-4x3-2x-50-withtext",
+      "https://gogatsusai.herokuapp.com/img/header/header-16x9-2x-50-withtext"
+     ],
+    "description": "東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。",
+    "endDate": "2019-05-19T18:00+09:00",
+    "performer": {
+      "@type": "PerformingGroup",
+      "name": "東京大学医学部五月祭実行委員"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY",
+      "validFrom": "2018-05-18T09:00+09:00"
+    }
+  },
+  {
+    "@context":"http://schema.org",
+    "@type":"WebSite",
+    "name":"医へのいざない公式サイト",
+    "url":"http://utmed-mayfes.net/",
+    "inLanguage":"ja",
+    "keywords":"五月祭,医学部,医へのいざない,五月祭企画,医学部企画,理科三類,東大,東京大学,東大医学部",
+    "description":"東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。",
+    "publisher":{
+      "@type":"Corporation",
+      "name":"東京大学医学部五月祭実行委員",
+      "url":"http://utmed-mayfes.net/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://gogatsusai.herokuapp.com/",
+    "logo": "https://gogatsusai.herokuapp.com/img/icon/icon144.png"
+  }
+]
+</script>
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, viewport-fit=cover">
 <meta name="amp-google-client-id-api" content="googleanalytics">
 <meta property="og:site_name" content="医へのいざない" />
@@ -34,7 +93,7 @@
 
 <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
 <script custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js" async=""></script>
-<script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+<!--<script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>-->
 <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1359,7 +1418,7 @@ ampstart-dropdown {
   background-size: cover;
   font-size: 30px;
   color: #fff;
-  width: 35%
+  width: 40%
 }
 
 .ampstart-sidebar .ampstart-icon {
@@ -1449,15 +1508,6 @@ footer>p {
       width:100%
   }
 }
-section>h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-    display: block;
-    font-weight: bold;
-}
-
 section>hr {
     width: 40px;
     margin-bottom: 1.2rem;
@@ -1519,6 +1569,8 @@ section>h2 {
     margin: 1em 0 1.5em;
     padding-top:4rem;
     text-shadow:5px 5px 5px rgba(0,0,0,0.2);
+    display: block;
+    font-weight: bold;
 }
 
 section>h2::before{
@@ -1528,7 +1580,6 @@ section>h2::before{
     width:100vw;
     left:50px;
     top:85px;
-    /*background-color:rgb(220,220,220);*/
     background:linear-gradient(150deg,rgb(104, 207, 255), rgb(50,100,255));
     z-index:-1;
 }

@@ -10,197 +10,29 @@
   <script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async=""></script>
   <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-<script type="application/ld+json">
-  [
-  {
-    "@context": "http://schema.org",
-    "@type": "Event",
-    "name": "東京大学 第92回 五月祭 医学部企画 医へのいざない",
-    "startDate": "2018-05-18T09:00+09:00",
-    "location": {
-      "@type": "Place",
-      "name": "医学部2号館, 東京大学本郷キャンパス",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "本郷7丁目3-1",
-        "addressLocality": "文京区",
-        "postalCode": "1138654",
-        "addressRegion": "東京都",
-        "addressCountry": "JP"
-      }
-    },
-    "image": [
-     ],
-    "description": "東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。",
-    "endDate": "2019-05-19T18:00+09:00",
-    "performer": {
-      "@type": "PerformingGroup",
-      "name": "東京大学医学部五月祭実行委員"
-    }
-  },
-  {
-    "@context":"http://schema.org",
-    "@type":"WebSite",
-    "name":"医へのいざない公式サイト",
-    "url":"http://utmed-mayfes.net/",
-    "inLanguage":"ja",
-    "keywords":"五月祭,医学部,医へのいざない,五月祭企画,医学部企画,理科三類,東大,東京大学,東大医学部",
-    "description":"東京大学 第92回五月祭 医学部企画『医へのいざない』の公式ウェブサイトです。2019年は第71回目で、今年もクイズ・ゲーム・学術展示等面白い企画を沢山ご用意しております。皆様のご来場をお待ちしております。",
-    "publisher":{
-      "@type":"Corporation",
-      "name":"東京大学医学部五月祭実行委員",
-      "url":"http://utmed-mayfes.net/"
-    }
-  },
-  {
-    "@context":"http://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[
-      {
-        "@type":"ListItem",
-        "position":1,
-        "url":"https://gogatsusai.herokuapp.com/contents/lecture"
-      },
-      {
-        "@type":"ListItem",
-        "position":2,
-        "url":"https://gogatsusai.herokuapp.com/contents/surgery"
-      },
-      {
-        "@type":"ListItem",
-        "position":3,
-        "url":"https://gogatsusai.herokuapp.com/contents/ambulance"
-      },
-      {
-        "@type":"ListItem",
-        "position":4,
-        "url":"https://gogatsusai.herokuapp.com/contents/history"
-      },
-      {
-        "@type":"ListItem",
-        "position":5,
-        "url":"https://gogatsusai.herokuapp.com/contents/forefront"
-      },
-      {
-        "@type":"ListItem",
-        "position":6,
-        "url":"https://gogatsusai.herokuapp.com/goods"
-      },
-      {
-        "@type":"ListItem",
-        "position":7,
-        "url":"https://gogatsusai.herokuapp.com/contents/cafe"
-      },
-      {
-        "@type":"ListItem",
-        "position":8,
-        "url":"https://gogatsusai.herokuapp.com/contents/artery"
-      },
-      {
-        "@type":"ListItem",
-        "position":9,
-        "url":"https://gogatsusai.herokuapp.com/contents/drama"
-      },
-      {
-        "@type":"ListItem",
-        "position":10,
-        "url":"https://gogatsusai.herokuapp.com/contents/feel-body"
-      },
-      {
-        "@type":"ListItem",
-        "position":11,
-        "url":"https://gogatsusai.herokuapp.com/contents/toxin"
-      },
-      {
-        "@type":"ListItem",
-        "position":12,
-        "url":"https://gogatsusai.herokuapp.com/contents/organ"
-      },
-      {
-        "@type":"ListItem",
-        "position":13,
-        "url":"https://gogatsusai.herokuapp.com/contents/vr"
-      },
-      {
-        "@type":"ListItem",
-        "position":14,
-        "url":"https://gogatsusai.herokuapp.com/contents/piano"
-      },
-      {
-        "@type":"ListItem",
-        "position":15,
-        "url":"https://gogatsusai.herokuapp.com/contents/chamber"
-      },
-      {
-        "@type":"ListItem",
-        "position":16,
-        "url":"https://gogatsusai.herokuapp.com/contents/sketch"
-      },
-      {
-        "@type":"ListItem",
-        "position":17,
-        "url":"https://gogatsusai.herokuapp.com/contents/narrative"
-      },
-      {
-        "@type":"ListItem",
-        "position":18,
-        "url":"https://gogatsusai.herokuapp.com/contents/bp"
-      },
-      {
-        "@type":"ListItem",
-        "position":19,
-        "url":"https://gogatsusai.herokuapp.com/contents/bookshelf"
-      },
-      {
-        "@type":"ListItem",
-        "position":20,
-        "url":"https://gogatsusai.herokuapp.com/contents/muscle-anatomy"
-      },
-      {
-        "@type":"ListItem",
-        "position":21,
-        "url":"https://gogatsusai.herokuapp.com/contents/quiz-rally"
-      },
-      {
-        "@type":"ListItem",
-        "position":22,
-        "url":"https://gogatsusai.herokuapp.com/contents/disaster-med"
-      },
-      {
-        "@type":"ListItem",
-        "position":23,
-        "url":"https://gogatsusai.herokuapp.com/contents/coat"
-      }
-    ]
-  }
-  ]
-  </script>
 <?=$header?>
-section>a>svg {
+#sns svg {
     padding-top: 0;
     float: left;
     margin-left:1.5rem;
     margin-top:21px;
 }
-section>a>div{
+#sns div{
     background:white;
     border-radius:10px;
     box-shadow:4px 4px 8px silver;
-
-}
-section>a>svg+div {
     padding:17px;
     padding-left: 4.5rem;
     margin-bottom: 15px
 }
-section>a>svg+div>h3 {
+#sns div>h3 {
     font-weight: 600;
     font-size: 0.87rem;
     line-height: 1.12rem;
     text-decoration: none;
 }
 
-section>a>svg+div>p {
+#sns div>p {
     letter-spacing: 1px;
     text-decoration: none
 }
@@ -334,23 +166,6 @@ section>a>svg+div>p {
       padding-bottom:2vw;
     }
   }
-  section>h2 {
-      font-size: 2.5em;
-      line-height:1em;
-      margin: 1em 0 1.5em;
-  }
-
-  section>h2::before{
-      content:'';
-      position:absolute;
-      height:80%;
-      width:100vw;
-      left:50px;
-      top:40px;
-      /*background-color:rgb(220,220,220);*/
-      background:linear-gradient(-135deg,#1E00FF,#05FBFF);
-      z-index:-1;
-  }
   i button{
     overflow: hidden;
     width: 48%;
@@ -362,7 +177,6 @@ section>a>svg+div>p {
 
   section button>amp-img {
       background-color:#333;
-      /*filter: brightness(0.8);*/
       transition: transform .4s;
   }
 

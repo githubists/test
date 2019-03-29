@@ -31,7 +31,7 @@
   </amp-accordion>
             </li>
             <!-- End Dropdown-inline -->
-            <li class="ampstart-nav-item relative "><a href="/">トップ</a></li>            
+            <li class="ampstart-nav-item relative "><a href="/">トップ</a></li>
             <li class="ampstart-nav-item relative "><a href="/contents">おすすめ企画</a></li>
             <li class="ampstart-nav-item relative "><a href="/access">アクセス</a></li>
             <li class="ampstart-nav-item relative "><a href="/timetable">タイムテーブル</a></li>
@@ -48,7 +48,6 @@
   </b>
 
       <ul class="ampstart-sidebar-faq m0 px3">
-          <li class="ampstart-faq-item"><a href="/about" class="text-decoration-none">About</a></li>
           <li class="ampstart-faq-item"><a href="mailto:mayfes2019.utmed@gmail.com" class="text-decoration-none">Contact</a></li>
       </ul>
   </amp-sidebar>
