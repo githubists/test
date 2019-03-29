@@ -176,25 +176,34 @@
   ]
   </script>
 <?=$header?>
-  section>a>svg {
-      padding-top: 2px;
-      float: left
-  }
-  section>a>svg+div {
-      padding-left: 3rem;
-      margin-bottom: 2.4rem
-  }
-  section>a>svg+div>h3 {
-      font-weight: 600;
-      font-size: 0.87rem;
-      line-height: 1.12rem;
-      text-decoration: none;
-  }
+section>a>svg {
+    padding-top: 0;
+    float: left;
+    margin-left:1.5rem;
+    margin-top:21px;
+}
+section>a>div{
+    background:white;
+    border-radius:10px;
+    box-shadow:4px 4px 8px silver;
 
-  section>a>svg+div>p {
-      letter-spacing: 1px;
-      text-decoration: none
-  }
+}
+section>a>svg+div {
+    padding:17px;
+    padding-left: 4.5rem;
+    margin-bottom: 15px
+}
+section>a>svg+div>h3 {
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 1.12rem;
+    text-decoration: none;
+}
+
+section>a>svg+div>p {
+    letter-spacing: 1px;
+    text-decoration: none
+}
   .top-header {
       background: rgba(255,255,255,0.5);
       border-style: solid;
