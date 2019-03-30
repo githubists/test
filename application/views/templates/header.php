@@ -1416,6 +1416,7 @@ ampstart-dropdown {
 .ampstart-sidebar {
   background-image: url('/img/nav_bg.jpg');
   background-size: cover;
+  background-color:#222;
   font-size: 30px;
   color: #fff;
   width: 40%

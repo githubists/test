@@ -296,15 +296,11 @@ self.__precacheManifest = [
   {
     "url": "js/main.js",
     "revision": "1624a1fa0eadab987c68db1e7fd9df97"
-  },
-  {
-    "url": "js/sw-custom.js",
-    "revision": "7ba97e2871fc1273b6c9d5d06063cb09"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/\/[^\.]*$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"pages", plugins: [new workbox.expiration.Plugin({ maxEntries: 30, maxAgeSeconds: 28800, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
+workbox.routing.registerRoute(/\/[^\.]*$/, new workbox.strategies.NetworkFirst({ "cacheName":"pages", plugins: [new workbox.expiration.Plugin({ maxEntries: 30, maxAgeSeconds: 28800, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/^https:\/\/cdn.ampproject.org/, new workbox.strategies.StaleWhileRevalidate({ plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/^https:\/\/www.googletagmanager.com/, new workbox.strategies.StaleWhileRevalidate({ plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 
