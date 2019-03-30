@@ -1468,7 +1468,7 @@ ul {
   display: inline-block;
 }
 
-footer>h2>span {
+footer>h2{
   font-size: 1.4rem;
   font-weight: 500
 }
@@ -1568,7 +1568,6 @@ section>h2 {
     font-size: 2.5em;
     line-height:1em;
     margin: 1em 0 1.5em;
-    padding-top:4rem;
     text-shadow:5px 5px 5px rgba(0,0,0,0.2);
     display: block;
     font-weight: bold;

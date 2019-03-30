@@ -16,10 +16,10 @@ amp-iframe{
 <?=$navbar?>
     <main id="content" role="main" class="">
       <article class="px2">
-          <section class="pt5">
+          <section class="">
               <h2 class="relative">アクセス</h2>
               <div class="m2">
-                  <h3>東京大学本郷キャンパス 医学部2号館</h3>
+                  <h3>東京大学本郷キャンパス 医学部本館</h3>
                   <ul>
                       <li>・東京メトロ丸ノ内線/都営大江戸線 本郷三丁目から徒歩10分</li>
                       <li>・東京メトロ南北線 東大前駅から徒歩10分</li>
