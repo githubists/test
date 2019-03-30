@@ -1,6 +1,6 @@
 <main id="content" role="main" class="">
   <article class="px2">
-      <section class="pt5">
+      <section class="">
           <h2 class="relative">Coming Soon</h2>
           <p class="m2 relative p2">
               このページは近日公開予定です。<br>
