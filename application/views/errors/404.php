@@ -12,9 +12,9 @@
 <?=$navbar?>
 <main id="content" role="main" class="">
   <article class="px2">
-      <section class="pt5">
+      <section class="">
           <h2 class="relative">404 Page not found</h2>
-          <p class="m2 relative">
+          <p class="m2 relative p2">
               お探しのページは見つかりません。<br>
               トップページは <a href="/">こちら</a> 。
           </p>
