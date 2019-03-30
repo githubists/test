@@ -11,6 +11,9 @@
   <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 <?=$header?>
+section>h2{
+  margin-top:1em;
+}
 #sns svg {
     padding-top: 0;
     float: left;
