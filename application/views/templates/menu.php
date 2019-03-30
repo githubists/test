@@ -8,7 +8,7 @@
 </head>
 <body  id="top">
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TSDD9QV&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
-  <amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://gogatsusai.herokuapp.com/sw.html"></amp-install-serviceworker>
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://utmed-mayfes.net/sw.html"></amp-install-serviceworker>
 
   <!-- Start Sidebar -->
   <amp-sidebar id="header-sidebar" class="ampstart-sidebar  " layout="nodisplay" side="right">

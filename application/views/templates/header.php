@@ -18,9 +18,9 @@
       }
     },
     "image": [
-      "https://gogatsusai.herokuapp.com/img/header/header-1x1-2x-50-withtext.jpg",
-      "https://gogatsusai.herokuapp.com/img/header/header-4x3-2x-50-withtext",
-      "https://gogatsusai.herokuapp.com/img/header/header-16x9-2x-50-withtext"
+      "https://utmed-mayfes.net/img/header/header-1x1-2x-50-withtext.jpg",
+      "https://utmed-mayfes.net/img/header/header-4x3-2x-50-withtext",
+      "https://utmed-mayfes.net/img/header/header-16x9-2x-50-withtext"
      ],
     "description": "東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。",
     "endDate": "2019-05-19T18:00+09:00",
@@ -52,8 +52,8 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "url": "https://gogatsusai.herokuapp.com/",
-    "logo": "https://gogatsusai.herokuapp.com/img/icon/icon144.png"
+    "url": "https://utmed-mayfes.net/",
+    "logo": "https://utmed-mayfes.net/img/icon/icon144.png"
   }
 ]
 </script>
