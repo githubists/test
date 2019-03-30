@@ -11,9 +11,6 @@
   <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 <?=$header?>
-section>h2{
-  padding-top:4rem;
-}
 #sns svg {
     padding-top: 0;
     float: left;
@@ -601,7 +598,6 @@ section>h2{
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="10 10 37 37" class="left"><title>Facebook</title><path fill="#3b5998" d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon-fb"></path></svg>
     <div><h3 class="h5">Facebook:</h3><p>@utmed.mayfes</p></div>
     </a>
-    <!-- Copyright (c) Thomas Rye Released under the MIT license http://opensource.org/licenses/mit-license.php-->
     <a href="https://www.instagram.com/utmed_mayfes/"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="8 5 45 45" class="left"><title>instagram</title><defs><radialGradient id="ig" gradientUnits="objectBoundingBox" spreadMethod="pad" cx="0.3" cy="1.07" r="1.2"><stop stop-color="#fdf497" offset="0%"/><stop stop-color="#fdf497" offset="5%" id="stop20" /><stop stop-color="#fd5949" offset="45%"/><stop stop-color="#d6249f" offset="60%"/><stop stop-color="#285aeb" offset="90%"/></radialGradient></defs><path fill=url(#ig) class="ampstart-icon-instagram" d="M 27.2 6.1 c -5.1 0 -5.8 0 -7.8 0.1 s -3.4 0.4 -4.6 0.9 c -1.2 0.5 -2.3 1.1 -3.3 2.2 c -1.1 1 -1.7 2.1 -2.2 3.3 c -0.5 1.2 -0.8 2.6 -0.9 4.6 c -0.1 2 -0.1 2.7 -0.1 7.8 s 0 5.8 0.1 7.8 s 0.4 3.4 0.9 4.6 c 0.5 1.2 1.1 2.3 2.2 3.3 c 1 1.1 2.1 1.7 3.3 2.2 c 1.2 0.5 2.6 0.8 4.6 0.9 c 2 0.1 2.7 0.1 7.8 0.1 s 5.8 0 7.8 -0.1 s 3.4 -0.4 4.6 -0.9 c 1.2 -0.5 2.3 -1.1 3.3 -2.2 c 1.1 -1 1.7 -2.1 2.2 -3.3 c 0.5 -1.2 0.8 -2.6 0.9 -4.6 c 0.1 -2 0.1 -2.7 0.1 -7.8 s 0 -5.8 -0.1 -7.8 s -0.4 -3.4 -0.9 -4.6 c -0.5 -1.2 -1.1 -2.3 -2.2 -3.3 c -1 -1.1 -2.1 -1.7 -3.3 -2.2 c -1.2 -0.5 -2.6 -0.8 -4.6 -0.9 c -2 -0.1 -2.7 -0.1 -7.8 -0.1 Z m 0 3.4 c 5 0 5.6 0 7.6 0.1 c 1.9 0.1 2.9 0.4 3.5 0.7 c 0.9 0.3 1.6 0.7 2.2 1.4 c 0.7 0.6 1.1 1.3 1.4 2.2 c 0.3 0.6 0.6 1.6 0.7 3.5 c 0.1 2 0.1 2.6 0.1 7.6 s 0 5.6 -0.1 7.6 c -0.1 1.9 -0.4 2.9 -0.7 3.5 c -0.3 0.9 -0.7 1.6 -1.4 2.2 c -0.7 0.7 -1.3 1.1 -2.2 1.4 c -0.6 0.3 -1.7 0.6 -3.5 0.7 c -2 0.1 -2.6 0.1 -7.6 0.1 c -5.1 0 -5.7 0 -7.7 -0.1 c -1.8 -0.1 -2.9 -0.4 -3.5 -0.7 c -0.9 -0.3 -1.5 -0.7 -2.2 -1.4 c -0.7 -0.7 -1.1 -1.3 -1.4 -2.2 c -0.3 -0.6 -0.6 -1.7 -0.7 -3.5 c 0 -2 -0.1 -2.6 -0.1 -7.6 c 0 -5.1 0.1 -5.7 0.1 -7.7 c 0.1 -1.8 0.4 -2.8 0.7 -3.5 c 0.3 -0.9 0.7 -1.5 1.4 -2.2 c 0.7 -0.6 1.3 -1.1 2.2 -1.4 c 0.6 -0.3 1.6 -0.6 3.5 -0.7 h 7.7 Z m 0 5.8 c -5.4 0 -9.7 4.3 -9.7 9.7 c 0 5.4 4.3 9.7 9.7 9.7 c 5.4 0 9.7 -4.3 9.7 -9.7 c 0 -5.4 -4.3 -9.7 -9.7 -9.7 Z m 0 16 c -3.5 0 -6.3 -2.8 -6.3 -6.3 s 2.8 -6.3 6.3 -6.3 s 6.3 2.8 6.3 6.3 s -2.8 6.3 -6.3 6.3 Z m 12.4 -16.4 c 0 1.3 -1.1 2.3 -2.3 2.3 c -1.3 0 -2.3 -1 -2.3 -2.3 c 0 -1.2 1 -2.3 2.3 -2.3 c 1.2 0 2.3 1.1 2.3 2.3 Z" ></path></svg>
     <div><h3 class="h5">Instagram:</h3><p>@utmed_mayfes</p></div>
     </a>
