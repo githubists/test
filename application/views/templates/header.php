@@ -1468,7 +1468,7 @@ ul {
   display: inline-block;
 }
 
-footer>h2>span {
+footer>h2 {
   font-size: 1.4rem;
   font-weight: 500
 }
