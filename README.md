@@ -59,3 +59,54 @@ $ php -S localhost:3000 index.php
 http://localhost:3000/[controller-class]/[controller-method]/[arguments]
 にアクセスすると試すことができます。
 application/views/parts/template.phpに分割のデモがあります。
+
+## パーツの説明
+### 必須
+| ファイル名 | 内容 |インクルードコード|
+----|----|----
+| [application/views/templates/prefix.php](https://github.com/githubists/test/blob/master/application/views/templates/prefix.php) | `<!doctype HTML>`から`<head>`まで |`<?=$prefix?>`|
+| [application/views/templates/header.php](https://github.com/githubists/test/blob/master/application/views/templates/header.php) | 全ページに共通する`<meta>`、`<link>`タグとCSS |`<?=$header?>`|
+| [application/views/templates/menu.php](https://github.com/githubists/test/blob/master/application/views/templates/menu.php) | `@font-face`、`</head`、`<body>`、GTMの設定、Service Workerのインストール、サイドバーの内容 |`<?=$menu?>`|
+| [application/views/templates/navbar.php](https://github.com/githubists/test/blob/master/application/views/templates/navbar.php) | サイドバーの開閉用ヘッダー |`<?=$navbar?>`|
+| [application/views/templates/footer.php](https://github.com/githubists/test/blob/master/application/views/templates/footer.php) | フッターとLightboxの中身、`</body>`、`</html>` |`<?=$footer?>`|
+### オプション
+| ファイル名 | 内容 |インクルードコード|
+----|----|----
+| [application/views/parts/comingsoon.php](https://github.com/githubists/test/blob/master/application/views/parts/comingsoon.php) | ComingSoonページの内容 `<main>`~`</main>` |`<?=$comingsoon?>`|
+| [application/views/parts/sponsors.php](https://github.com/githubists/test/blob/master/application/views/parts/comingsoon.php) | 協賛企業様のバナー表示 `<section>`~`</section>` |`<?=$sponsors?>`|
+| [application/views/parts/vote.php](https://github.com/githubists/test/blob/master/application/views/parts/comingsoon.php) | Mayfes Award投票バナー(未作成) |`<?=$vote?>`|
+### 使用法([template.php](https://github.com/githubists/test/blob/master/application/views/pages/template.php)の解説)
+```
+<?=$prefix?>
+  <title></title>
+  <link rel="canonical" href="">
+  <meta name="description" content=""/>
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+```
+上記のタグはページごとに変える。
+また、ここにamp-lightboxとamp-sidebar以外のAMP Componentをインクルードする。
+```
+     <?=$header?>
+```
+ここは`<style>`~`</style>`の間であるからCSSのコードをそのまま打ち込む
+```
+    <?=$menu?>
+```
+メニューバーの上に置きたいものはここに書く。メニューバーは`position:sticky`で画面上部に貼りつくようになっている
+```
+    <?=$navbar?>
+```
+ここにはメインとなるコンテンツを置く`<?=$comingsoon?>`や`<?=$sponsors?>`、`<?=$vote?>`を置くのもここである。
+```
+    <button class="controls scrollToTop p0"on="tap:top.scrollTo(duration=200)"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>ScrollToTop</title><polyline stroke="#fff" fill="none" points="10 32 25 18 40 32"/></svg></button>
+  <?=$footer?>
+```
+これ以降は何も書かない。
+
+### カスタマイズ法
+新たに部品を[application/views/templates](https://github.com/githubists/test/tree/master/application/views/templates)、[application/views/parts](https://github.com/githubists/test/tree/master/application/views/parts)に作成した場合は、
+[application/controllers/Pages.php](https://github.com/githubists/test/blob/master/application/controllers/Pages.php)の`public function view($page='gogatsusai_home')`の`else{}`内でhoge.phpをファイル名とすると`$data['hoge']=$this->load->view('templates/hoge','',TRUE);`あるいは`$data['hoge']=$this->load->view('parts/hoge','',TRUE);`を付け加えれば`<?=$hoge?>`でインクルードできるようになる
