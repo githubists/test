@@ -406,10 +406,10 @@
   <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
   <h1>毒物</h1>
   <hr /><br />
-  <h2>毒物</h2>
-  <p>内容</p>
-  <h2>働く細胞</h2>
-  <p>赤血球、白血球</p>
+  <h2>どんな企画?</h2>
+  <p>身近な植物に含まれる有毒成分や、栄養素の大量摂取による中毒を、薬理学的観点から説明し、毒物の危険性を適切に再認識してもらう企画です。将来医学・薬学を志す高校生に、この分野への学術的興味を持ってもら得たらうれしいです。</p>
+  <h2>ポスター展示</h2>
+  <p>トリカブトやチョウセンアサガオなど比較的身近な野生・園芸植物に含まれる人体に悪影響のある成分の作用機序や、塩分等の大量摂取による健康への影響をまとめ、ポスターとして発表しています。ぜひご覧ください。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before toxin" on="tap:toxin.close,disaster">&lt; 前の企画</button></li>
   <li><button aria-label="close toxin" on="tap:toxin.close">✕</button></li>
@@ -421,12 +421,10 @@
 <amp-img src="/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
-  <h1>カフェ</h1>
+  <h1>おいしく学ぶ医学</h1>
   <hr /><br />
-  <h2>カフェとは?</h2>
-  <p>内容</p>
-  <h2>医学にちなんだメニュー</h2>
-  <p>赤血球、白血球</p>
+  <h2>おいしく学ぶ医学</h2>
+  <p>色が変わる！ハーブティー、免疫もちもちフルーツサイダーなど医学にちなんだメニューを提供しております。紅茶のパウンドケーキ、ポルポローネ(いちご・抹茶)や飲み物も提供しております。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before cafe" on="tap:cafe.close,toxin">&lt; 前の企画</button></li>
   <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
@@ -441,7 +439,7 @@
   <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
   <hr /><br />
   <h2>東大医学部限定グッズとは?</h2>
-  <p>内容</p>
+  <p>今年度もポストカード等医学部グッズを販売いたします。グッズの詳細情報は近日追加いたします。また受験本も販売いたします。最新の情報を取り入れてさらなる内容の充実を図っております。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
   <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>
