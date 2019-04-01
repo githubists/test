@@ -435,7 +435,7 @@ section>h2{
                   本館1階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>筋肉体操</u>
+                  <u>筋肉から学べる解剖学</u>
               </amp-fit-text>
           </div>
       </button>

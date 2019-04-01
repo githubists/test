@@ -40,7 +40,7 @@
             <li><button on="tap:artery">動脈観察</button></li>
             <li><button on="tap:coat">白衣体験</button></li>
             <li><button on="tap:sketch">スケッチ企画</button></li>
-            <li><button on="tap:muscle">筋肉体操</button></li>
+            <li><button on="tap:muscle">筋肉から学べる解剖学</button></li>
             <li><button on="tap:drama">医学ドラマの世界</button></li>
           </ul>
         </li>
@@ -284,10 +284,10 @@
 </article>
 </amp-lightbox>
 <amp-lightbox id="muscle" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+<amp-img src="/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉から学べる解剖学のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close muscle" on="tap:muscle.close">✕</button>
-  <h1>筋肉体操</h1>
+  <h1>筋肉から学べる解剖学</h1>
   <hr /><br />
   <h2>東大医学部生ってどんな体しているの?</h2>
   <h3>意外に運動好き?</h3>
@@ -421,7 +421,7 @@
 <amp-img src="/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close cafe" on="tap:cafe.close">✕</button>
-  <h1>おいしく学ぶ医学</h1>
+  <h1>カフェ</h1>
   <hr /><br />
   <h2>おいしく学ぶ医学</h2>
   <p>色が変わる！ハーブティー、免疫もちもちフルーツサイダーなど医学にちなんだメニューを提供しております。紅茶のパウンドケーキ、ポルポローネ(いちご・抹茶)や飲み物も提供しております。</p>
