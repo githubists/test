@@ -472,17 +472,6 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      <button on="tap:narrative">
-        <amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
-        <div class="absolute flex flex-column proj-container">
-              <amp-fit-text layout="flex-item" class="proj-desc">
-                  本館1階
-              </amp-fit-text>
-              <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>ことばで感じる医療</u>
-              </amp-fit-text>
-          </div>
-      </button>
       <button on="tap:research">
         <amp-img src="/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -505,6 +494,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
+      <!--
       <button on="tap:toxin">
         <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -516,6 +506,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
+      -->
     </i>
     </section>
     <section class="relative">
