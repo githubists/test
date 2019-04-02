@@ -48,6 +48,7 @@
           <ul class="disc">
             <li><button on="tap:history">医学部史</button></li>
             <li><button on="tap:bookshelf">医学部生の本棚</button></li>
+            <!--<li><button on="tap:narrative">ことばで感じる医療</button></li>-->
             <li><button on="tap:research">最先端研究</button></li>
             <li><button on="tap:disaster">災害時の医療</button></li>
             <!--<li><button on="tap:toxin">毒物</button></li>-->
@@ -352,6 +353,26 @@
   </ul>
 </article>
 </amp-lightbox>
+
+<!--
+<amp-lightbox id="narrative" layout="nodisplay" scrollable="">
+<amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
+<article>
+  <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
+  <h1>ことばで感じる医療</h1>
+  <hr /><br />
+  <h2>患者さんとの語り</h2>
+  <p>医療の一側面である医療者と患者のコミュニケーションに焦点を当てた企画である。学生が解説・誘導を行いつつ来場者と具体的なケースを想定したロールプレイを行い、医療における適切なコミュニケーションについて来場者に考えてもらうことが目的である。</p>
+  <p>ここで考える適切なコミュニケーションはケースによって異なるが、「患者の心理的不安を取り除く」「患者と医療者が一体となって治療方針を決定する」などを念頭に置いている。</p>
+  <ul class="lightbox-nav">
+  <li><button class="" aria-label="before narrative" on="tap:narrative.close,bookshelf">&lt; 前の企画</button></li>
+  <li><button aria-label="close narrative" on="tap:narrative.close">✕</button></li>
+  <li><button class="" aria-label="next narrative" on="tap:narrative.close,research">次の企画 &gt;</button></li>
+  </ul>
+</article>
+</amp-lightbox>
+-->
+
 <amp-lightbox id="research" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
