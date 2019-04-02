@@ -383,8 +383,8 @@
   </ul>
 </article>
 </amp-lightbox>
-<amp-lightbox id="toxin" layout="nodisplay" scrollable="">
 <!--
+<amp-lightbox id="toxin" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
