@@ -50,7 +50,7 @@
             <li><button on="tap:bookshelf">医学部生の本棚</button></li>
             <li><button on="tap:narrative">ことばで感じる医療</button></li>
             <li><button on="tap:research">最先端研究</button></li>
-            <li><button on="tap:disaster">災害医療</button></li>
+            <li><button on="tap:disaster">災害時の医療</button></li>
             <li><button on="tap:toxin">毒物</button></li>
             <li><button on="tap:cafe">カフェ</button></li>
             <li><button on="tap:goods">グッズ</button></li>
@@ -386,12 +386,12 @@
 </article>
 </amp-lightbox>
 <amp-lightbox id="disaster" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
+<amp-img src="/img/contents/exhibition/disaster.jpg" width="450" height="300" alt="災害時の医療のイメージ画像として干ばつでひび割れた土地の写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close disaster" on="tap:disaster.close">✕</button>
-  <h1>災害医療</h1>
+  <h1>災害時の医療</h1>
   <hr /><br />
-  <h2>災害医療とは</h2>
+  <h2>災害時の医療とは</h2>
   <p>災害医療という言葉をお聞きになったことがある方も多いでしょうか。日本は昨年だけでも北海道や大阪での地震、また西日本での豪雨など、多くの自然災害に見舞われました。こうしたとき災害の被害を受けた地域では、医療の需要が供給を上回り、他の地域からの医療支援が必要な状況となりえます。こうした際に提供される医療を災害医療と呼んでいます。また自然災害だけでなく、大規模な事故やテロは人為の災害です。さらに2020年のオリンピック・パラリンピックのような行事でも、大勢の人が集まるためにこうした災害が起きると大きな被害が懸念され、災害医療の観点からの対策が重要となります。本企画では、そうした災害医療にまつわるトピックをポスター展示にて紹介します。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before disaster" on="tap:disaster.close,research">&lt; 前の企画</button></li>
