@@ -48,10 +48,9 @@
           <ul class="disc">
             <li><button on="tap:history">医学部史</button></li>
             <li><button on="tap:bookshelf">医学部生の本棚</button></li>
-            <li><button on="tap:narrative">ことばで感じる医療</button></li>
             <li><button on="tap:research">最先端研究</button></li>
             <li><button on="tap:disaster">災害時の医療</button></li>
-            <li><button on="tap:toxin">毒物</button></li>
+            <!--<li><button on="tap:toxin">毒物</button></li>-->
             <li><button on="tap:cafe">カフェ</button></li>
             <li><button on="tap:goods">グッズ</button></li>
             <li><button on="tap:lecture">講演会</button></li>
@@ -350,23 +349,7 @@
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before bookshelf" on="tap:bookshelf.close,history">&lt; 前の企画</button></li>
   <li><button aria-label="close bookshelf" on="tap:bookshelf.close">✕</button></li>
-  <li><button class="" aria-label="next bookshelf" on="tap:bookshelf.close,narrative">次の企画 &gt;</button></li>
-  </ul>
-</article>
-</amp-lightbox>
-<amp-lightbox id="narrative" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
-<article>
-  <button class="close" aria-label="close narrativeivle" on="tap:narrative.close">✕</button>
-  <h1>ことばで感じる医療</h1>
-  <hr /><br />
-  <h2>患者さんとの語り</h2>
-  <p>医療の一側面である医療者と患者のコミュニケーションに焦点を当てた企画である。学生が解説・誘導を行いつつ来場者と具体的なケースを想定したロールプレイを行い、医療における適切なコミュニケーションについて来場者に考えてもらうことが目的である。</p>
-  <p>ここで考える適切なコミュニケーションはケースによって異なるが、「患者の心理的不安を取り除く」「患者と医療者が一体となって治療方針を決定する」などを念頭に置いている。</p>
-  <ul class="lightbox-nav">
-  <li><button class="" aria-label="before narrative" on="tap:narrative.close,bookshelf">&lt; 前の企画</button></li>
-  <li><button aria-label="close narrative" on="tap:narrative.close">✕</button></li>
-  <li><button class="" aria-label="next narrative" on="tap:narrative.close,research">次の企画 &gt;</button></li>
+  <li><button class="" aria-label="next bookshelf" on="tap:bookshelf.close,research">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
@@ -379,7 +362,7 @@
   <h2>この企画――最先端研究について</h2>
   <p>この企画では、昨年に東大の研究室から発表された論文をいくつか選び、ポスターの形式で紹介いたします。東大の医学系研究は、本郷キャンパスや東大病院、また各地の附置研究所にあるさまざまな領域の研究室で日々行われています。論文は、その日々の研究の営みが成果となり、世界中で読めるように専門雑誌などに投稿されたものです。今回の五月祭企画では、神経病理学教室、免疫学教室、システムズ薬理学教室、健康環境医工学部門から発表された各論文の紹介ポスターと、東大病院のがん遺伝子パネル検査についての解説ポスターの計5つを用意しました。基礎研究から臨床まで幅広いテーマから選んだつもりです。ここ本郷の医学部建物内で、実際に毎日どのような研究が行われているか、少しだけ覗いてみてください!</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before research" on="tap:research.close,narrative">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before research" on="tap:research.close,bookshelf">&lt; 前の企画</button></li>
   <li><button aria-label="close research" on="tap:research.close">✕</button></li>
   <li><button class="" aria-label="next research" on="tap:research.close,disaster">次の企画 &gt;</button></li>
   </ul>
@@ -396,11 +379,12 @@
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before disaster" on="tap:disaster.close,research">&lt; 前の企画</button></li>
   <li><button aria-label="close disaster" on="tap:disaster.close">✕</button></li>
-  <li><button class="" aria-label="next disaster" on="tap:disaster.close,toxin">次の企画 &gt;</button></li>
+  <li><button class="" aria-label="next disaster" on="tap:disaster.close,cafe">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
 <amp-lightbox id="toxin" layout="nodisplay" scrollable="">
+<!--
 <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close toxin" on="tap:toxin.close">✕</button>
@@ -417,6 +401,7 @@
   </ul>
 </article>
 </amp-lightbox>
+-->
 <amp-lightbox id="cafe" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
@@ -426,7 +411,7 @@
   <h2>おいしく学ぶ医学</h2>
   <p>色が変わる！ハーブティー、免疫もちもちフルーツサイダーなど医学にちなんだメニューを提供しております。紅茶のパウンドケーキ、ポルポローネ(いちご・抹茶)や飲み物も提供しております。</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before cafe" on="tap:cafe.close,toxin">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before cafe" on="tap:cafe.close,disaster">&lt; 前の企画</button></li>
   <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
   <li><button class="" aria-label="next cafe" on="tap:cafe.close,goods">次の企画 &gt;</button></li>
   </ul>
