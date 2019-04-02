@@ -490,7 +490,7 @@ section>h2{
                   本館1階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>災害医療</u>
+                  <u>災害時の医療</u>
               </amp-fit-text>
           </div>
       </button>
