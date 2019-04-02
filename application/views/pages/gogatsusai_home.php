@@ -252,7 +252,7 @@ section>h2{
           <div class="top-credit  block">東京大学医学部五月祭企画</div>
           <h1 class="top-title block"><div>医へのいざない</div></h1>
           <amp-fit-text height=12vw layout="fixed-height" max-font-size="30">
-              <small>2019.</small>5.18<small>(土)-</small>19<small>(日) </small>9:00-17:00
+              <small>2019.</small>5.18<small>(土)-</small>19<small>(日) </small>9:00-18:00
               <br /><small>本郷キャンパス 医学部本館</small>
           </amp-fit-text>
 
