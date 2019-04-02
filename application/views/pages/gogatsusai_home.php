@@ -322,6 +322,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
+      <!--
       <button on="tap:quiz">
           <amp-img src="/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -333,6 +334,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
+      -->
       <button on="tap:emergency">
           <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">

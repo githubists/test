@@ -31,7 +31,7 @@
         <li class="md-pt0 col-6 xs-col-5 lg-col-5 left-align">
           <ul class="disc">
             <li><button on="tap:vr">VR医学体験</button></li>
-            <li><button on="tap:quiz">クイズラリー</button></li>
+            <!--<li><button on="tap:quiz">クイズラリー</button></li>-->
             <li><button on="tap:emergency">救命救急体験</button></li>
             <li><button on="tap:bp">血圧測定体験</button></li>
             <li><button on="tap:surgery">手術体験</button></li>
@@ -102,10 +102,11 @@
     <ul class="lightbox-nav">
     <li><button class="notarget" aria-label="before vr" on="tap:vr.close,art">&lt; 前の企画</button></li>
     <li><button aria-label="close vr" on="tap:vr.close">✕</button></li>
-    <li><button aria-label="next vr" on="tap:vr.close,quiz">次の企画 &gt;</button></li>
+    <li><button aria-label="next vr" on="tap:vr.close,emergency">次の企画 &gt;</button></li>
     </ul>
   </article>
 </amp-lightbox>
+<!--
 <amp-lightbox id="quiz" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
@@ -125,6 +126,7 @@
   </ul>
 </article>
 </amp-lightbox>
+-->
 <amp-lightbox id="emergency" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
 <article>
@@ -139,7 +141,7 @@
   <h3>「救急救命×リアル脱出ゲーム」!?</h3>
   <p>この文章を読んでいる皆さんの多くは、保健体育の授業や運転免許の学科で救命講習を受けたことがあるでしょう。胸骨圧迫、人工呼吸、AEDの使用等、これらの講習は教育的ではあるものの、臨場感に欠けていると感じた人も多いのではないでしょうか。筆者もその一人でした。「一般向けの救命講習を、臨場感を出して行うことはできないのか?」このような思いから本企画は始まりました。近年若者の間で大流行しているリアル脱出ゲームと救命講習を組み合わせることで、緊張感の中、救命に必要な手技をマスターできるプログラムを作ることを目指しました。制作に携わったメンバーはリアル脱出ゲームが好きな人ばかりです。諸所に工夫が凝らしてあるので、ぜひ存分に楽しんでいってください!</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before emergency" on="tap:emergency.close,quiz">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before emergency" on="tap:emergency.close,vr">&lt; 前の企画</button></li>
   <li><button aria-label="close emergency" on="tap:emergency.close">✕</button></li>
   <li><button class="" aria-label="next emergency" on="tap:emergency.close,bp">次の企画 &gt;</button></li>
   </ul>
