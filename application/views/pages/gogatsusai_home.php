@@ -375,7 +375,7 @@ section>h2{
                   本館2階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>臓器当て</u>
+                  <u>開腹式臓器パズル</u>
               </amp-fit-text>
           </div>
       </button>
@@ -426,7 +426,7 @@ section>h2{
                   本館3階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>医学生のスケッチ</u>
+                  <u>スケッチ企画</u>
               </amp-fit-text>
           </div>
       </button>
@@ -569,7 +569,7 @@ section>h2{
                   本館3階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>ピアノの会</u>
+                  <u>鉄門ピアノの会</u>
               </amp-fit-text>
           </div>
       </button>
@@ -580,7 +580,7 @@ section>h2{
                   本館3階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>室内楽の会</u>
+                  <u>鉄門室内楽の会</u>
               </amp-fit-text>
           </div>
       </button>

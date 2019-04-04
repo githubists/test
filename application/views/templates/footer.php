@@ -32,10 +32,10 @@
           <ul class="disc">
             <li><button on="tap:vr">VR医学体験</button></li>
             <!--<li><button on="tap:quiz">クイズラリー</button></li>-->
-            <li><button on="tap:emergency">救命救急体験</button></li>
+            <li><button on="tap:emergency">ER-救命救急体験</button></li>
             <li><button on="tap:bp">血圧測定体験</button></li>
             <li><button on="tap:surgery">手術体験</button></li>
-            <li><button on="tap:organ">臓器当て</button></li>
+            <li><button on="tap:organ">開腹式臓器パズル</button></li>
             <li><button on="tap:beat">鼓動を感じる</button></li>
             <li><button on="tap:artery">動脈観察</button></li>
             <li><button on="tap:coat">白衣体験</button></li>
@@ -53,7 +53,7 @@
             <li><button on="tap:disaster">災害時の医療</button></li>
             <!--<li><button on="tap:toxin">毒物</button></li>-->
             <li><button on="tap:cafe">カフェ</button></li>
-            <li><button on="tap:goods">グッズ</button></li>
+            <li><button on="tap:goods">グッズ販売</button></li>
             <li><button on="tap:lecture">講演会</button></li>
             <li><button on="tap:piano">鉄門ピアノの会</button></li>
             <li><button on="tap:chamber">鉄門室内楽の会</button></li>
@@ -131,7 +131,7 @@
 <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
-  <h1>救急救命体験</h1>
+  <h1>ER-救急救命体験</h1>
   <hr /><br />
   <h2>ある救命実習からの脱出</h2>
   <h3>ストーリー</h3>
@@ -151,7 +151,7 @@
 <amp-img src="/img/contents/experience/bp.jpg" width="450" height="300" alt="血圧測定体験イメージ画像として、血圧測定に必要な聴診器の写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close bp" on="tap:bp.close">✕</button>
-  <h1>血圧測定</h1>
+  <h1>血圧測定体験</h1>
   <hr /><br />
   <h2>血圧を"自分で"測ってみよう!</h2>
   <h3>血圧ってなんだろう?</h3>
@@ -194,7 +194,7 @@
 <amp-img src="/img/contents/experience/organ.jpg" width="450" height="300" alt="臓器あてイメージ画像として、骨格が透けて見える人体模型と、身体の状態を表すグラフの画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close organ" on="tap:organ.close">✕</button>
-  <h1>臓器パズル</h1>
+  <h1>開腹式臓器パズル</h1>
   <hr /><br />
   <h2>自分の体の中のこと、知っていますか?</h2>
   <h3>実は知らない体の内部</h3>
@@ -270,7 +270,7 @@
 <amp-img src="/img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
-  <h1>医学部生のスケッチ</h1>
+  <h1>スケッチ企画</h1>
   <hr /><br />
   <h2>東大医学部生の「絵心」や如何に</h2>
   <h3>医学部に、まるで美術の授業のような時間があります</h3>
@@ -442,7 +442,7 @@
 <amp-lightbox id="goods" layout="nodisplay" scrollable="">
 <amp-img src="/img/contents/misc/goods2.jpg" width="450" height="300" alt="グッズ販売のイメージ画像としてケトルや水差しが棚に収まっている写真を使用した。" layout="responsive" class=""></amp-img>
 <article>
-  <h1>グッズ</h1>
+  <h1>グッズ販売</h1>
   <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
   <hr /><br />
   <h2>東大医学部限定グッズとは?</h2>
