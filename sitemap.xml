@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://utmed-mayfes.net/</loc>
-    <lastmod>2018-05-18T20:00:00+09]00</lastmod>
+    <lastmod>2018-05-18T20:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://utmed-mayfes.net/access</loc>
-    <lastmod>2018-05-18T20:00:00+09]00</lastmod>
+    <lastmod>2018-05-18T20:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://utmed-mayfes.net/contents</loc>
-    <lastmod>2018-05-18T20:00:00+09]00</lastmod>
+    <lastmod>2018-05-18T20:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://utmed-mayfes.net/timetable</loc>
-    <lastmod>2018-05-18T20:00:00+09]00</lastmod>
+    <lastmod>2018-05-18T20:00:00+09:00</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://utmed-mayfes.net/map</loc>
-    <lastmod>2018-05-18T20:00:00+09]00</lastmod>
+    <lastmod>2018-05-18T20:00:00+09:00</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
