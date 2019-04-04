@@ -39,8 +39,8 @@
             <li><button on="tap:beat">鼓動を感じる</button></li>
             <li><button on="tap:artery">動脈観察</button></li>
             <li><button on="tap:coat">白衣体験</button></li>
-            <li><button on="tap:sketch">スケッチ企画</button></li>
             <li><button on="tap:muscle">筋肉から学べる解剖学</button></li>
+            <li><button on="tap:sketch">スケッチ企画</button></li>
             <li><button on="tap:drama">医学ドラマの世界</button></li>
           </ul>
         </li>
@@ -262,25 +262,7 @@
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before coat" on="tap:coat.close,artery">&lt; 前の企画</button></li>
   <li><button aria-label="close coat" on="tap:coat.close">✕</button></li>
-  <li><button class="" aria-label="next coat" on="tap:coat.close,sketch">次の企画 &gt;</button></li>
-  </ul>
-</article>
-</amp-lightbox>
-<amp-lightbox id="sketch" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
-<article>
-  <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
-  <h1>スケッチ企画</h1>
-  <hr /><br />
-  <h2>東大医学部生の「絵心」や如何に</h2>
-  <h3>医学部に、まるで美術の授業のような時間があります</h3>
-  <p>皆さんは、医学部で普段行われる授業についてどのようなイメージをお持ちでしょうか?医学生が避けては通れない試練(?)の一つに、「様々な臓器・身体の部位の一部を顕微鏡で見て、スケッチする」というものがあります(東大医学部では2年生の後半にこの授業が実施されます)。顕微鏡を覗きながら見えるものを絵に描くのは、非常に骨の折れる作業なのです。</p>
-  <h3>医学生の描いた渾身の絵を御覧あれ!</h3>
-  <p>この企画は、その医学生が苦労して描いたスケッチを皆さんに手にとって見て頂こうというものです。同じ東大医学部生でもそのスケッチは十人十色。まるで写真かと思うような美しいスケッチもあれば、描いた人の苦労が感じ取れるような、小さなところまで丁寧に描かれたものもあるでしょう。中には抽象画のような、違う意味で芸術的な(?)スケッチもあるかもしれません。そんなスケッチを是非パラパラと眺めて楽しんで頂けると幸いです。</p>
-  <ul class="lightbox-nav">
-  <li><button class="" aria-label="before sketch" on="tap:sketch.close,coat">&lt; 前の企画</button></li>
-  <li><button aria-label="close sketch" on="tap:sketch.close">✕</button></li>
-  <li><button class="" aria-label="next sketch" on="tap:sketch.close,muscle">次の企画 &gt;</button></li>
+  <li><button class="" aria-label="next coat" on="tap:coat.close,muscle">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
@@ -296,9 +278,27 @@
   <h3>筋肉から親しむ「解剖学」</h3>
   <p>解剖学、と聞くと多くの方はカエルの解剖を思い受けべて、気持ち悪いな、よしてくれよ。と敬遠してしまいがち。しかし、解剖学というのは体の成り立ちを詳しく見ることでそのほかのあらゆる医学を学ぶ基礎となる学問。あまり難しい展示で医学から距離を感じてしまうより、東大生医学部生の筋肉を使った世にも奇妙な解剖学講義から医学に親しんでみるのはいかがでしょうか</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before muscle" on="tap:muscle.close,sketch">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before muscle" on="tap:muscle.close,coat">&lt; 前の企画</button></li>
   <li><button aria-label="close muscle" on="tap:muscle.close">✕</button></li>
-  <li><button class="" aria-label="next muscle" on="tap:muscle.close,drama">次の企画 &gt;</button></li>
+  <li><button class="" aria-label="next muscle" on="tap:muscle.close,sketch">次の企画 &gt;</button></li>
+  </ul>
+</article>
+</amp-lightbox>
+<amp-lightbox id="sketch" layout="nodisplay" scrollable="">
+<amp-img src="/img/contents/exhibition/sketch.jpg" width="450" height="300" alt="スケッチ企画のイメージ画像として色鉛筆が十数本並んでテーブルの上においてある画像を使用した。" layout="responsive" class=""></amp-img>
+<article>
+  <button class="close" aria-label="close sketch" on="tap:sketch.close">✕</button>
+  <h1>スケッチ企画</h1>
+  <hr /><br />
+  <h2>東大医学部生の「絵心」や如何に</h2>
+  <h3>医学部に、まるで美術の授業のような時間があります</h3>
+  <p>皆さんは、医学部で普段行われる授業についてどのようなイメージをお持ちでしょうか?医学生が避けては通れない試練(?)の一つに、「様々な臓器・身体の部位の一部を顕微鏡で見て、スケッチする」というものがあります(東大医学部では2年生の後半にこの授業が実施されます)。顕微鏡を覗きながら見えるものを絵に描くのは、非常に骨の折れる作業なのです。</p>
+  <h3>医学生の描いた渾身の絵を御覧あれ!</h3>
+  <p>この企画は、その医学生が苦労して描いたスケッチを皆さんに手にとって見て頂こうというものです。同じ東大医学部生でもそのスケッチは十人十色。まるで写真かと思うような美しいスケッチもあれば、描いた人の苦労が感じ取れるような、小さなところまで丁寧に描かれたものもあるでしょう。中には抽象画のような、違う意味で芸術的な(?)スケッチもあるかもしれません。そんなスケッチを是非パラパラと眺めて楽しんで頂けると幸いです。</p>
+  <ul class="lightbox-nav">
+  <li><button class="" aria-label="before sketch" on="tap:sketch.close,muscle">&lt; 前の企画</button></li>
+  <li><button aria-label="close sketch" on="tap:sketch.close">✕</button></li>
+  <li><button class="" aria-label="next sketch" on="tap:sketch.close,drama">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
@@ -314,7 +314,7 @@
   <h3>企画内容について</h3>
   <p>実際にテレビで放映されたシーンを画面に流しつつ、これらのシーンの解説を試みます。身近なお薬の話から現場で実装されている最先端医療の話まで、幅広いテーマについてご紹介できるように、解説するシーンについては厳選しました。また、普段はドラマを見ないという方にも楽しんでいただけるように、そのドラマのあらすじにも多少踏み込みます。この機会に、医学部生が観る医療ドラマの世界の一端をのぞいてみませんか?</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before drama" on="tap:drama.close,muscle">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before drama" on="tap:drama.close,sketch">&lt; 前の企画</button></li>
   <li><button aria-label="close drama" on="tap:drama.close">✕</button></li>
   <li><button class="" aria-label="next drama" on="tap:drama.close,history">次の企画 &gt;</button></li>
   </ul>

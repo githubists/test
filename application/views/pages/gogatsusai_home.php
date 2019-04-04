@@ -412,6 +412,17 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
+      <button on="tap:muscle">
+          <amp-img src="/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
+          <div class="absolute flex flex-column proj-container">
+              <amp-fit-text layout="flex-item" class="proj-desc">
+                  本館1階
+              </amp-fit-text>
+              <amp-fit-text layout="flex-item" class="proj-name">
+                  <u>筋肉から学べる解剖学</u>
+              </amp-fit-text>
+          </div>
+      </button>
     </i>
     </section>
     <section class="relative">
@@ -427,17 +438,6 @@ section>h2{
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
                   <u>スケッチ企画</u>
-              </amp-fit-text>
-          </div>
-      </button>
-      <button on="tap:muscle">
-          <amp-img src="/img/contents/exhibition/muscle.jpg" width="450" height="300" alt="筋肉体操のイメージ画像として筋骨隆々で緑色の肌をした人形の写真を使用した。" layout="responsive" class=""></amp-img>
-          <div class="absolute flex flex-column proj-container">
-              <amp-fit-text layout="flex-item" class="proj-desc">
-                  本館1階
-              </amp-fit-text>
-              <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>筋肉から学べる解剖学</u>
               </amp-fit-text>
           </div>
       </button>
