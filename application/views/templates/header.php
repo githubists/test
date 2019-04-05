@@ -62,12 +62,13 @@
 <meta property="og:site_name" content="医へのいざない" />
 <meta property="og:locale" content="ja_JP" />
 <!-- Facebook引継ぎ後に入力 -->
-<meta property="fb:app_id" content="" />
+<meta property="fb:app_id" content="468247833715690" />
 <meta name="apple-mobile-web-app-title" content="医へのいざない">
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@utmedmayfes"/>
 <meta name="twitter:creator" content="@utmedmayfes">
 <meta name="theme-color" content="#3264FF">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <link href="/favicon.ico" rel="icon" type="image/ico">
 <link rel="icon" href="/img/icon/icon16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="/img/icon/icon32.png" sizes="32x32" type="image/png">
