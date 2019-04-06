@@ -445,7 +445,7 @@
   <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
   <hr /><br />
   <h2>東大医学部限定グッズとは?</h2>
-  <p>今年度もポストカード等医学部グッズを販売いたします。グッズの詳細情報は近日追加いたします。また受験本も販売いたします。最新の情報を取り入れてさらなる内容の充実を図っております。</p>
+  <p>今年度もペンやノートなど医学部グッズを販売いたします。グッズの詳細情報は近日追加いたします。また受験本も販売いたします。最新の情報を取り入れてさらなる内容の充実を図っております。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
   <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>
