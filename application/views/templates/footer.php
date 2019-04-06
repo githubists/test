@@ -258,7 +258,6 @@
   <p>スクラブは半袖で首元がVネックになっている白衣です。その名前は、「ゴシゴシ洗う」という意味の英単語である「Scrub」を語源としていて、頑丈な素材でできているため容易に洗濯が可能です。また軽さや動きやすさも兼ねそろえています。</p>
   <h3>手術用ガウン</h3>
   <p>手術の際に手術現場の清潔な環境を保ち、医師を血液・汚染などから保護するために用いられます。術場で長時間赤色の血液を見続ける医師の目を気遣ってか、赤の補色である緑系統のものが多くなっています。</p>
-  <cite>本のタイトル, 著者名, 出版年, 出版社</cite>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before coat" on="tap:coat.close,artery">&lt; 前の企画</button></li>
   <li><button aria-label="close coat" on="tap:coat.close">✕</button></li>
