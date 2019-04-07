@@ -555,7 +555,7 @@ section>h2{
         <amp-img src="/img/contents/misc/lecture.jpg" width="450" height="300" alt="講演会のイメージ画像としてビルの窓に青空と雲が反射している写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
-                  本館3階 事前予約あり
+                  本館3階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
                   <u>講演会</u>
