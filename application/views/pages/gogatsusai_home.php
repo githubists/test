@@ -482,7 +482,7 @@ section>h2{
                   本館1階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>ことばで感じる医療</u>
+                  <u>公衆衛生へのいざない</u>
               </amp-fit-text>
           </div>
       </button>
@@ -517,7 +517,7 @@ section>h2{
                   本館1階
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>毒物</u>
+                  <u>毒物を知ろう</u>
               </amp-fit-text>
           </div>
       </button>
