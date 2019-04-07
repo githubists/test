@@ -63,8 +63,9 @@ lrwxrwxrwx 1 g2019mayfesweb g2019mayfesweb 38 Apr  4 11:42 app/current -> /home/
 $ cd /home/g2019mayfesweb/app/releases
 $ git clone https://github.com/githubists/test.git
 $ mv test v00x
-$ ln -snf v00x /home/g2019mayfesweb/app/current
+$ ln -snf /home/g2019mayfesweb/app/releases/v00x /home/g2019mayfesweb/app/current
 ```
+github上でタグという機能を使って、コミットにデプロイ名の目印を付けたりしていますが、単なる目印なので、やってもやらなくても大丈夫です。
 
 ## サーバー設定ファイルについて
 サーバーの設定ファイルは
