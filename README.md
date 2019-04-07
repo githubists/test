@@ -45,6 +45,33 @@ https://github.com/githubists/test/blob/master/01_HTML/article.amp.html
 ## デザインに悩んだら
 デザインに悩んだ際はA/Bテストが有用である。[Google Optimize](https://optimize.google.com/optimize/home/)を使用する。AMPページの場合は[amp-experiment](https://www.ampproject.org/docs/reference/components/amp-experiment)を使用する。
 
+# デプロイの仕方について
+/home/g2019mayfesweb/app/current
+がドキュメントルートになっています。
+
+/home/g2019mayfesweb/app/current
+はリンクになっていて、実際には/home/g2019mayfesweb/app/releases/v00x
+を指しています。現在のリンク先は
+```shell
+$ ls -l /home/g2019mayfesweb/app/current
+lrwxrwxrwx 1 g2019mayfesweb g2019mayfesweb 38 Apr  4 11:42 app/current -> /home/g2019mayfesweb/app/releases/v002
+```
+などとすれば調べられます。
+
+デプロイするには、まずreleasesディレクトリの中にgithubの内容をcloneします。するとtestディレクトリができるのでそれをv00xという名前に変更します（わかりやすいために）。最後にリンクを貼り直してデプロイ完了です。
+```shell
+$ cd /home/g2019mayfesweb/app/releases
+$ git clone https://github.com/githubists/test.git
+$ mv test v00x
+$ ln -snf v00x /home/g2019mayfesweb/app/current
+```
+
+## サーバー設定ファイルについて
+サーバーの設定ファイルは
+/home/g2019mayfesweb/server_conf/mayfes.conf
+に移動しました。
+gitで管理しているので、安心して変更できます。
+
 # CodeIgniterについて
 heroku上である程度作ることにしました。
 https://gogatsusai.herokuapp.com/01_HTML
