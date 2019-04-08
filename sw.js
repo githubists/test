@@ -11,7 +11,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.1.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js");
 
 importScripts(
   "js/sw-custom.js"
@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "img/clients/tomas-banner.jpg",
-    "revision": "49b41140a82ada91e6dbc9aa255022db"
+    "revision": "a263366416de30ceb4a6778306613199"
   },
   {
     "url": "img/contents/exhibition/bookshelf.jpg",
