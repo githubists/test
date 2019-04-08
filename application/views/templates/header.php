@@ -32,7 +32,9 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "JPY",
-      "validFrom": "2018-05-18T09:00+09:00"
+      "validFrom": "2018-05-18T09:00+09:00",
+      "availability": "http://schema.org/InStock",
+      "url": "https://utmed-mayfes.net/"
     }
   },
   {
