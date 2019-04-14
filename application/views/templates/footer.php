@@ -55,9 +55,9 @@
             <li><button on="tap:cafe">カフェ</button></li>
             <li><button on="tap:goods">グッズ販売</button></li>
             <li><button on="tap:lecture">講演会</button></li>
-            <li><button on="tap:piano">鉄門ピアノの会</button></li>
-            <li><button on="tap:chamber">鉄門室内楽の会</button></li>
             <li><button on="tap:art">踏朱会</button></li>
+            <li><button on="tap:chamber">鉄門室内楽の会</button></li>
+            <li><button on="tap:piano">鉄門ピアノの会</button></li>
           </ul>
         </li>
       </ul>
@@ -101,7 +101,7 @@
     <p>皆さんこれらの病気の名前を耳にしたことはあると思いますが、具体的な症状をご存知でしょうか? おそらく、多くの人が記憶障害、あるいは妄想や幻覚などを頭に思い浮かべるでしょう。しかし実際にはもっと様々な症状があります。自分の身近な人がこれらの病気になってしまった際、早期発見(と治療)のために、これらの様々な症状を正しく理解することは非常に大切なことです。これらのVRはそのようなコンセプトのもとで、医療従事者以外の方にも具体的な症状を理解してもらえるように作られました。</p>
     <p>いずれのVRも非常にリアリティがあり、とても貴重な経験となることは間違いありません。皆様のご来場を心よりお待ちしております。</p>
     <ul class="lightbox-nav">
-    <li><button class="notarget" aria-label="before vr" on="tap:vr.close,art">&lt; 前の企画</button></li>
+    <li><button class="notarget" aria-label="before vr" on="tap:vr.close,piano">&lt; 前の企画</button></li>
     <li><button aria-label="close vr" on="tap:vr.close">✕</button></li>
     <li><button aria-label="next vr" on="tap:vr.close,emergency">次の企画 &gt;</button></li>
     </ul>
@@ -477,41 +477,7 @@
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before lecture" on="tap:lecture.close,goods">&lt; 前の企画</button></li>
   <li><button aria-label="close lecture" on="tap:lecture.close">✕</button></li>
-  <li><button class="" aria-label="next lecture" on="tap:lecture.close,piano">次の企画 &gt;</button></li>
-  </ul>
-</article>
-</amp-lightbox>
-<amp-lightbox id="piano" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
-<article>
-  <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
-  <h1>鉄門ピアノの会</h1>
-  <hr /><br />
-  <h2>五月祭演奏会</h2>
-  <p>鉄門ピアノの会は、現役の医学部医学科の学生とOB、OGからなるピアノサークルで、五月祭演奏会のほか、学会や病院などで演奏機会を頂いております。本サークルの会員はピアノ好きばかりで、演奏される曲もバラエティーに富んでいます。最近は近現代の作曲家の作品に取り組む人もおり、新しい曲に出会える場となっています。</p>
-  <p>さて、今年も恒例の五月祭演奏会を、2日目の5月19日に本館3階の大講堂で開催いたします。医学部企画の展示をご覧になられたついでに、ピアノの美しい音色に浸ってみませんか? 会員一同、ご来場を心からお待ちしております。</p>
-  <ul class="lightbox-nav">
-  <li><button class="" aria-label="before piano" on="tap:piano.close,lecture">&lt; 前の企画</button></li>
-  <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
-  <li><button class="" aria-label="next piano" on="tap:piano.close,chamber">次の企画 &gt;</button></li>
-  </ul>
-</article>
-</amp-lightbox>
-<amp-lightbox id="chamber" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
-<article>
-  <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
-  <h1>鉄門室内楽の会</h1>
-  <hr /><br />
-  <h2>五月祭演奏会</h2>
-  <p>鉄門室内楽の会は、東京大学医学部の学生を中心とした音楽好きな学生が総勢60人以上所属し、活動を行っております。演奏する楽器は、弦楽器、管楽器、また合唱など多岐にわたります。オーケストラなど他の音楽系団体にも所属している会員も多く、それぞれのスタイルで音楽を楽しんでいるのが特徴です。年間の演奏活動としては、学園祭(五月祭、駒場祭)の他、学会や病院など外部での演奏も行っており、地域の皆様に好評を頂いております。今年も、下記の日時で五月祭演奏会を開催致します。どうぞお越しください!会員一同お待ちしております。</p>
-  <h3>日程</h3>
-  <strong>1日目 5/18(土)  11:00?14:45(予定)於 医学部本館(2号館) 3階 大講堂</strong>
-  <p>学年も楽器編成もバラエティに富んだメンバーたちの演奏をお楽しみください♪<p>
-  <ul class="lightbox-nav">
-  <li><button class="" aria-label="before chamber" on="tap:chamber.close,piano">&lt; 前の企画</button></li>
-  <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
-  <li><button class="" aria-label="next chamber" on="tap:chamber.close,art">次の企画 &gt;</button></li>
+  <li><button class="" aria-label="next lecture" on="tap:lecture.close,art">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
@@ -528,9 +494,43 @@
   <h2>Art Meets Science</h2>
   <p>今年度は、東京藝術大学との合同プロジェクトArts meet Scienceが東京大学医学部の学生と東京藝術大学の学生で行われており、それの美術部門のポスターをこちら踏朱会のブースでも紹介しようと思います。踏朱会部員の作品に加え、こちらもご覧いただければ幸いです。</p>
   <ul class="lightbox-nav">
-  <li><button class="" aria-label="before art" on="tap:art.close,chamber">&lt; 前の企画</button></li>
+  <li><button class="" aria-label="before art" on="tap:art.close,lecture">&lt; 前の企画</button></li>
   <li><button aria-label="close art" on="tap:art.close">✕</button></li>
-  <li><button class="disabled" aria-label="next art" on="tap:art.close,vr">次の企画 &gt;</button></li>
+  <li><button class="disabled" aria-label="next art" on="tap:art.close,chamber">次の企画 &gt;</button></li>
+  </ul>
+</article>
+</amp-lightbox>
+<amp-lightbox id="chamber" layout="nodisplay" scrollable="">
+<amp-img src="/img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
+<article>
+  <button class="close" aria-label="close chamber" on="tap:chamber.close">✕</button>
+  <h1>鉄門室内楽の会</h1>
+  <hr /><br />
+  <h2>五月祭演奏会</h2>
+  <p>鉄門室内楽の会は、東京大学医学部の学生を中心とした音楽好きな学生が総勢60人以上所属し、活動を行っております。演奏する楽器は、弦楽器、管楽器、また合唱など多岐にわたります。オーケストラなど他の音楽系団体にも所属している会員も多く、それぞれのスタイルで音楽を楽しんでいるのが特徴です。年間の演奏活動としては、学園祭(五月祭、駒場祭)の他、学会や病院など外部での演奏も行っており、地域の皆様に好評を頂いております。今年も、下記の日時で五月祭演奏会を開催致します。どうぞお越しください!会員一同お待ちしております。</p>
+  <h3>日程</h3>
+  <strong>1日目 5/18(土)  11:00?14:45(予定)於 医学部本館(2号館) 3階 大講堂</strong>
+  <p>学年も楽器編成もバラエティに富んだメンバーたちの演奏をお楽しみください♪<p>
+  <ul class="lightbox-nav">
+  <li><button class="" aria-label="before chamber" on="tap:chamber.close,art">&lt; 前の企画</button></li>
+  <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
+  <li><button class="" aria-label="next chamber" on="tap:chamber.close,piano">次の企画 &gt;</button></li>
+  </ul>
+</article>
+</amp-lightbox>
+<amp-lightbox id="piano" layout="nodisplay" scrollable="">
+<amp-img src="/img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
+<article>
+  <button class="close" aria-label="close piano" on="tap:piano.close">✕</button>
+  <h1>鉄門ピアノの会</h1>
+  <hr /><br />
+  <h2>五月祭演奏会</h2>
+  <p>鉄門ピアノの会は、現役の医学部医学科の学生とOB、OGからなるピアノサークルで、五月祭演奏会のほか、学会や病院などで演奏機会を頂いております。本サークルの会員はピアノ好きばかりで、演奏される曲もバラエティーに富んでいます。最近は近現代の作曲家の作品に取り組む人もおり、新しい曲に出会える場となっています。</p>
+  <p>さて、今年も恒例の五月祭演奏会を、2日目の5月19日に本館3階の大講堂で開催いたします。医学部企画の展示をご覧になられたついでに、ピアノの美しい音色に浸ってみませんか? 会員一同、ご来場を心からお待ちしております。</p>
+  <ul class="lightbox-nav">
+  <li><button class="" aria-label="before piano" on="tap:piano.close,chamber">&lt; 前の企画</button></li>
+  <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
+  <li><button class="notarget" aria-label="next piano" on="tap:piano.close,vr">次の企画 &gt;</button></li>
   </ul>
 </article>
 </amp-lightbox>
