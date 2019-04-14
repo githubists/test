@@ -577,7 +577,7 @@ section>h2{
         <amp-img src="/img/contents/misc/chamber.jpg" width="450" height="300" alt="鉄門室内楽の会のイメージ画像として金属でできた五線譜の、下から一番目と二番目の間に16分音符が載っている画像を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
-                  本館3階 5/18
+                  本館3階 18日(土)
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
                   <u>鉄門室内楽の会</u>
@@ -588,7 +588,7 @@ section>h2{
         <amp-img src="/img/contents/misc/piano.jpg" width="450" height="300" alt="鉄門ピアノの会のイメージ画像としてピアノの写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
-                  本館3階 5\19
+                  本館3階 19日(日)
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
                   <u>鉄門ピアノの会</u>
