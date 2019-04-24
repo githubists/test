@@ -62,6 +62,7 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, viewport-fit=cover">
 <meta name="amp-google-client-id-api" content="googleanalytics">
 <meta property="og:site_name" content="医へのいざない" />
+<meta name="keywords" content="五月祭,医学部,医へのいざない,五月祭企画,医学部企画,理科三類,東大,東京大学,東大医学部" />
 <meta property="og:locale" content="ja_JP" />
 <!-- Facebook引継ぎ後に入力 -->
 <meta property="fb:app_id" content="468247833715690" />
