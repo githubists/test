@@ -1637,10 +1637,21 @@ amp-lightbox h1 {
     font-size: 2rem
 }
 amp-lightbox h2 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    margin-top:0.6rem;
+    line-height:2rem;
+    font-weight:600
+}
+amp-lightbox h2.subtitle{
+  font-weight:500;
+  margin-top:0;
+  margin-bottom:0.6rem;
 }
 amp-lightbox h3 {
-    font-size: 1.1rem
+    font-size: 1.1rem;
+    margin-top:0.5rem;
+    font-weight:600;
+    line-height:1.3rem;
 }
 .close {
     position: fixed;

@@ -322,7 +322,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      <!--
+      
       <button on="tap:quiz">
           <amp-img src="/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -334,7 +334,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      -->
+      
       <button on="tap:emergency">
           <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -342,7 +342,7 @@ section>h2{
                   本館3階 整理券制
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>ER-救急救命体験</u>
+                  <u>ある救急救命からの脱出</u>
               </amp-fit-text>
           </div>
       </button>
@@ -474,7 +474,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      <!--
+      
       <button on="tap:narrative">
         <amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -486,7 +486,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      -->
+      
       <button on="tap:research">
         <amp-img src="/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -509,7 +509,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      <!--
+      
       <button on="tap:toxin">
         <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -521,7 +521,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      -->
+      
     </i>
     </section>
     <section class="relative">
