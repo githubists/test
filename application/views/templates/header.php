@@ -1245,6 +1245,7 @@ body {
   -webkit-font-smoothing: antialiased
 }
 article {
+  overflow:hidden;
   max-width: 750px;
   margin: 0 auto
 }
