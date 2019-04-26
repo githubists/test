@@ -32,7 +32,7 @@
           <ul class="disc">
             <li><button on="tap:vr">VR医学体験</button></li>
             <li><button on="tap:quiz">クイズラリー</button></li>
-            <li><button on="tap:emergency">ある救命救急からの脱出</button></li>
+            <li><button on="tap:emergency">ある救命実習からの脱出</button></li>
             <li><button on="tap:bp">血圧測定体験</button></li>
             <li><button on="tap:surgery">手術体験</button></li>
             <li><button on="tap:organ">開腹式臓器パズル</button></li>
@@ -130,7 +130,7 @@
 <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
-  <h1>ある救急救命からの脱出</h1>
+  <h1>ある救命実習からの脱出</h1>
   <hr /><br />
   <h2>ストーリー</h2>
   <p>『今回の実習の合格条件は、一次救命の手技を身につけること、そして実習終了までにレポートを完成させておくことだ。』</p><p>2019年5月中旬、医学生の一人として救命実習に臨もうとしているあなたは、抜き打ちのレポートを課されてしまった。実習を行う教授は非常に厳しいことで有名である。</p><p>果たして、レポートを完成させ、救命実習にチーム全員で合格することはできるのか?そして、最後に明らかになる教授の真意とは——</p>
