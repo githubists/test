@@ -342,7 +342,7 @@ section>h2{
                   本館3階 整理券制
               </amp-fit-text>
               <amp-fit-text layout="flex-item" class="proj-name">
-                  <u>ある救急救命からの脱出</u>
+                  <u>ある救命実習からの脱出</u>
               </amp-fit-text>
           </div>
       </button>
