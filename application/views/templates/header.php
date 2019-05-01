@@ -751,6 +751,10 @@ canvas {
   width: 100%
 }
 @media(min-width: 28rem) {
+  .xs-px0 {
+      padding-left:0px;
+      padding-right: 0px
+  }
   .xs-col {
       float:left;
       box-sizing: border-box
@@ -800,6 +804,10 @@ canvas {
   }
 }
 @media (min-width: 40.06rem) {
+  .sm-px0 {
+      padding-left:0px;
+      padding-right: 0px
+  }
   .sm-col {
       float:left;
       box-sizing: border-box
@@ -850,6 +858,10 @@ canvas {
   .md-px0 {
       padding-left:0px;
       padding-right: 0px
+  }
+  .md-px2 {
+      padding-left:1rem;
+      padding-right: 1rem
   }
 
   .md-col {

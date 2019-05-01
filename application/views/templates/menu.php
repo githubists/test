@@ -32,7 +32,7 @@
             </li>
             <!-- End Dropdown-inline -->
             <li class="ampstart-nav-item relative "><a href="/">トップ</a></li>
-            <li class="ampstart-nav-item relative "><a href="/contents">おすすめ企画</a></li>
+            <li class="ampstart-nav-item relative "><a href="/map">館内案内図</a></li>
             <li class="ampstart-nav-item relative "><a href="/access">アクセス</a></li>
             <li class="ampstart-nav-item relative "><a href="/timetable">タイムテーブル</a></li>
       </ul>

@@ -267,9 +267,9 @@ section>h2{
                 <amp-img src="/img/dock/dock-contents-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
                 <h2>企画紹介</h2>
               </button>
-              <a class="dock-item flex flex-column items-stretch" href="/contents">
+              <a class="dock-item flex flex-column items-stretch" href="/map">
                 <amp-img src="/img/dock/dock-recommended-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
-                <h2>おすすめ企画</h2>
+                <h2>館内案内図</h2>
               </a>
               <a class="dock-item flex flex-column items-stretch" href="/timetable">
                 <amp-img src="/img/dock/dock-timetable-1x.png" width="128" height="128" alt="" layout="responsive" class=""></amp-img>
@@ -322,7 +322,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
       <button on="tap:quiz">
           <amp-img src="/img/contents/experience/quiz.jpg" width="450" height="300" alt="クイズラリーイメージ画像として疑問符を浮かべた人の脳内で歯車が回っている画像を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -334,7 +334,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
       <button on="tap:emergency">
           <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
@@ -474,7 +474,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
       <button on="tap:narrative">
         <amp-img src="/img/contents/exhibition/narrative.jpg" width="450" height="300" alt="ことばで感じる医療のイメージ画像として子供が文字を学ぶための四角くアルファベットが書いてあるおもちゃがテーブルの上に散らばっている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -486,7 +486,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
       <button on="tap:research">
         <amp-img src="/img/contents/exhibition/research.jpg" width="450" height="300" alt="最先端研究のイメージ画像として現代的なビルの窓が青空を映した写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -509,7 +509,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
       <button on="tap:toxin">
         <amp-img src="/img/contents/exhibition/toxin.jpg" width="450" height="300" alt="毒物のイメージ画像として青い液体が入っていて、POISONの文字とどくろマークが絵が画れたラベルの貼ってあり、コルクで蓋されたガラス瓶がフローリングの上に載っている写真を使用した。" layout="responsive" class=""></amp-img>
         <div class="absolute flex flex-column proj-container">
@@ -521,7 +521,7 @@ section>h2{
               </amp-fit-text>
           </div>
       </button>
-      
+
     </i>
     </section>
     <section class="relative">
@@ -613,6 +613,12 @@ section>h2{
     </a>
     <a href="https://www.youtube.com/channel/UCP-i4yu5NRPfFVP6zjot7MA"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26 17" class="left"><title>YouTube</title><path fill="#ff0000" class="ampstart-icon-youtube" fill-rule="evenodd" d="M 16.837 8.242 v 0.126 l -6.742 3.396 V 4.719 l 6.742 3.396 v 0.127 Z m 8.167 -4.707 c 0.05 0.399 0.244 2.102 0.26 3.805 v 0.126 c -0.018 -1.946 -0.27 -3.893 -0.27 -3.893 s -0.245 -1.651 -1.003 -2.384 c -0.96 -0.961 -2.04 -0.961 -2.528 -1.02 C 17.94 -0.075 12.64 0.017 12.64 0.017 S 7.348 -0.075 3.817 0.17 C 3.32 0.228 2.25 0.228 1.29 1.189 C 0.531 1.913 0.287 3.573 0.287 3.573 S 0.05 5.52 0 7.466 v 1.602 c 0.05 1.946 0.287 3.893 0.287 3.893 s 0.244 1.66 1.002 2.384 c 0.96 0.961 2.031 0.961 2.528 1.02 c 3.531 0.244 8.823 0.202 8.823 0.202 s 5.3 0.042 8.823 -0.202 c 0.488 -0.059 1.567 -0.059 2.528 -1.02 c 0.758 -0.733 1.003 -2.384 1.003 -2.384 s 0.252 -1.947 0.27 -3.893 v 0.126 c -0.018 1.946 -0.27 3.893 -0.27 3.893 s -0.061 0.404 -0.211 0.9 c 0.157 -0.508 0.219 -0.925 0.219 -0.925 s 0.253 -1.947 0.27 -3.893 V 7.34 a 38.672 38.672 0 0 0 -0.268 -3.805 Z" ></path></svg>
     <div><h3 class="h5">YouTube:</h3><p>医学部五月祭</p></div></a>
+    </section>
+    <section class="relative">
+      <h2 class="relative">パンフレット</h2>
+      <p class="p2 flex flex-wrap justify-around items-center">
+      <a href="/pdf/2019_pamphlet.pdf" class="col-12 xs-col-7 md-col-6" ><amp-img src="/img/pamphlet.jpg" width="1191" height="1684" layout="responsive"></amp-img></a>
+      <span class="md-px2 col-12 xs-col-7 md-col-6 inline-block">例年、当日配布いたしますパンフレットはご好評につき、今年度はweb上でも配布することにいたしました。<a href="/pdf/2019_pamphlet.pdf">こちら</a>からダウンロードできますので、ぜひご覧ください。</span></p>
     </section>
       <?=$sponsors?>
     </article>
