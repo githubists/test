@@ -238,6 +238,19 @@ section>h2{
       }
   }
 
+  #member>div{
+    font-size: 1rem;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 4px 4px 8px silver;
+    background: white;
+    margin-top:1rem;
+  }
+  #member>div>p{
+      margin-top:0.5rem;
+      line-height: 1.6rem;
+  }
+
 <?=$menu?>
 <!-- Start Fullpage Hero -->
 
@@ -597,6 +610,25 @@ section>h2{
       </button>
     </i>
     </section>
+
+    <section id="member" class="relative mt5">
+        <h2 class="relative">代表メンバー</h2>
+        <div class="p2">
+            <h3>代表団</h3>
+            <p>田村悟己、櫻井円香、吉富祐太朗、長田悠希</p>
+        </div>
+        <div class="p2">
+            <h3>企画責任者</h3>
+            <p>小林瑞季、吉富祐太朗</p>
+        </div>
+        <div class="p2">
+            <h3>部門統括</h3>
+            <p>竹嶋大翔、田中正純（企画）、望月大也（物品販売）、大野嵩侃（広報）、内山咲良（演出）、小林瑞季（庶務）、平岩茉優（会計）、齋藤朱花（渉外財務）</p>
+        </div>
+        </p>
+
+    </section>
+
     <section id="sns" class="relative mt5">
     <h2 class="relative">Social Media</h2>
     <a href="https://twitter.com/utmedmayfes">
