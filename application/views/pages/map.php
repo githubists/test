@@ -25,7 +25,7 @@
           <div class="m2">
               <h3>東京大学本郷キャンパス 医学部本館</h3>
               <i class="flex flex-wrap justify-around mt2 col-12">
-                <amp-img src="/img/map/title.png" width="1785" height="216" alt="" layout="responsive" class=""></amp-img>
+                <amp-img src="/img/map/Title.png" width="1785" height="216" alt="" layout="responsive" class=""></amp-img>
                 <button on="tap:3f">
                   <amp-img src="/img/map/3F.png" width="1785" height="585" alt="" layout="responsive" class=""></amp-img>
                 </button>
