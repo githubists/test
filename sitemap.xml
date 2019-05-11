@@ -16,6 +16,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://utmed-mayfes.net/contents/lecture</loc>
+    <lastmod>2019-05-11T20:00:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://utmed-mayfes.net/timetable</loc>
     <lastmod>2019-05-11T20:00:00+09:00</lastmod>
     <changefreq>daily</changefreq>
