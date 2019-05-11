@@ -1692,7 +1692,7 @@ amp-lightbox h3 {
     color: #AAA
 }
 .background-reserve{
-  background-color:#a94a0b;
+  background-color:#f68a4c;
   color:#fff;
   height:auto;
   font-family:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
