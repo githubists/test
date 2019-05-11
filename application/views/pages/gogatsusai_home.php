@@ -102,6 +102,11 @@ section>h2{
   .dock-item>amp-img:active{
     filter:brightness(0.5)
   }
+  @media(orientation: landscape) and (max-width: 996px){
+    .top-header {
+        width:64vw;
+    }
+  }
 
   @media(orientation: portrait) {
     .top-header {
