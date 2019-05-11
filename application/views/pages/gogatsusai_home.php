@@ -243,6 +243,19 @@ section>h2{
       }
   }
 
+  #member>div{
+    font-size: 1rem;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 4px 4px 8px silver;
+    background: white;
+    margin-top:1rem;
+  }
+  #member>div>p{
+      margin-top:0.5rem;
+      line-height: 1.6rem;
+  }
+
 <?=$menu?>
 <!-- Start Fullpage Hero -->
 
@@ -307,7 +320,11 @@ section>h2{
   <article class="photo-article px2">
     <section id="about" class="relative">
     <h2 class="relative header-about">医へのいざない</h2>
-    <p class="p2">東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。</p>
+    <p class="p2">
+        東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。
+        <br>
+        代表挨拶は <a href="/about">こちら</a>
+    </p>
     </section>
 
     <section id="contents" class="relative">
@@ -602,6 +619,25 @@ section>h2{
       </button>
     </i>
     </section>
+
+    <section id="member" class="relative mt5">
+        <h2 class="relative">代表メンバー</h2>
+        <div class="p2">
+            <h3>代表団</h3>
+            <p>田村悟己、櫻井円香、吉富祐太朗、長田悠希</p>
+        </div>
+        <div class="p2">
+            <h3>企画責任者</h3>
+            <p>小林瑞季、吉富祐太朗</p>
+        </div>
+        <div class="p2">
+            <h3>部門統括</h3>
+            <p>竹嶋大翔、田中正純（企画）、望月大也（物品販売）、大野嵩侃（広報）、内山咲良（演出）、小林瑞季（庶務）、平岩茉優（会計）、齋藤朱花（渉外財務）</p>
+        </div>
+        </p>
+
+    </section>
+
     <section id="sns" class="relative mt5">
     <h2 class="relative">Social Media</h2>
     <a href="https://twitter.com/utmedmayfes">
