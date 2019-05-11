@@ -11,12 +11,8 @@
 img{
   height:auto;
 }
-.timetable-img button{
+#timetable button{
   position:absolute
-}
-.timetable-img>nav{
-  width:auto;
-  height:auto
 }
 <?=$menu?>
 <?=$navbar?>
@@ -25,30 +21,30 @@ img{
       <section id="timetable" class="relative">
         <h2 class="relative header-about">タイムテーブル</h2>
         <div class="col-12 sm-col-8 md-col-7 center mx-auto relative timetable-img">
-          <amp-img src="/img/timetable/timetable_2.jpg" width="455" height="600" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/timetable/timetable_2.jpg" width="455" height="600" layout="responsive" class="" alt="タイムテーブルの画像です。小講堂と大講堂の日程が表示されています。"></amp-img>
           <nav class="absolute top-0 right-0 bottom-0 left-0">
-            <button on="tap:lecture" style="left:29.10%;top:13.53%;width:16.70%;height:22.50%"></button>
-            <button on="tap:lecture" style="left:29.10%;top:76.38%;width:16.70%;height:18.02%"></button>
-            <button on="tap:lecture" style="left:77.76%;top:13.97%;width:17.63%;height:16.72%"></button>
-            <button on="tap:lecture" style="left:77.76%;top:84.40%;width:17.63%;height:10.43%"></button>
-            <button on="tap:chamber" style="left:29.10%;top:37.17%;width:16.70%;height:38.43%"></button>
-            <button on="tap:piano" style="left:77.76%;top:32.67%;width:17.63%;height:50.62%"></button>
-            <button on="tap:muscle" style="left:5.67%;top:25.78%;width:17.63%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:5.67%;top:47.85%;width:17.63%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:5.67%;top:68.28%;width:17.63%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:5.67%;top:84.22%;width:17.63%;height:4.83%"></button>
-            <button on="tap:muscle" style="left:54.57%;top:25.78%;width:17.60%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:54.57%;top:47.85%;width:17.60%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:54.57%;top:68.28%;width:17.60%;height:4.82%"></button>
-            <button on="tap:muscle" style="left:54.57%;top:84.22%;width:17.60%;height:4.83%"></button>
-            <button on="tap:research" style="left:5.67%;top:36.82%;width:17.63%;height:4.82%"></button>
-            <button on="tap:research" style="left:5.67%;top:58.80%;width:17.63%;height:4.82%"></button>
-            <button on="tap:research" style="left:5.67%;top:76.20%;width:17.63%;height:4.83%"></button>
-            <button on="tap:research" style="left:54.57%;top:36.82%;width:17.60%;height:4.82%"></button>
-            <button on="tap:research" style="left:54.57%;top:58.80%;width:17.60%;height:6.46%"></button>
-            <button on="tap:research" style="left:54.57%;top:76.20%;width:17.60%;height:4.83%"></button>
-            <button on="tap:narrative" style="left:5.67%;top:63.53%;width:17.63%;height:4.83%"></button>
-            <button on="tap:narrative" style="left:54.57%;top:63.53%;width:17.60%;height:4.83%"></button>
+            <button on="tap:lecture" style="left:29.10%;top:13.53%;width:16.70%;height:22.50%" aria-label="open lecture"></button>
+            <button on="tap:lecture" style="left:29.10%;top:76.38%;width:16.70%;height:18.02%" aria-label="open lecture"></button>
+            <button on="tap:lecture" style="left:77.76%;top:13.97%;width:17.63%;height:16.72%" aria-label="open lecture"></button>
+            <button on="tap:lecture" style="left:77.76%;top:84.40%;width:17.63%;height:10.43%" aria-label="open lecture"></button>
+            <button on="tap:chamber" style="left:29.10%;top:37.17%;width:16.70%;height:38.43%" aria-label="open chamber"></button>
+            <button on="tap:piano" style="left:77.76%;top:32.67%;width:17.63%;height:50.62%" aria-label="open piano"></button>
+            <button on="tap:muscle" style="left:5.67%;top:25.78%;width:17.63%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:5.67%;top:47.85%;width:17.63%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:5.67%;top:68.28%;width:17.63%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:5.67%;top:84.22%;width:17.63%;height:4.83%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:54.57%;top:25.78%;width:17.60%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:54.57%;top:47.85%;width:17.60%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:54.57%;top:68.28%;width:17.60%;height:4.82%" aria-label="open muscle"></button>
+            <button on="tap:muscle" style="left:54.57%;top:84.22%;width:17.60%;height:4.83%" aria-label="open muscle"></button>
+            <button on="tap:research" style="left:5.67%;top:36.82%;width:17.63%;height:4.82%" aria-label="open reserach"></button>
+            <button on="tap:research" style="left:5.67%;top:58.80%;width:17.63%;height:4.82%" aria-label="open reserach"></button>
+            <button on="tap:research" style="left:5.67%;top:76.20%;width:17.63%;height:4.83%" aria-label="open reserach"></button>
+            <button on="tap:research" style="left:54.57%;top:36.82%;width:17.60%;height:4.82%" aria-label="open reserach"></button>
+            <button on="tap:research" style="left:54.57%;top:58.80%;width:17.60%;height:6.46%" aria-label="open reserach"></button>
+            <button on="tap:research" style="left:54.57%;top:76.20%;width:17.60%;height:4.83%" aria-label="open reserach"></button>
+            <button on="tap:narrative" style="left:5.67%;top:63.53%;width:17.63%;height:4.83%" aria-label="open narrative"></button>
+            <button on="tap:narrative" style="left:54.57%;top:63.53%;width:17.60%;height:4.83%" aria-label="open narrative"></button>
           </nav>
         </div>
       </section>
@@ -75,7 +71,7 @@ img{
           先着順で、集合時刻の書かれた整理券を配布いたします。<br />
           整理券をお持ちのお客様は、集合時刻に所定の場所にお越しください。その後、スタッフの案内に従ってご体験いただきます。<br />
           なお、整理券の枚数につきましては、以下の通りです。<br />
-          <amp-img src="/img/timetable/maisuu.jpg" width="327" height="103" layout="responsive"></amp-img><br />
+          <amp-img src="/img/timetable/maisuu.jpg" width="1300" height="300" layout="responsive" alt="整理券の配布枚数です。"></amp-img><br />
           <div class="pt2">①手術体験、血圧測定、動脈観察、VR医学体験</div>
           <div class="pl2">
             1枚の整理券につき体験者1名（手術体験・VR医学体験は小学生以上）＋同伴者2名（ただし、未就学児を同伴者に含む場合は3名）までご入場いただけます。<br />

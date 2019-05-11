@@ -44,7 +44,7 @@ section>article>p.ampstart-dropcap{
     <main id="content" role="main" class="">
       <article class="px2">
           <section class="">
-              <h2 class="relative">代表挨拶</h2>
+              <h2 class="relative">About</h2>
               <article class="p2">
                   <h3 class="text-brown">代表挨拶</h3>
                   <p class="ampstart-dropcap">ようこそ、東京大学医学部五月祭企画「医へのいざない」へ。医学はとても深淵で、かつ興味深い世界です。病院に行くと聞こえてくるお医者さんの話、なにやら大変難解なものに感じませんか。確かに医学は日進月歩のリージョンであり、その学びは日々膨大です。しかし学ぶうちにそこに名状しがたい面白さが存在することも、確かな事実です。</p>
