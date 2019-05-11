@@ -468,6 +468,24 @@
   <p>近年ニュース等でも取り上げられることの多くなった再生医療。日本においても世界の最先端をゆく基礎・臨床研究が多数行われています!でも「再生医療って興味はあるけれど、いざ自分で調べてみてもiPSみたいな難しい単語が並んでいてさっぱり......」そんな経験はありませんか?</p><p>そこで本企画では、再生医療のフロンティアで活躍されている栗本康夫先生、竹内昌治先生をお招きして再生医療の今、そして未来を熱く語っていただきます!</p>
   <h2>お医者さんってどうやって診断してるの?</h2>
   <p>「朝起きたら突然の発熱と倦怠感。それに少し体の節々に痛みも感じる気がする......」この1文からどんな病気を思い浮かべますか?普段目にするお医者さんの診察風景――問診や身体診察――の中には、みなさんの予想をはるかに超えた奥深く面白い世界が眠っています。今回は、日ごろから臨床現場でご活躍なさっている「診断のプロ」徳田安春先生、生坂政臣先生をお招きして、臨床推論の世界にみなさんをいざないます!</p>
+  <p>午前の部に関しては事前予約を行っております。</p>
+  <a href="https://forms.gle/jRiwe5EbEu3E73oE6" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve">
+    <amp-img src="/img/lecturers/Yasuo-Kurimoto-photo.jpg" width="519" height="610" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
+    <div class="inline-block col-10 background-reserve">
+      栗本康夫先生講演会事前予約<br />
+      フォームはこちら<br />
+      <time datetime="2019-05-18T09:20">5/18 9:20~10:45</time> 3F 大講堂
+    </div>
+  </a>
+  <a href="https://forms.gle/JA8ZkCz7WGWeAt5g8" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve">
+    <amp-img src="/img/lecturers/Yasuharu-Tokuda-photo-2.jpg" width="1347" height="1502" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
+    <div class="inline-block col-10">
+      徳田安春先生講演会事前予約<br />
+      フォームはこちら<br />
+      <time datetime="2019-05-19T09:20">5/18 9:20~10:30</time> 3F 大講堂
+    </div>
+  </a>
+  <p>お問い合わせは<a href="mailto:mayfes2019utmed.lecture@gmail.com">mayfes2019utmed.lecture@gmail.com</a>までお願いします。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before lecture" on="tap:lecture.close,goods">&lt; 前の企画</button></li>
   <li><button aria-label="close lecture" on="tap:lecture.close">✕</button></li>

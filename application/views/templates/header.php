@@ -1691,3 +1691,12 @@ amp-lightbox h3 {
 .notarget {
     color: #AAA
 }
+.background-reserve{
+  background-color:#a94a0b;
+  color:#fff;
+  height:auto;
+  font-family:serif;
+}
+.background-reserve>div{
+  color:#fff;
+}
