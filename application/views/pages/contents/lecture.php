@@ -291,7 +291,7 @@
               </amp-accordion>
             </article>
             <p class="mt2">本年度の講演会で、午前の部は事前予約を受け付けております。以下のフォームにご回答抱ければ幸いです。</p>
-            <a href="https://forms.gle/jRiwe5EbEu3E73oE6" class="ml0 mb2 flex justify-start items-center controls text-decoration-none background-reserve">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYYWf8Fgwzeqd4dqd1XGsejb2Co3x0pOFF9ePu5Un7_sCpTg/viewform?usp=sf_link" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve">
               <amp-img src="/img/lecturers/Yasuo-Kurimoto-photo.jpg" width="519" height="610" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
               <div class="inline-block col-10 background-reserve">
                 栗本康夫先生講演会事前予約<br />
@@ -299,7 +299,7 @@
                 <time datetime="2019-05-18T09:20">5/18 9:20~10:45</time> 3F 大講堂
               </div>
             </a>
-            <a href="https://forms.gle/JA8ZkCz7WGWeAt5g8" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ_QjS0ctyhrvU7lSSzgwE_FtGeYIi2zENHDE7GTIyLnC50Q/viewform?usp=sf_link" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve">
               <amp-img src="/img/lecturers/Yasuharu-Tokuda-photo-2.jpg" width="1347" height="1502" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
               <div class="inline-block col-10">
                 徳田安春先生講演会事前予約<br />

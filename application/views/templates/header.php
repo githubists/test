@@ -1691,12 +1691,19 @@ amp-lightbox h3 {
 .notarget {
     color: #AAA
 }
-.background-reserve{
-  background-color:#f68a4c;
-  color:#fff;
+.link-button{
   height:auto;
   font-family:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
 }
-.background-reserve>div{
-  color:#fff;
+.background-reserve{
+  background-color:#f68a4c;
+}
+.background-piano{
+  background-color:#e35b8b;
+}
+.background-chamber{
+  background-color:#896ae6;
+}
+.white-text{
+  color:#fff
 }
