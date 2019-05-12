@@ -16,7 +16,7 @@
     font-weight:600;
     position:relative
   }
-  
+
   .profile-face{
   }
   .profile-text-wrapper::before{
@@ -164,7 +164,7 @@
                 <h3 class="lecture-title">iPSが切り拓く目の再生医療</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuo-Kurimoto-photo.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuo-Kurimoto-photo-3.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">栗本康夫先生</h3>
@@ -189,14 +189,14 @@
                   <h4 ><b>日時</b>：5/18 9:20〜10:45</h4>
                   <h4><b>場所</b>：医学部本館 大講堂</h4>
                 </div>
-                
+
                 <h4 class="message-heading">来場者へのメッセージ</h4>
                 <p>21世紀は再生医療の世紀と言われており、これから医療のあり方は大きく変わっていくことでしょう。本講演では世界初のiPS細胞治療の話を中心に主に眼の再生医療の現状と将来についてお話します。</p>
 
                 <h4 class="pt1 reservation">ご予約の場合は<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYYWf8Fgwzeqd4dqd1XGsejb2Co3x0pOFF9ePu5Un7_sCpTg/viewform">こちら</a><h4>
 
               </div>
-              
+
 
 
 
@@ -205,7 +205,7 @@
                 <h3 class="lecture-title">工学×バイオがいざなう未来</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Shoji-Takeuchi-photo.png" width="10" height="15" layout="responsive" max-width="20"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Shoji-Takeuchi-photo-3.png" width="10" height="15" layout="responsive" max-width="20"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">竹内昌治先生</h3>
@@ -238,7 +238,7 @@
                 <h3 class="lecture-title">こんな症状に注意！<br><small>〜がんの初期症状について教えます〜</small></h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuharu-Tokuda-photo-2.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuharu-Tokuda-photo-3.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">徳田安春先生</h3>
@@ -255,7 +255,7 @@
                   <h4 ><b>日時</b>：5/19 9:20～10:30</h4>
                   <h4><b>場所</b>：医学部本館 大講堂</h4>
                 </div>
-                
+
                 <h4 class="message-heading">来場者へのメッセージ</h4>
                 <p>平均的日本人の二人に一人が癌にかかります。日本人の死因の第一位も癌です。早期診断と適切な治療が必要です。癌の早期発見には検診がありますが、過剰診断や見逃しのリスクもあり、それだけでは十分ではありません。最も重要なのは予防ですが、完全に予防できない癌もあります。そこで大切なのは、症状を出している癌の早期診断と、それに基づいた適切な治療です。今回の講演では、よくみる癌にその症状がでるメカニズムと早期診断のポイントについて、早期受診が必要な場合についてお話しします。</p>
 
@@ -271,7 +271,7 @@
                 <h3 class="lecture-title">医師は如何に診断し、如何に間違えるのか</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Masatomi-Ikusaka-photo.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Masatomi-Ikusaka-photo-3.jpg" width="10" height="15" layout="responsive" max-width="20"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">生坂政臣先生</h3>
@@ -292,7 +292,7 @@
                   <h4 ><b>日時</b>：5/19 16:00～17:00</h4>
                   <h4><b>場所</b>：医学部本館 大講堂</h4>
                 </div>
-                
+
                 <h4 class="message-heading">来場者へのメッセージ</h4>
                 <p>今回の講演では診断プロセスの解析を通して、医師が陥りやすいピットフォールを理解し、誤診から身を守るために私たちができることを考えたいと思います。</p>
 

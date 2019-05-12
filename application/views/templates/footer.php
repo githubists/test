@@ -477,7 +477,7 @@
   <br>
   <p>午前の部に関しては事前予約を行っております。</p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYYWf8Fgwzeqd4dqd1XGsejb2Co3x0pOFF9ePu5Un7_sCpTg/viewform?usp=sf_link" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve link-button">
-    <amp-img src="/img/lecturers/Yasuo-Kurimoto-photo.jpg" width="378" height="567" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
+    <amp-img src="/img/lecturers/Yasuo-Kurimoto-photo-3.jpg" width="378" height="567" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
     <div class="inline-block col-10 white-text">
       栗本康夫先生講演会事前予約<br />
       フォームはこちら<br />
@@ -485,7 +485,7 @@
     </div>
   </a>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ_QjS0ctyhrvU7lSSzgwE_FtGeYIi2zENHDE7GTIyLnC50Q/viewform?usp=sf_link" class="ml0 my2 flex justify-start items-center controls text-decoration-none background-reserve link-button">
-    <amp-img src="/img/lecturers/Yasuharu-Tokuda-photo-2.jpg" width="1000" height="1500" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
+    <amp-img src="/img/lecturers/Yasuharu-Tokuda-photo-3.jpg" width="1000" height="1500" layout="responsive" class="my0 left mr1 col-2" alt="Logo"></amp-img>
     <div class="inline-block col-10 white-text">
       徳田安春先生講演会事前予約<br />
       フォームはこちら<br />
