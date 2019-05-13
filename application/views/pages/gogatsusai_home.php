@@ -10,6 +10,7 @@
   <script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async=""></script>
   <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 <?=$header?>
 section>h2{
   margin-top:1em;
@@ -320,10 +321,13 @@ section>h2{
   <article class="photo-article px2">
     <section id="about" class="relative">
     <h2 class="relative header-about">医へのいざない</h2>
+    
     <p class="p2">
+    
         東京大学医学部4年生による五月祭企画です。20を超える企画を通して、医学の歴史から最先端までをどなたでも楽しく体験できます。受験本の販売など、受験生も必見! 医学部の学生たちが魅せる医の世界をぜひお楽しみください。
         <br>
         代表挨拶は <a href="/about">こちら</a>
+        <amp-youtube data-videoid="EK_uKGMIetY" layout="responsive" width="480" height="270" id="pv" class="mt2"></amp-youtube>
     </p>
     </section>
 
