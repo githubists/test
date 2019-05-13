@@ -61,8 +61,7 @@ img{
           <li>・血圧測定体験</li>
           <li>・動脈観察</li>
           <li>・VR医学体験</li>
-          <li>・
-            救急救命体験</li>
+          <li>・救命救急体験</li>
         </ul>
         企画ごとに集合場所が異なりますのでご注意ください。
         <h3 class="relative py2 underline">整理券の配布場所と入場までの流れについて</h3>
@@ -70,8 +69,9 @@ img{
           18日、19日の両日で、その日ご入場いただける整理券配布対象企画の整理券を、企画別の配布列を作って配布いたします。<br />
           先着順で、集合時刻の書かれた整理券を配布いたします。<br />
           整理券をお持ちのお客様は、集合時刻に所定の場所にお越しください。その後、スタッフの案内に従ってご体験いただきます。<br />
-          なお、整理券の枚数につきましては、以下の通りです。<br />
+          <!--なお、整理券の枚数につきましては、以下の通りです。<br />
           <amp-img src="/img/timetable/maisuu.jpg" width="1300" height="300" layout="responsive" alt="整理券の配布枚数です。"></amp-img><br />
+          -->
           <div class="pt2">①手術体験、血圧測定、動脈観察、VR医学体験</div>
           <div class="pl2">
             1枚の整理券につき体験者1名（手術体験・VR医学体験は小学生以上）＋同伴者2名（ただし、未就学児を同伴者に含む場合は3名）までご入場いただけます。<br />
@@ -92,14 +92,15 @@ img{
           12:00の回、15:00の回の配布列形成はそれぞれ11:30, 14:30からとなります。<br />
           それより前の列形成は禁止させていただいております。ご了承ください。<br />
           <br />
-          なお、医学部本館は両日朝9:00より会場予定です。開場後、スタッフの支持に従って配布列への整列にご協力ください。
+          なお、医学部本館は両日朝9:00より開場予定です。開場後、スタッフの指示に従って配布列への整列にご協力ください。
         </div>
         <h3 class="relative py2 undeline">企画への参加について</h3>
         <div class="">①手術体験、血圧測定、動脈観察、VR医学体験</div>
         <div class="pl2">整理券に表示されている時刻になりましたら階段を上がって左手側の2F総合実習室改札口へお越しいただき、お持ちの整理券をスタッフにお見せください。</div>
+        <amp-img src="/img/timetable/ticket_map.jpg" width="370" height="400" layout="responsive" class="mx-auto col-6"></amp-img><br />
         <div class="pt2">②救命救急体験</div>
         <div class="pl2">整理券の時刻までに、3Fにへの階段を上がって左側にあります救命救急体験までお越しください。</div>
-        <amp-img src="/img/timetable/ticket_map.jpg" width="554" height="600" layout="responsive" class="mx-auto"></amp-img><br />
+        <amp-img src="/img/timetable/ticket_map_2.jpg" width="370" height="400" layout="responsive" class="mx-auto col-6"></amp-img><br />
         <h3 class="relative py2 underline">注意事項</h3>
         <ul class="pl2">
           <li>・各企画の配布数が上限に達し次第、配布を終了させていただきます。列にお並びいただいても整理券を発行できない場合がございます。</li>
