@@ -577,7 +577,7 @@
     医学部本館(2号館)3階大講堂にて<br><br>
     ※3階大講堂のスケジュールにつきましては、<a href="/timetable">タイムテーブル</a>もご参照ください
   </strong>
-  <a href="" class="ml0 my1 py2 flex justify-start items-center controls text-decoration-none background-chamber link-button">
+  <a href="/pdf/2019_chamber_mayfes_program.pdf" class="ml0 my1 py2 flex justify-start items-center controls text-decoration-none background-chamber link-button">
     <svg class="my0 left mx2 col-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <path class="st0" fill="#fff" d="M327.392,89.817C270.288,62.244,222.046,0,222.046,0v41.456v325.214c-17.83-6.55-38.908-8.486-60.632-4.292 c-52.168,10.023-88.075,51.179-80.247,91.872c7.851,40.714,56.48,65.578,108.638,55.512c46.306-8.915,79.741-42.349,81.171-78.257 h0.29V148.513c149.815,18.303,125.209,124.349,114.842,155.439C472.464,207.23,427.556,138.158,327.392,89.817z"/>
     </svg>
@@ -586,6 +586,7 @@
       <time datetime="2019-05-18T11:00">5/18 11:00~14:45</time> 3F 大講堂
     </div>
   </a>
+  <p>コンサートの依頼等、本会へのお問い合わせは<a href="mailto:tetsumon.chambermusic@gmail.com">tetsumon.chambermusic@gmail.com</a>までお願いします。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before chamber" on="tap:chamber.close,art">&lt; 前の企画</button></li>
   <li><button aria-label="close chamber" on="tap:chamber.close">✕</button></li>
@@ -617,6 +618,7 @@
       <time datetime="2019-05-19T10:40">5/19 10:40~15:50</time> 3F 大講堂
     </div>
   </a>
+  <p>コンサートの依頼等、本会へのお問い合わせは<a href="mailto:tetumonpiano@gmail.com">tetumonpiano@gmail.com</a>までお願いします。</p>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before piano" on="tap:piano.close,chamber">&lt; 前の企画</button></li>
   <li><button aria-label="close piano" on="tap:piano.close">✕</button></li>
