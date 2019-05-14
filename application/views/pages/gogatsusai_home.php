@@ -629,6 +629,7 @@ section>h2{
         <div class="p2">
             <h3>代表団</h3>
             <p>田村悟己、櫻井円香、吉富祐太朗、長田悠希</p>
+            <p>代表挨拶は <a href="/about">こちら</a></p>
         </div>
         <div class="p2">
             <h3>企画責任者</h3>

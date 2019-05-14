@@ -21,7 +21,7 @@
   border-radius:50%;
 }
 .img-brown{
-  border:solid 2px rgba(51,44,33,0.7);
+  border:solid 2px rgba(51,44,33,0.5);
 }
 .img-red{
   border:solid 2px rgba(219,28,30,0.5);
