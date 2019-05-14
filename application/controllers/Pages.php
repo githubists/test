@@ -23,7 +23,7 @@ class Pages extends CI_Controller {
   }
   public function error_404() {
     $this->output->set_status_header('404');
-    $this->load->view('pages/contents/'.$page, $this->loadtemplates($page));
+    $this->load->view('errors/404', $this->loadtemplates($page));
   }
   public function loadtemplates ($page){
     $data['prefix']=$this->load->view('templates/prefix','',TRUE);
