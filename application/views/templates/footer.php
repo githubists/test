@@ -385,6 +385,49 @@
   <p>この企画では、昨年に東京大学の研究室から発表された論文をいくつか選び、ポスターの形式で紹介いたします。東京大学の医学系研究は、本郷キャンパスや東京大学病院、また各地の附置研究所で日々行われています。論文は、その日々の研究の営みが成果となり、専門雑誌などに掲載されたものです。それらは世界中で読まれ、新たな研究の基盤となっています。今回の五月祭企画では、神経病理学教室、免疫学教室、システムズ薬理学教室、疾患生命工学センター放射線分子医学部門から発表された各論文の紹介ポスターと、東京大学病院のがん遺伝子パネル検査についての解説ポスターの計5 つを用意しました。基礎研究から臨床まで幅広いテーマから選んでおります。ここ本郷の医学部建物内で、実際に毎日どのような研究が行われているか、ぜひ覗いてみてください！</p>
   <br />
   <strong>※この企画にはポスター展示に加え班員による発表がございます。発表スケジュールは <a href="/timetable">タイムテーブル</a> をご覧ください。</strong>
+  ポスターのみの発表として<a href="https://www.nature.com/articles/s41467-018-03147-6">骨破壊性のT細胞がもつ口腔内の細菌に対する生体防御</a>があります。
+  <table class="research-table mt4">
+  <tr>
+  <th class="center">5/18</th>
+  <th>発表<br />時間</th>
+  <th class="center">5/19</th>
+  </tr>
+  <tr>
+  <td><a href="https://www.cell.com/cell/fulltext/S0092-8674(18)31117-6" class="text-decoration-none">
+    遺伝情報を正確に守るための<br />新たなDNA修復メカニズム
+  </a></td>
+  <td>11:00-11:15</td>
+  <td><a href="http://todaioncopanel.umin.jp/" class="text-decoration-none">
+    「Todai OncoPanel」<br />世界をリードする遺伝子パネル検査が<br />がん研究の未来を照らす
+  </a></td>
+  </tr>
+  <tr>
+  <td><a href="https://www.cell.com/neuron/fulltext/S0896-6273(16)00169-0" class="text-decoration-none">
+    神経細胞内のカルシウムが<br />睡眠時間を制御する
+  </a></td>
+  <td>13:00-13:15</td>
+  <td><a href="https://www.cell.com/cell/fulltext/S0092-8674(18)31117-6" class="text-decoration-none">
+    遺伝情報を正確に守るための<br />新たなDNA修復メカニズム
+  </a></td>
+  </tr>
+  <tr>
+  <td><a href="http://todaioncopanel.umin.jp/" class="text-decoration-none">
+    「Todai OncoPanel」<br />世界をリードする遺伝子パネル検査が<br />がん研究の未来を照らす
+  </a></td>
+  <td>15:00-15:15</td>
+  <td><a href="https://www.cell.com/neuron/fulltext/S0896-6273(16)00169-0" class="text-decoration-none">
+    神経細胞内のカルシウムが<br />睡眠時間を制御する
+  </a></td>
+  <tr>
+  <td><a href="https://www.pnas.org/content/115/39/E9115.long" class="text-decoration-none">
+    LRRK2およびその基質Rabはストレスを<br />受けたリソソームに連続的に集積し<br />その恒常性を維持する
+  </a></td>
+  <td>15:15-15:30</td>
+  <td><a href="https://www.pnas.org/content/115/39/E9115.long" class="text-decoration-none">
+    LRRK2およびその基質Rabはストレスを<br />受けたリソソームに連続的に集積し<br />その恒常性を維持する
+  </a></td>
+  </tr>
+  </table>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before research" on="tap:research.close,narrative">&lt; 前の企画</button></li>
   <li><button aria-label="close research" on="tap:research.close">✕</button></li>
@@ -563,7 +606,7 @@
     医学部本館(2号館)3階大講堂にて<br><br>
     ※3階大講堂のスケジュールにつきましては、<a href="/timetable">タイムテーブル</a>もご参照ください
   </strong>
-  <a href="" class="ml0 my1 py2 flex justify-start items-center controls text-decoration-none background-piano link-button">
+  <a href="/pdf/2019_piano_mayfes_program.pdf" class="ml0 my1 py2 flex justify-start items-center controls text-decoration-none background-piano link-button">
     <svg class="my0 left mx2 col-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <path class="st0" fill="#fff" d="M327.392,89.817C270.288,62.244,222.046,0,222.046,0v41.456v325.214c-17.83-6.55-38.908-8.486-60.632-4.292 c-52.168,10.023-88.075,51.179-80.247,91.872c7.851,40.714,56.48,65.578,108.638,55.512c46.306-8.915,79.741-42.349,81.171-78.257 h0.29V148.513c149.815,18.303,125.209,124.349,114.842,155.439C472.464,207.23,427.556,138.158,327.392,89.817z"/>
     </svg>

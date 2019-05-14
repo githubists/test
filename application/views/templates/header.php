@@ -1710,3 +1710,10 @@ amp-lightbox h3 {
 .white-text{
   color:#fff
 }
+.research-table td,.research-table tr{
+  padding-bottom:0.5rem;
+  border-width: 1px 0px 0px;
+  border-color:black;
+  border-style: solid;
+  border-collapse:collapse
+}
