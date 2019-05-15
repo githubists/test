@@ -164,7 +164,7 @@
                 <h3 class="lecture-title">iPSが切り拓く目の再生医療</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuo-Kurimoto-photo-3.jpg" width="10" height="15" layout="responsive"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuo-Kurimoto-photo-3.jpg" width="10" height="15" layout="responsive" alt="栗本康夫先生の顔写真です。"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">栗本康夫先生</h3>
@@ -205,7 +205,7 @@
                 <h3 class="lecture-title">工学×バイオがいざなう未来</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Shoji-Takeuchi-photo-3.png" width="10" height="15" layout="responsive"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Shoji-Takeuchi-photo-3.png" width="10" height="15" layout="responsive" alt="竹内昌治先生の顔写真です。"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">竹内昌治先生</h3>
@@ -240,7 +240,7 @@
                 <h3 class="lecture-title">こんな症状に注意！<br><small>〜がんの初期症状について教えます〜</small></h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuharu-Tokuda-photo-3.jpg" width="10" height="15" layout="responsive"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Yasuharu-Tokuda-photo-3.jpg" width="10" height="15" layout="responsive" alt="徳田安春先生の顔写真です。"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">徳田安春先生</h3>
@@ -273,7 +273,7 @@
                 <h3 class="lecture-title">医師は如何に診断し、如何に間違えるのか</h3>
               </div>
               <div class="relative pt1 pl1 lecture-body">
-                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Masatomi-Ikusaka-photo-3.jpg" width="10" height="15" layout="responsive"></amp-img>
+                <amp-img class="col-4 profile-face inline-block" src="/img/lecturers/Masatomi-Ikusaka-photo-3.jpg" width="10" height="15" layout="responsive" alt="生坂政臣先生の顔写真です。"></amp-img>
                 <div class="col-8 relative right inline-block profile-text-wrapper">
                   <div class="absolute profile-text">
                     <h3 class="pl1 profile-name">生坂政臣先生</h3>

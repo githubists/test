@@ -48,7 +48,7 @@
   margin-bottom:3px;
 }
 .member-name{
-  
+
 }
 .green{
   background-color:#bec82a
@@ -102,9 +102,9 @@ section>article>p.ampstart-dropcap{
               <h2 class="relative">代表団紹介</h2>
               <article class="p2">
 
-                  
+
                   <div class="member-picture-wrapper">
-                    <amp-img layout="fill" src="/img/members/sq_tamura2.jpg" class="img-brown"></amp-img>
+                    <amp-img layout="fill" src="/img/members/sq_tamura2.jpg" class="img-brown" alt="当企画代表を務めております、医学科4年 田村悟己の顔写真です"></amp-img>
                   </div>
                   <div class="member-abs">
                     <amp-fit-text width="auto" height="35" layout="fixed-height" class="member-status">代表</amp-fit-text>
@@ -122,7 +122,7 @@ section>article>p.ampstart-dropcap{
 
               <article class="p2">
                   <div class="member-picture-wrapper">
-                    <amp-img layout="fill" src="/img/members/sq_sakurai.jpg" class="img-red"></amp-img>
+                    <amp-img layout="fill" src="/img/members/sq_sakurai.jpg" class="img-red" alt="当企画副代表を務めております、医学科4年 櫻井円香の顔写真です"></amp-img>
                   </div>
                   <div class="member-abs">
                     <amp-fit-text width="auto" height="35" layout="fixed-height" class="member-status">副代表</amp-fit-text>
@@ -141,7 +141,7 @@ section>article>p.ampstart-dropcap{
 
               <article class="p2">
                   <div class="member-picture-wrapper">
-                    <amp-img layout="fill" src="/img/members/sq_nagata.jpg" class="img-blue"></amp-img>
+                    <amp-img layout="fill" src="/img/members/sq_nagata.jpg" class="img-blue" alt="当企画副代表を務めております、健康総合科学科4年 長田悠希の顔写真です"></amp-img>
                   </div>
                   <div class="member-abs">
                     <amp-fit-text width="auto" height="35" layout="fixed-height" class="member-status">副代表</amp-fit-text>
@@ -159,7 +159,7 @@ section>article>p.ampstart-dropcap{
 
               <article class="p2 mb2">
                   <div class="member-picture-wrapper">
-                    <amp-img layout="fill" src="/img/members/sq_yoshitomi.jpg" class="img-green"></amp-img>
+                    <amp-img layout="fill" src="/img/members/sq_yoshitomi.jpg" class="img-green" alt="当企画副代表を務めております、医学科4年 吉富祐太朗の顔写真です"></amp-img>
                   </div>
                   <div class="member-abs">
                     <amp-fit-text width="auto" height="35" layout="fixed-height" class="member-status">副代表</amp-fit-text>
