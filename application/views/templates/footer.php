@@ -80,7 +80,7 @@
       <a href="mailto:mayfes2019.utmed@gmail.com" target="_blank" rel="noopener" class="inline-block p1" aria-label="東大医学部五月祭企画公式e-mailアドレスへのリンク"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewBox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
   </li>
 </ul>
-  <p class="center">
+  <p class="center mb4">
     © 2019 東京大学医学部五月祭実行委員, ALL RIGHTS RESERVED
   </p>
 </footer>
@@ -628,9 +628,6 @@
 </amp-lightbox>
 <button class="controls scrollToTop p0"on="tap:top.scrollTo(duration=200)"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>ScrollToTop</title><polyline stroke="#fff" fill="none" points="10 32 25 18 40 32"/></svg></button>
 <a class="controls px2" id="mayfesaward-link"href="/">
-  <!--<amp-fit-text layout="fill">
-    May Fes Awards に投票
-  </amp-fit-text>-->
   <span id="mayfesaward-text">May Fes Awards</span>
   <span id="mayfesaward-vote"><i class="fa fa-hand-point-up"></i><span>
 </a>

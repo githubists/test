@@ -1719,7 +1719,7 @@ amp-lightbox h3 {
   border-collapse:collapse
 }
 #mayfesaward-link{
-  border: double 6px white;
+  border: outset 6px white;
   border-radius: 0px;
 
   position: fixed;
@@ -1727,15 +1727,8 @@ amp-lightbox h3 {
   bottom: 15px;
   height: 50px;
   right:80px;
-  padding-right:25px;
-  /*
-  margin-left:50%;
-  transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);*/
-  
+  pedding-left:10px;
+  padding-right:15px;
   text-align:center;
   line-height:35px;
   vertical-align:baseline;
@@ -1746,8 +1739,11 @@ amp-lightbox h3 {
   box-shadow:4px 4px 8px;
   z-index: 2;
 }
+#mayfesaward-link:active{
+  border:inset 6px white;
+}
 #mayfesaward-link>#mayfesaward-text{
-  font-size:30px;
+  font-size:25px;
   font-weight:800;
   color:white;
   
@@ -1755,7 +1751,7 @@ amp-lightbox h3 {
 #mayfesaward-link>#mayfesaward-vote{
   position: absolute;
   top: 12px;
-  right: 3px;
-  font-size: 25px;
+  right: 0px;
+  font-size: 23px;
   color:white;
 }
