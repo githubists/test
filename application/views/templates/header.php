@@ -91,6 +91,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <meta name="google-site-verification" content="woSXtH8d9cusEuNf4g-8VQLppZFeqxg_7aNu011cwqY" />
 <meta name="msvalidate.01" content="A69F6134B0FE60F3FCA37D8A6D1FB5C5" />
@@ -1716,4 +1717,45 @@ amp-lightbox h3 {
   border-color:black;
   border-style: solid;
   border-collapse:collapse
+}
+#mayfesaward-link{
+  border: double 6px white;
+  border-radius: 0px;
+
+  position: fixed;
+
+  bottom: 15px;
+  height: 50px;
+  right:80px;
+  padding-right:25px;
+  /*
+  margin-left:50%;
+  transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);*/
+  
+  text-align:center;
+  line-height:35px;
+  vertical-align:baseline;
+  text-decoration:none;
+  text-shadow: 2px 2px 4px black;
+
+  background-color: red;
+  box-shadow:4px 4px 8px;
+  z-index: 2;
+}
+#mayfesaward-link>#mayfesaward-text{
+  font-size:30px;
+  font-weight:800;
+  color:white;
+  
+}
+#mayfesaward-link>#mayfesaward-vote{
+  position: absolute;
+  top: 12px;
+  right: 3px;
+  font-size: 25px;
+  color:white;
 }
