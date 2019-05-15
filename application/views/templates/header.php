@@ -1519,6 +1519,7 @@ footer>ul {
 .disc>li>button{
   text-decoration:underline;
   cursor:pointer;
+  padding:0.2rem 0rem
 }
 footer>p {
   font-size: 14px;
