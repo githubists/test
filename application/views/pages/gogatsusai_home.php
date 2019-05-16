@@ -362,7 +362,7 @@ section>h2{
       </button>
 
       <button on="tap:emergency">
-          <amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+          <amp-img src="/img/contents/experience/emergency2.png" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
           <div class="absolute flex flex-column proj-container">
               <amp-fit-text layout="flex-item" class="proj-desc">
                   本館3階 整理券制

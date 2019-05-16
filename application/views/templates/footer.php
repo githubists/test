@@ -127,7 +127,7 @@
 </article>
 </amp-lightbox>
 <amp-lightbox id="emergency" layout="nodisplay" scrollable="">
-<amp-img src="/img/contents/experience/emergency.jpg" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
+<amp-img src="/img/contents/experience/emergency2.png" width="450" height="300" alt="救急救命体験イメージ画像として緑色の心電図波形を使用した。" layout="responsive" class=""></amp-img>
 <article>
   <button class="close" aria-label="close emergency" on="tap:emergency.close">✕</button>
   <h1>ある救命実習からの脱出</h1>
