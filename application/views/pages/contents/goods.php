@@ -2,7 +2,7 @@
   <title>グッズ | 東京大学 第92回 五月祭 医学部企画</title>
   <link rel="canonical" href="https://utmed-mayfes.net/contents/goods">
   <meta name="description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』のグッズ紹介ページです。クリアファイル、ペン、ポストカード、受験本など、今年も様々な東大医学部グッズを販売しております。"/>
-  <meta property="og:title" content="Template | 東大医学部 五月祭企画 医へのいざない" />
+  <meta property="og:title" content="グッズ | 東大医学部 五月祭企画 医へのいざない" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://utmed-mayfes.net/contents/goods" />
   <meta property="og:image" content="https://utmed-mayfes.net/img/header/header-og-1x-50-withtext.jpg" />
