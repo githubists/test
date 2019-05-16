@@ -23,6 +23,7 @@
        display: flex;
        align-items: center;
        justify-content: center;
+       background-color:#eee;
      }
      .carousel-preview > * {
        margin: var(--space-1);
@@ -86,7 +87,7 @@
               on="select:utbook.goToSlide(index=event.targetOption)"
               layout="container">
               <amp-carousel id="utbookPreview"
-                class="carousel-preview"
+                class="carousel-preview mt1"
                 height="100"
                 layout="fixed-height"
                 type="carousel">
@@ -119,7 +120,7 @@
               </amp-carousel>
             </amp-selector>
             </div>
-            <div class="col-12 sm-col-8 md-col-6 indented-paragraph">
+            <div class="mt1 col-12 sm-col-8 md-col-6 indented-paragraph">
               <p>みなさん，こんにちは。私たちは東京大学医学部医学科４年生，五月祭医学部企画における『2019東大入試研究』編集チームです。</p>
               <p>「東京大学医学部」は，日本で最高峰とされる東京大学の，さらに最難関と言われています。では，そんな東京大学医学部，一体どんな人たちがどうやって入ってきているのでしょう？</p>
               <p>本書は，そんな疑問を解決すべく，医学部医学科のメンバーの受験期の勉強法から医学部生の実生活まで，私たちのリアルをご紹介いたします。近年の東大入試の問題傾向の分析や医学部生へのアンケートコーナー，また最近の東大医学部入試における推薦入試や面接の体験談など，ここでしか手に入らない情報を盛りだくさんに詰め込みました。</p>
@@ -131,7 +132,7 @@
         <section class="">
           <h2 class="relative">クリアファイル</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-5">
+            <div class="col-12 sm-col-8 md-col-7">
             <amp-carousel id="files"
               width="400"
               height="300"
@@ -176,7 +177,7 @@
               on="select:files.goToSlide(index=event.targetOption)"
               layout="container">
               <amp-carousel id="filesPreview"
-                class="carousel-preview"
+                class="carousel-preview mt1"
                 height="100"
                 layout="fixed-height"
                 type="carousel">
@@ -221,7 +222,7 @@
         <section class="">
           <h2 class="relative">ノート</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-5">
+            <div class="col-12 sm-col-8 md-col-7">
             <amp-carousel id="notes"
               width="400"
               height="300"
@@ -265,8 +266,8 @@
             <amp-selector id="notesSelector"
               on="select:notes.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="utboolPreview"
-                class="carousel-preview"
+              <amp-carousel id="notesPreview"
+                class="carousel-preview mt1"
                 height="100"
                 layout="fixed-height"
                 type="carousel">
@@ -311,7 +312,7 @@
         <section class="">
           <h2 class="relative">ポストカード</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-5">
+            <div class="col-12 sm-col-8 md-col-7">
             <amp-carousel id="postcards"
               width="400"
               height="300"
@@ -340,8 +341,8 @@
             <amp-selector id="postcardsSelector"
               on="select:postcards.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="utboolPreview"
-                class="carousel-preview"
+              <amp-carousel id="notesPreview"
+                class="carousel-preview mt1"
                 height="100"
                 layout="fixed-height"
                 type="carousel">
