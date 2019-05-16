@@ -1728,7 +1728,7 @@ amp-lightbox h3 {
   bottom: 15px;
   height: 50px;
   right:80px;
-  pedding-left:10px;
+  padding-left:10px;
   padding-right:15px;
   text-align:center;
   line-height:35px;
@@ -1743,16 +1743,27 @@ amp-lightbox h3 {
 #mayfesaward-link:active{
   border:inset 6px white;
 }
-#mayfesaward-link>#mayfesaward-text{
+#mayfesaward-text{
   font-size:25px;
   font-weight:800;
   color:white;
   
 }
-#mayfesaward-link>#mayfesaward-vote{
+#mayfesaward-vote{
+  font-size:20px;
+}
+#mayfesaward-hand{
   position: absolute;
   top: 12px;
   right: 0px;
   font-size: 23px;
   color:white;
+}
+@media(max-width:365px){
+  #mayfesaward-text{
+    font-size:20px;
+  }
+  #mayfesaward-vote{
+    font-size:15px;
+  }
 }
