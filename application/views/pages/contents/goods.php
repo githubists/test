@@ -40,6 +40,11 @@
      .carousel-preview button:active {
        opacity: 0.5;
      }
+     amp-carousel amp-img{
+       background-color:#eee;
+       padding 2px 0px;
+       border: 2px solid #eee
+     }
     <?=$menu?>
     <?=$navbar?>
     <main>
@@ -47,7 +52,7 @@
         <section class="">
           <h2 class="relative">受験本</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-5">
+            <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="utbook"
               width="400"
               height="300"
@@ -73,11 +78,6 @@
                 layout="responsive"
                 alt="a sample image"></amp-img>
               <amp-img src="/img/goods/utbook/utbook-pages-3.jpg"
-                width="1033"
-                height="1458"
-                layout="responsive"
-                alt="a sample image"></amp-img>
-              <amp-img src="/img/goods/utbook/utbook-backcover.jpg"
                 width="1033"
                 height="1458"
                 layout="responsive"
@@ -112,15 +112,10 @@
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-                <amp-img option="4"
-                  src="/img/goods/utbook/utbook-backcover.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
               </amp-carousel>
             </amp-selector>
             </div>
-            <div class="mt1 col-12 sm-col-8 md-col-6 indented-paragraph">
+            <div class="mt1 md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
               <p>みなさん，こんにちは。私たちは東京大学医学部医学科４年生，五月祭医学部企画における『2019東大入試研究』編集チームです。</p>
               <p>「東京大学医学部」は，日本で最高峰とされる東京大学の，さらに最難関と言われています。では，そんな東京大学医学部，一体どんな人たちがどうやって入ってきているのでしょう？</p>
               <p>本書は，そんな疑問を解決すべく，医学部医学科のメンバーの受験期の勉強法から医学部生の実生活まで，私たちのリアルをご紹介いたします。近年の東大入試の問題傾向の分析や医学部生へのアンケートコーナー，また最近の東大医学部入試における推薦入試や面接の体験談など，ここでしか手に入らない情報を盛りだくさんに詰め込みました。</p>
