@@ -627,9 +627,9 @@
 </article>
 </amp-lightbox>
 <button class="controls scrollToTop p0"on="tap:top.scrollTo(duration=200)"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>ScrollToTop</title><polyline stroke="#fff" fill="none" points="10 32 25 18 40 32"/></svg></button>
-<a class="controls px2" id="mayfesaward-link"href="/">
-  <span id="mayfesaward-text">May Fes Awards<span id="mayfesaward-vote"> 投票</span></span>
-  <span id="mayfesaward-hand"><i class="fa fa-hand-point-up"></i><span>
+<a class="controls px2" id="mayfesawards-link"href="/mayfesawards">
+  <span id="mayfesawards-text">May Fes. Awards<span id="mayfesawards-vote"> 投票</span></span>
+  <span id="mayfesawards-hand"><i class="fa fa-hand-point-up"></i><span>
 </a>
 </body>
 </html>

@@ -1719,7 +1719,7 @@ amp-lightbox h3 {
   border-style: solid;
   border-collapse:collapse
 }
-#mayfesaward-link{
+#mayfesawards-link{
   border: outset 6px white;
   border-radius: 0px;
 
@@ -1740,19 +1740,19 @@ amp-lightbox h3 {
   box-shadow:4px 4px 8px;
   z-index: 2;
 }
-#mayfesaward-link:active{
+#mayfesawards-link:active{
   border:inset 6px white;
 }
-#mayfesaward-text{
+#mayfesawards-text{
   font-size:25px;
   font-weight:800;
   color:white;
   
 }
-#mayfesaward-vote{
+#mayfesawards-vote{
   font-size:20px;
 }
-#mayfesaward-hand{
+#mayfesawards-hand{
   position: absolute;
   top: 12px;
   right: 0px;
@@ -1760,10 +1760,10 @@ amp-lightbox h3 {
   color:white;
 }
 @media(max-width:365px){
-  #mayfesaward-text{
+  #mayfesawards-text{
     font-size:20px;
   }
-  #mayfesaward-vote{
+  #mayfesawards-vote{
     font-size:15px;
   }
 }
