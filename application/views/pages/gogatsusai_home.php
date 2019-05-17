@@ -552,9 +552,12 @@ section>h2{
     </section>
     <section class="relative">
     <h2 class="relative">その他の企画</h2>
-    <p class="p2">・タイムテーブルは<a href="/timetable">こちら</a><br>
-       ・館内図は<a href="/map">こちら</a><br />
-     ・グッズ詳細は<a href="/contents/goods">こちら</a></p>
+    <p class="p2">
+        ・タイムテーブルは<a href="/timetable">こちら</a><br>
+        ・館内図は<a href="/map">こちら</a><br />
+        ・カフェ企画メニューは<a href="/contents/cafe">こちら</a><br>
+        ・グッズ詳細は<a href="/contents/goods">こちら</a>
+    </p>
     <i class="flex flex-wrap justify-start mt2">
       <button on="tap:cafe">
         <amp-img src="/img/contents/misc/cafe.jpg" width="450" height="300" alt="カフェ企画のイメージ画像として背景が植物で、赤と黒のストライプの入ったマグカップが床の上に置かれている画像を使用した。" layout="responsive" class=""></amp-img>
