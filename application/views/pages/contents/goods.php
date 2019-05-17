@@ -7,7 +7,7 @@
   <meta property="og:url" content="https://utmed-mayfes.net/contents/goods" />
   <meta property="og:image" content="https://utmed-mayfes.net/img/header/header-og-1x-50-withtext.jpg" />
   <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』のグッズ紹介ページです。クリアファイル、ペン、ポストカード、受験本など、今年も様々な東大医学部グッズを販売しております。" />
-  <！-- Custom AMP Package other than lightbox accordion and sidebar-->
+  <!-- Custom AMP Package other than lightbox accordion and sidebar-->
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>

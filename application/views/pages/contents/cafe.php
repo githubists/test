@@ -109,7 +109,7 @@
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6">
               <p>
-                <span class="h4 block my1 goods-name">色が変わる!ハーブティー 300円</span>
+                <span class="h4 block my1 goods-name">色が変わる！ハーブティー 300円</span>
                 <span class="goods-explanation">
                 「マロウブルー」と呼ばれる紫色のハーブティー。スポイトでレモンを滴下すると，なんとピンク色になります！最初は薄味のハーブティーとして，滴下後はレモン風味のドリンクとしてお楽しみいただけます。鮮やかな色で，身体に悪いのではないかと一見不安になるかもしれませんが，むしろ呼吸器や消化器の炎症を抑える身体にいい飲み物です。
                 </span>
