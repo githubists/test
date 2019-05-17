@@ -479,6 +479,8 @@
   <hr /><br />
   <h2>おいしく学ぶ医学</h2>
   <p>たくさんの企画を巡って疲れてしまったあなたに、座ってくつろげる場所をご用意しています。色が変わるハーブティー、免疫系をイメージしたフルーツポンチ、お菓子などを、背景にある医学知識とともにお楽しみください！医学生の店員が精一杯おもてなしさせていただきます。</p>
+  <br>
+  <strong>詳しくは <a href="/contents/cafe">こちら</a></strong>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before cafe" on="tap:cafe.close,disaster">&lt; 前の企画</button></li>
   <li><button aria-label="close cafe" on="tap:cafe.close">✕</button></li>
@@ -493,7 +495,9 @@
   <button class="close" aria-label="close goods" on="tap:goods.close">✕</button>
   <hr /><br />
   <h2>東大医学部限定グッズとは？</h2>
-  <p>今年度もペンやノートなど医学部グッズを販売いたします。グッズの詳細情報は近日追加いたします。また受験本も販売いたします。最新の情報を取り入れてさらなる内容の充実を図っております。</p>
+  <p>今年度もペンやノートなど医学部グッズを販売いたします。また受験本も販売いたします。最新の情報を取り入れてさらなる内容の充実を図っております。</p>
+  <br>
+  <strong>詳しくは <a href="/contents/goods">こちら</a></strong>
   <ul class="lightbox-nav">
   <li><button class="" aria-label="before goods" on="tap:goods.close,cafe">&lt; 前の企画</button></li>
   <li><button aria-label="close goods" on="tap:goods.close">✕</button></li>

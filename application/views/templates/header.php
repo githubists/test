@@ -1647,7 +1647,7 @@ amp-lightbox hr {
     background: #000;
     width: 4.5rem
 }
-amp-lightbox p {
+amp-lightbox p , .indented-paragraph>p{
     text-indent: 1rem
 }
 amp-lightbox h1 {
@@ -1747,7 +1747,6 @@ amp-lightbox h3 {
   font-size:25px;
   font-weight:800;
   color:white;
-  
 }
 #mayfesawards-vote{
   font-size:20px;
