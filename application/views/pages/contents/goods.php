@@ -86,11 +86,9 @@
             <amp-selector id="utbookSelector"
               on="select:utbook.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="utbookPreview"
+              <div id="utbookPreview"
                 class="carousel-preview mt1"
-                height="100"
-                layout="fixed-height"
-                type="carousel">
+                >
                 <amp-img option="0"
                   selected
                   src="/img/goods/utbook/utbook-frontcover.jpg"
@@ -112,7 +110,7 @@
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-              </amp-carousel>
+              </div>
             </amp-selector>
             </div>
             <div class="mt1 md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
@@ -142,17 +140,7 @@
                 height="1792"
                 layout="responsive"
                 alt="a sample image"></amp-img>
-              <amp-img src="/img/goods/files/file-road-back.jpg"
-                width="1282"
-                height="1792"
-                layout="responsive"
-                alt="a sample image"></amp-img>
               <amp-img src="/img/goods/files/file-wave-front.jpg"
-                width="1282"
-                height="1792"
-                layout="responsive"
-                alt="a sample image"></amp-img>
-              <amp-img src="/img/goods/files/file-wave-back.jpg"
                 width="1282"
                 height="1792"
                 layout="responsive"
@@ -171,11 +159,8 @@
             <amp-selector id="filesSelector"
               on="select:files.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="filesPreview"
-                class="carousel-preview mt1"
-                height="100"
-                layout="fixed-height"
-                type="carousel">
+              <div id="filesPreview"
+                class="carousel-preview mt1">
                 <amp-img option="0"
                   selected
                   src="/img/goods/files/file-road-front.jpg"
@@ -183,31 +168,21 @@
                   height="60"
                   alt="a sample image"></amp-img>
                 <amp-img option="1"
-                  src="/img/goods/files/file-road-back.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
-                <amp-img option="2"
                   src="/img/goods/files/file-wave-front.jpg"
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-                <amp-img option="3"
-                  src="/img/goods/files/file-wave-back.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
-                <amp-img option="4"
+                <amp-img option="2"
                   src="/img/goods/files/file-wave2-front.jpg"
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-                <amp-img option="5"
+                <amp-img option="3"
                   src="/img/goods/files/file-wave2-back.jpg"
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-              </amp-carousel>
+              </div>
             </amp-selector>
             </div>
             <!--<div class="col-12 sm-col-8 md-col-6 indented-paragraph">
@@ -232,17 +207,7 @@
                 height="1792"
                 layout="responsive"
                 alt="a sample image"></amp-img>
-              <amp-img src="/img/goods/notes/note-pink-back.jpg"
-                width="1282"
-                height="1792"
-                layout="responsive"
-                alt="a sample image"></amp-img>
               <amp-img src="/img/goods/notes/note-blue-front.jpg"
-                width="1282"
-                height="1792"
-                layout="responsive"
-                alt="a sample image"></amp-img>
-              <amp-img src="/img/goods/notes/note-blue-back.jpg"
                 width="1282"
                 height="1792"
                 layout="responsive"
@@ -261,11 +226,8 @@
             <amp-selector id="notesSelector"
               on="select:notes.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="notesPreview"
-                class="carousel-preview mt1"
-                height="100"
-                layout="fixed-height"
-                type="carousel">
+              <div id="notesPreview"
+                class="carousel-preview mt1">
                 <amp-img option="0"
                   selected
                   src="/img/goods/notes/note-pink-front.jpg"
@@ -273,26 +235,16 @@
                   height="60"
                   alt="a sample image"></amp-img>
                 <amp-img option="1"
-                  src="/img/goods/notes/note-pink-back.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
-                <amp-img option="2"
                   src="/img/goods/notes/note-blue-front.jpg"
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-                <amp-img option="3"
-                  src="/img/goods/notes/note-blue-back.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
-                <amp-img option="4"
+                <amp-img option="2"
                   src="/img/goods/notes/note-white-front.jpg"
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-                <amp-img option="5"
+                <amp-img option="3"
                   src="/img/goods/notes/note-white-back.jpg"
                   width="40"
                   height="60"
@@ -336,11 +288,8 @@
             <amp-selector id="postcardsSelector"
               on="select:postcards.goToSlide(index=event.targetOption)"
               layout="container">
-              <amp-carousel id="notesPreview"
-                class="carousel-preview mt1"
-                height="100"
-                layout="fixed-height"
-                type="carousel">
+              <div id="notesPreview"
+                class="carousel-preview mt1">
                 <amp-img option="0"
                   selected
                   src="/img/goods/postcards/post-road.jpg"
@@ -357,7 +306,7 @@
                   width="60"
                   height="40"
                   alt="a sample image"></amp-img>
-              </amp-carousel>
+              </div>
             </amp-selector>
             </div>
             <!--<div class="col-12 sm-col-8 md-col-6 indented-paragraph">
@@ -373,32 +322,14 @@
               height="300"
               layout="responsive"
               type="slides"
-              on="slideChange:
-                      postcardsSelector.toggle(index=event.index, value=true),
-                      postcardsPreview.goToSlide(index=event.index)
-              " lightbox>
+              lightbox>
               <amp-img src="/img/goods/pens.jpg"
                 width="602"
                 height="875"
                 layout="responsive"
                 alt="a sample image"></amp-img>
             </amp-carousel>
-            <amp-selector id="postcardsSelector"
-              on="select:postcards.goToSlide(index=event.targetOption)"
-              layout="container">
-              <amp-carousel id="notesPreview"
-                class="carousel-preview mt1"
-                height="100"
-                layout="fixed-height"
-                type="carousel">
-                <amp-img option="0"
-                  selected
-                  src="/img/goods/pens.jpg"
-                  width="40"
-                  height="60"
-                  alt="a sample image"></amp-img>
-              </amp-carousel>
-            </amp-selector>
+            
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
               シャーペン，ボールペン　　1本400円
