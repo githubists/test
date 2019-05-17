@@ -7,7 +7,7 @@
   <meta property="og:url" content="https://utmed-mayfes.net/contents/goods" />
   <meta property="og:image" content="https://utmed-mayfes.net/img/header/header-og-1x-50-withtext.jpg" />
   <meta property="og:description" content="東京大学 第92回五月祭 医学部企画『医へのいざない』のグッズ紹介ページです。クリアファイル、ペン、ポストカード、受験本など、今年も様々な東大医学部グッズを販売しております。" />
-  <!-- Custom AMP Package other than lightbox accordion and sidebar-->
+  <！-- Custom AMP Package other than lightbox accordion and sidebar-->
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
@@ -15,6 +15,14 @@
     :root {
       --space-1: .5rem;  /* 8px */
       --space-2: 1rem;   /* 16px */
+    }
+    .goods-title {
+      margin-top:3rem;
+      padding: 0.2em 0.5em;
+      background: #f4f4f4;
+      border-left: solid 5px #7db4e6;
+      border-bottom: solid 3px #d7d7d7;
+      font-weight:600;
     }
     #carousel-with-preview amp-img {
        transition: opacity 1s ease-in-out;
@@ -45,12 +53,18 @@
        padding 2px 0px;
        border: 2px solid #eee
      }
+     .goods-name{
+       font-weight:600;
+       text-decoration:underline;
+     }
+
     <?=$menu?>
     <?=$navbar?>
     <main>
       <article class="px2">
         <section class="">
-          <h2 class="relative">受験本</h2>
+          <h2 class="relative">グッズ紹介</h2>
+          <h3 class="h2 mb1 goods-title">受験本</h2>
           <div class="mb2 flex flex-wrap justify-around">
             <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="utbook"
@@ -113,17 +127,16 @@
               </div>
             </amp-selector>
             </div>
-            <div class="mt1 md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
-              <p>みなさん，こんにちは。私たちは東京大学医学部医学科４年生，五月祭医学部企画における『2019東大入試研究』編集チームです。</p>
-              <p>「東京大学医学部」は，日本で最高峰とされる東京大学の，さらに最難関と言われています。では，そんな東京大学医学部，一体どんな人たちがどうやって入ってきているのでしょう？</p>
-              <p>本書は，そんな疑問を解決すべく，医学部医学科のメンバーの受験期の勉強法から医学部生の実生活まで，私たちのリアルをご紹介いたします。近年の東大入試の問題傾向の分析や医学部生へのアンケートコーナー，また最近の東大医学部入試における推薦入試や面接の体験談など，ここでしか手に入らない情報を盛りだくさんに詰め込みました。</p>
-              <p>いま大学を目指している方（特に東京大学を目指している方）も，また医学部生に興味のある方も，きっと楽しんでお読みいただけると思います。</p>
-              <p>なお，執筆者の価値観や体験をもとに書かれている部分が多分にありますので，あくまでも参考程度にご活用いただければ幸いです。</p>
+            <div class="md-px2 col-12 sm-col-8 md-col-6">
+              <p>
+                <span class="h4 block my1 goods-name">受験本 1000円</span>
+                <span class="goods-explanation">東大入試のすべてが詰まった一冊です！勉強法をはじめ役立つ情報満載、受験生のマストアイテム！これを読んで合格を勝ち取ろう！！</span>
+              </p>
             </div>
           </div>
         </section>
         <section class="">
-          <h2 class="relative">クリアファイル</h2>
+          <h3 class="h2 mb1 goods-title">クリアファイル</h2>
           <div class="mb2 flex flex-wrap justify-around">
             <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="files"
@@ -187,14 +200,14 @@
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6">
               <p>
-                <span class="h4 block my1">クリアファイル 1冊400円</span>
-                今年度の装飾デザインがクリアファイルになりました！日常で使える便利グッズです。３柄ご用意しました。
+                <span class="h4 block my1 goods-name">クリアファイル 1冊400円</span>
+                <span class="goods-explanation">今年度の装飾デザインがクリアファイルになりました！日常で使える便利グッズです。３柄ご用意しました。</span>
               </p>
             </div>
           </div>
         </section>
         <section class="">
-          <h2 class="relative">ノート</h2>
+          <h3 class="h2 mb1 goods-title">ノート</h2>
           <div class="mb2 flex flex-wrap justify-around">
             <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="notes"
@@ -257,15 +270,15 @@
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6">
               <p>
-                <span class="h4 block my1">ノート 1冊400円</span>
-                もったいなくて使えない？？いやいや，使い終わった頃には成績up間違いなし！（科学的根拠はありません）。全３色ご用意しました
+                <span class="h4 block my1 goods-name">ノート 1冊400円</span>
+                <span class="goods-explanation">もったいなくて使えない？？いやいや，使い終わった頃には成績up間違いなし！（科学的根拠はありません）。全３色ご用意しました。</span>
               </p>
             </div>
           </div>
         </section>
 
         <section class="">
-          <h2 class="relative">ポストカード</h2>
+          <h3 class="h2 mb1 goods-title">ポストカード</h2>
           <div class="mb2 flex flex-wrap justify-around">
             <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="postcards"
@@ -319,8 +332,8 @@
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6">
               <p>
-                <span class="h4 block my1">ポストカード 3枚200円</span>
-                今年度が初の試みです！しかも限定100部の超レアアイテム。お土産にも最適です。３柄１セットで販売しております。
+                <span class="h4 block my1 goods-name">ポストカード 3枚200円</span>
+                <span class="goods-explanation">今年度が初の試みです！しかも限定100部の超レアアイテム。お土産にも最適です。３柄１セットで販売しております。</span>
               </p>
             </div>
           </div>
@@ -328,7 +341,7 @@
 
 
         <section class="">
-          <h2 class="relative">ペン</h2>
+          <h3 class="h2 mb1 goods-title">ペン</h2>
           <div class="mb2 flex flex-wrap justify-around">
             <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="pen"
@@ -346,11 +359,13 @@
             </div>
             <div class="md-px2 col-12 sm-col-8 md-col-6">
               <p>
-                <span class="h4 block my1">シャーペン、ボールペン 1本400円</span>
-                いずれも５色ご用意しております。<br>
-                ・青、ピンク、緑、オレンジ(共通)<br>
-                ・黒(シャーペンのみ)<br>
-                ・紫(ボールペンのみ)
+                <span class="h4 block my1 goods-name">シャーペン、ボールペン 1本400円</span>
+                <span class="goods-explanation">
+                  いずれも５色ご用意しております。<br>
+                  ・青、ピンク、緑、オレンジ(共通)<br>
+                  ・黒(シャーペンのみ)<br>
+                  ・紫(ボールペンのみ)
+                </span>
               </p>
             </div>
           </div>
