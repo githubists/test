@@ -364,6 +364,51 @@
             </div>-->
           </div>
         </section>
+        <section class="">
+          <h2 class="relative">ペン</h2>
+          <div class="mb2 flex flex-wrap justify-around">
+            <div class="col-12 sm-col-8 md-col-7">
+            <amp-carousel id="postcards"
+              width="400"
+              height="300"
+              layout="responsive"
+              type="slides"
+              on="slideChange:
+                      postcardsSelector.toggle(index=event.index, value=true),
+                      postcardsPreview.goToSlide(index=event.index)
+              " lightbox>
+              <amp-img src="/img/goods/pens.jpg"
+                width="602"
+                height="875"
+                layout="responsive"
+                alt="a sample image"></amp-img>
+            </amp-carousel>
+            <amp-selector id="postcardsSelector"
+              on="select:postcards.goToSlide(index=event.targetOption)"
+              layout="container">
+              <amp-carousel id="notesPreview"
+                class="carousel-preview mt1"
+                height="100"
+                layout="fixed-height"
+                type="carousel">
+                <amp-img option="0"
+                  selected
+                  src="/img/goods/pens.jpg"
+                  width="40"
+                  height="60"
+                  alt="a sample image"></amp-img>
+              </amp-carousel>
+            </amp-selector>
+            </div>
+            <div class="md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
+              シャーペン，ボールペン　　1本400円
+　いずれも５色ご用意しております。
+　青，ピンク，緑，オレンジ(共通)
+　黒(シャーペンのみ)
+　紫(ボールペンのみ)
+            </div>
+          </div>
+        </section>
       </article>
     </main>
     <?=$vote?>
