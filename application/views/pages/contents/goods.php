@@ -125,7 +125,7 @@
         <section class="">
           <h2 class="relative">クリアファイル</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-7">
+            <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="files"
               width="400"
               height="300"
@@ -185,14 +185,18 @@
               </div>
             </amp-selector>
             </div>
-            <!--<div class="col-12 sm-col-8 md-col-6 indented-paragraph">
-            </div>-->
+            <div class="md-px2 col-12 sm-col-8 md-col-6">
+              <p>
+                <span class="h4 block my1">クリアファイル 1冊400円</span>
+                今年度の装飾デザインがクリアファイルになりました！日常で使える便利グッズです。３柄ご用意しました。
+              </p>
+            </div>
           </div>
         </section>
         <section class="">
           <h2 class="relative">ノート</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-7">
+            <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="notes"
               width="400"
               height="300"
@@ -226,8 +230,7 @@
             <amp-selector id="notesSelector"
               on="select:notes.goToSlide(index=event.targetOption)"
               layout="container">
-              <div id="notesPreview"
-                class="carousel-preview mt1">
+              <div id="notesPreview" class="carousel-preview mt1">
                 <amp-img option="0"
                   selected
                   src="/img/goods/notes/note-pink-front.jpg"
@@ -249,17 +252,22 @@
                   width="40"
                   height="60"
                   alt="a sample image"></amp-img>
-              </amp-carousel>
+              </div>
             </amp-selector>
             </div>
-            <!--<div class="col-12 sm-col-8 md-col-6 indented-paragraph">
-            </div>-->
+            <div class="md-px2 col-12 sm-col-8 md-col-6">
+              <p>
+                <span class="h4 block my1">ノート 1冊400円</span>
+                もったいなくて使えない？？いやいや，使い終わった頃には成績up間違いなし！（科学的根拠はありません）。全３色ご用意しました
+              </p>
+            </div>
           </div>
         </section>
+
         <section class="">
           <h2 class="relative">ポストカード</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-7">
+            <div class="col-12 sm-col-8 md-col-6">
             <amp-carousel id="postcards"
               width="400"
               height="300"
@@ -309,15 +317,21 @@
               </div>
             </amp-selector>
             </div>
-            <!--<div class="col-12 sm-col-8 md-col-6 indented-paragraph">
-            </div>-->
+            <div class="md-px2 col-12 sm-col-8 md-col-6">
+              <p>
+                <span class="h4 block my1">ポストカード 3枚200円</span>
+                今年度が初の試みです！しかも限定100部の超レアアイテム。お土産にも最適です。３柄１セットで販売しております。
+              </p>
+            </div>
           </div>
         </section>
+
+
         <section class="">
           <h2 class="relative">ペン</h2>
           <div class="mb2 flex flex-wrap justify-around">
-            <div class="col-12 sm-col-8 md-col-7">
-            <amp-carousel id="postcards"
+            <div class="col-12 sm-col-8 md-col-6">
+            <amp-carousel id="pen"
               width="400"
               height="300"
               layout="responsive"
@@ -329,14 +343,15 @@
                 layout="responsive"
                 alt="a sample image"></amp-img>
             </amp-carousel>
-            
             </div>
-            <div class="md-px2 col-12 sm-col-8 md-col-6 indented-paragraph">
-              シャーペン，ボールペン　　1本400円
-　いずれも５色ご用意しております。
-　青，ピンク，緑，オレンジ(共通)
-　黒(シャーペンのみ)
-　紫(ボールペンのみ)
+            <div class="md-px2 col-12 sm-col-8 md-col-6">
+              <p>
+                <span class="h4 block my1">シャーペン、ボールペン 1本400円</span>
+                いずれも５色ご用意しております。<br>
+                ・青、ピンク、緑、オレンジ(共通)<br>
+                ・黒(シャーペンのみ)<br>
+                ・紫(ボールペンのみ)
+              </p>
             </div>
           </div>
         </section>
