@@ -50,7 +50,6 @@
      }
      amp-carousel amp-img{
        background-color:#eee;
-       padding 2px 0px;
        border: 2px solid #eee
      }
      .goods-name{
@@ -298,4 +297,3 @@
     <?=$vote?>
     <button class="controls scrollToTop p0"on="tap:top.scrollTo(duration=200)"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>ScrollToTop</title><polyline stroke="#fff" fill="none" points="10 32 25 18 40 32"/></svg></button>
   <?=$footer?>
-

@@ -50,7 +50,6 @@
      }
      amp-carousel amp-img{
        background-color:#eee;
-       padding 2px 0px;
        border: 2px solid #eee
      }
      .goods-name{
