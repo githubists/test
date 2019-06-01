@@ -91,7 +91,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <meta name="google-site-verification" content="woSXtH8d9cusEuNf4g-8VQLppZFeqxg_7aNu011cwqY" />
 <meta name="msvalidate.01" content="A69F6134B0FE60F3FCA37D8A6D1FB5C5" />
